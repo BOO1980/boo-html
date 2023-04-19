@@ -41,3 +41,9 @@ https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-buil
 https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-39 - 17/04/2023
 https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-40 - 17/04/2023
 https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-41 - 17/04/2023
+
+##RESOURCES
+
+
+(https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+(https://wordtohtml.net/)
