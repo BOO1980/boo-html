@@ -49,6 +49,8 @@ https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-buil
 https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-47 - 26/04/2023
 https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-48 - 26/04/2023
 https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-49 - 26/04/2023
+https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-50 - 26/04/2023
+https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-51 - 26/04/2023
 
 ##RESOURCES
 
