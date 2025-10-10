@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
    <meta charset="UTF-8" />
    <title>IFrame element</title>
 </head>
+
 <body>
    <h1>IFrame Element</h1>
 
    <ul>
-      <li>The <code>&lt;iframe&gt;</code> element is used to embed another HTML document within the current document.</li>
+      <li>The <code>&lt;iframe&gt;</code> element is used to embed another HTML document within the current document.
+      </li>
       <li>It allows for the inclusion of external content, such as other web pages or media.</li>
       <li>The <code>src</code> attribute specifies the URL of the document to be embedded.</li>
       <li>Attributes like <code>width</code> and <code>height</code> control the size of the iframe.</li>
-      <li>The <code>frameborder</code> attribute can be used to specify whether to display a border around the iframe.</li>
+      <li>The <code>frameborder</code> attribute can be used to specify whether to display a border around the iframe.
+      </li>
       <li>The <code>allowfullscreen</code> attribute enables fullscreen mode for the embedded content.</li>
       <li>Security features like the <code>sandbox</code> attribute can restrict actions within the iframe.</li>
       <li>Iframes can be styled using CSS, but their content is isolated from the parent document's styles.</li>
@@ -20,11 +24,37 @@
       <li>Iframes are commonly used for embedding videos, maps, and other interactive content.</li>
       <li>They can also be used for displaying advertisements or third-party widgets.</li>
       <li>Iframes can affect page load performance, so use them judiciously.</li>
-      <li>Consider using the <code>loading</code> attribute to control when the iframe content is loaded (e.g., <code>lazy</code> for deferred loading).</li>
+      <li>Consider using the <code>loading</code> attribute to control when the iframe content is loaded (e.g.,
+         <code>lazy</code> for deferred loading).</li>
       <li>Ensure that the embedded content is responsive to adapt to different screen sizes.</li>
-      <li>Use the <code>title</code> attribute to provide a descriptive title for the iframe content, improving accessibility.</li>
+      <li>Use the <code>title</code> attribute to provide a descriptive title for the iframe content, improving
+         accessibility.</li>
       <li>Be cautious with iframes from untrusted sources, as they can introduce security vulnerabilities.</li>
       <li>Test iframes across different browsers to ensure consistent behavior and appearance.</li>
-      </ul>
+      <li>The allow attribute: The <code>allow</code> attribute specifies a feature policy for the iframe, controlling
+         which APIs and features are available to the embedded content.</li>
+      <li>The accelerometer feature can be enabled using the <code>allow</code> attribute, allowing the embedded content
+         to access the device's accelerometer. the iframe use motion sensors so it can detect things like device tilting
+         and rotation</li>
+      <li>The autoplay feature can be enabled using the <code>allow</code> attribute, allowing the embedded content to
+         automatically start playing media (like videos or audio) without user interaction.</li>
+      <li>The clipboard-write feature can be enabled using the <code>allow</code> attribute, allowing the embedded
+         content to write data to the system clipboard. This is useful for functionalities like copy-pasting text or
+         images.</li>
+      <li>The encrypted-media feature can be enabled using the <code>allow</code> attribute, allowing the embedded
+         content to play encrypted media (like DRM-protected videos).</li>
+      <li>The gyroscope feature can be enabled using the <code>allow</code> attribute, allowing the embedded content to
+         access the device's gyroscope. This can be useful for applications that require orientation information.</li>
+      <li>The web-share feature can be enabled using the <code>allow</code> attribute, allowing the embedded content to
+         use the Web Share API. This enables sharing content (like links or files) directly from the iframe to other
+         apps or services on the device.</li>
+      <li>The referrerpolicy feature can be enabled using the <code>allow</code> attribute, allowing the embedded
+         content to control the HTTP referrer information sent when navigating from the iframe.</li>
+      <li>The strict-origin-when-cross-origin value can be used with the <code>referrerpolicy</code> attribute to
+         control the referrer information sent when navigating from the iframe.</li>
+      <li>The allowfullscreen feature can be enabled using the <code>allow</code> attribute, allowing the embedded
+         content to be displayed in fullscreen mode.</li>
+   </ul>
 </body>
+
 </html>
