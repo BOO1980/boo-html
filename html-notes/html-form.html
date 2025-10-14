@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
     <h1>Form</h1>
-    <ul><li>A web fom collects information from users</li>
-    <li>The action attribute of the form indicates where form data should be sent</li>
-<li>The input element allows you several wasy to collect data from a web from</li>
-<li>the input element is self closing</li>
-<li>There are many kinds of inputs you can create using the type attribute, you can create a password field, a reset button or a control to let users select a file from their computer</li>
-<li>Or a text element, where a user is to input text</li>
-<li>In order for the a forms data to be accessed by the location specified in the acion attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted</li>
-<li>Placeholder text is used to give people a hint about what kind of information to enter into an input</li>
-<li>To prevent a user from submitting your form when required information is missing you need to add the required attribute to the input element: There is no needto set a value to the input element</li>
-<li>Tere is a button element where it creates a clickable button</li>
-<li>The default behaviour of clicking a form button without any attributes is that the it submits the form to the location specified in the forms action attribute</li>
-<li>You can use radio buttons for questions where you want only one answer out of multiple options</li>
-<li>All input elements are self-closing</li>
-<li>Label elements are used to help assoicate the text for an input element with the input element itself</li>]
-<li>The ID attribute is used to identify specific HTML elements</li>
-<li>Each ID attribute is used to indentify specific HTML elements</li>
-<li>ID attributes need to be unique from all other ID values on the page</li>
-<li>To group the radio buttons togther we use the name attribute</li>
-<li>The fieldset element is used to group related inputs and labels togther in a web form</li>
-<li>Fieldset elements are block-level elements meaning that they appear on a new line</li>
-<li>The legend element acts as a caption for the content in the fieldset element it gives users context about aht they should eneter into the part of the form</li>
-<li>Checkbox elements are commonly used for question that may have more than one answer</li>
-<li>Another way to associate an input elements text with the element itself is to use the for attribute, with the same value at the input elements id attribute</li>
-<li>To make a checkbox checked or radio button selected by default you need to add the checked attribute to it, just add the word checked to the input element</li>
-</ul>
+    <ul>
+        <li>A web fom collects information from users</li>
+        <li>The form element in HTML is used to gather user information, such as names and email addresses</li>
+        <li>The action attribute specifies where the form data will be sent upon submission.
+            <ul>
+                <li>example: <code>&lt;form action="submit.php"&gt;</code></li>
+            </ul>
+        </li>
+        <li>The input element allows you several ways to collect data from a web form
+            <ul>
+                <li>example: <code>&lt;input type="text" name="username"&gt;</code></li>
+            </ul>
+        </li>
+        <li>The input element is self-closing</li>
+        <li>The for attribute is used to associate a label with a specific input element
+            <ul>
+                <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
+            </ul>
+        </li>
+        <li>The type attribute of the input element specifies what kind of input field will be displayed
+            <ul>
+                <li>example: <code>&lt;input type="text" name="username"&gt;</code></li>
+            </ul>
+        </li>
+        <li>By nesting an input inside a label element, you create an implicit association between the label and the
+            input field
+            <ul>
+                <li>example: <code>&lt;label&gt;&lt;input type="text" name="username"&gt;Name:&lt;/label&gt;</code></li>
+            </ul>
+        </li>
+        <li>The type attribute defines the data type expected from the user</li>
+        <li>There are many kinds of inputs you can create using the type attribute, you can create a password field, a
+            reset button or a control to let users select a file from their computer</li>
+        <li>Or a text element, where a user is to input text</li>
+        <li>In order for the a forms data to be accessed by the location specified in the acion attribute, you must give
+            the text field a name attribute and assign it a value to represent the data being submitted</li>
+        <li>Placeholder text is used to give people a hint about what kind of information to enter into an input</li>
+        <li> If you want to show additional hints to the users about the expected input, you can use the placeholder
+            attribute<ul>
+                <li>example: <code>&lt;input type="text" name="username" placeholder="Enter your username"&gt;</code>
+                </li>
+            </ul>
+        <li>For the placeholder text, you want to provide helpful short text to show the format and type of data you
+            expect from your user</li>
+        <li>To prevent a user from submitting your form when required information is missing you need to add the
+            required attribute to the input element: There is no need to set a value to the input element</li>
+        <li>Label elements are used to help associate the text for an input element with the input element
+            itself
+            <ul>
+                <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
+            </ul>
+        </li>
+        <li>To explicitly associate a label with an input, you can use the for attribute<ul>
+                <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
+            </ul>
+        </li>
+        <li>The term "implicit" refers to something that is understood or inferred without needing to be
+            explicitly
+            stated or defined with additional attributes or elements</li>
+        <li>When using an explicit association, the values for the for attribute and id need to be the same.
+        </li>
+        <li>There is a button element where it creates a clickable button</li>
+        <li>The default behaviour of clicking a form button without any attributes is that the it submits the
+            form to
+            the location specified in the forms action attribute</li>
+        <li>You can change the button's behaviour by adding the type attribute to it</li>
+        <li>You can use the reset type to create a button that will clear all the input fields in a form when
+            clicked</li>
+        <li>Another way to create buttons in HTML is to use the input element.
+            <code>&lt;input type="button" value="Click Me"&gt;</code>
+        </li>
+        <li>You can use radio buttons for questions where you want only one answer out of multiple options</li>
+        <li>The input element also has a type attribute with the possible values of submit, reset, and button</li>
+        <li>All input elements are self-closing</li>
+        <li>The ID attribute is used to identify specific HTML elements</li>
+        <li>Each ID attribute is used to indentify specific HTML elements</li>
+        <li>ID attributes need to be unique from all other ID values on the page</li>
+        <li>To group the radio buttons togther we use the name attribute</li>
+        <li>The fieldset element is used to group related inputs and labels togther in a web form</li>
+        <li>Fieldset elements are block-level elements meaning that they appear on a new line</li>
+        <li>The legend element acts as a caption for the content in the fieldset element it gives users context
+            about
+            aht they should eneter into the part of the form</li>
+        <li>Checkbox elements are commonly used for question that may have more than one answer</li>
+        <li>Another way to associate an input elements text with the element itself is to use the for attribute,
+            with
+            the same value at the input elements id attribute</li>
+        <li>To make a checkbox checked or radio button selected by default you need to add the checked attribute
+            to it,
+            just add the word checked to the input element</li>
+    </ul>
 </body>
+
 </html>
