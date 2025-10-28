@@ -9,98 +9,350 @@
 </head>
 
 <body>
-    <h1>Form</h1>
-    <ul>
-        <li>A web fom collects information from users</li>
-        <li>The form element in HTML is used to gather user information, such as names and email addresses</li>
-        <li>The action attribute specifies where the form data will be sent upon submission.
+    <main>
+        <h1>Form</h1>
+        <section>
+            <h2>Overview</h2>
             <ul>
-                <li>example: <code>&lt;form action="submit.php"&gt;</code></li>
-            </ul>
-        </li>
-        <li>The input element allows you several ways to collect data from a web form
-            <ul>
-                <li>example: <code>&lt;input type="text" name="username"&gt;</code></li>
-            </ul>
-        </li>
-        <li>The input element is self-closing</li>
-        <li>The for attribute is used to associate a label with a specific input element
-            <ul>
-                <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
-            </ul>
-        </li>
-        <li>The type attribute of the input element specifies what kind of input field will be displayed
-            <ul>
-                <li>example: <code>&lt;input type="text" name="username"&gt;</code></li>
-            </ul>
-        </li>
-        <li>By nesting an input inside a label element, you create an implicit association between the label and the
-            input field
-            <ul>
-                <li>example: <code>&lt;label&gt;&lt;input type="text" name="username"&gt;Name:&lt;/label&gt;</code></li>
-            </ul>
-        </li>
-        <li>The type attribute defines the data type expected from the user</li>
-        <li>There are many kinds of inputs you can create using the type attribute, you can create a password field, a
-            reset button or a control to let users select a file from their computer</li>
-        <li>Or a text element, where a user is to input text</li>
-        <li>In order for the a forms data to be accessed by the location specified in the acion attribute, you must give
-            the text field a name attribute and assign it a value to represent the data being submitted</li>
-        <li>Placeholder text is used to give people a hint about what kind of information to enter into an input</li>
-        <li> If you want to show additional hints to the users about the expected input, you can use the placeholder
-            attribute<ul>
-                <li>example: <code>&lt;input type="text" name="username" placeholder="Enter your username"&gt;</code>
+                <li>A web form collects information from users</li>
+                <li>The form element in HTML is used to gather user information, such as names and email addresses</li>
+                <li>The action attribute specifies where the form data will be sent upon submission.
+                    <ul>
+                        <li>example: <code>&lt;form action="submit.php"&gt;</code></li>
+                        <li>In the example, action="/submit-url" tells the browser that the form data should be sent to
+                            the path /submit-url.</li>
+                    </ul>
                 </li>
+                <li>The input element allows you several ways to collect data from a web form
+                    <ul>
+                        <li>example: <code>&lt;input type="text" name="username"&gt;</code></li>
+                    </ul>
+                </li>
+                <li>The input element is self-closing</li>
+                <li>There are many kinds of inputs you can create using the type attribute. You can easily create a
+                    password field, reset button, or a control to let users select a file from their computer. </li>
+                <li>In order for a form's data to be accessed by the location specified in the action attribute, you
+                    must give the text field a name attribute and assign it a value to represent the data being
+                    submitted. </li>
+                <li>The for attribute is used to associate a label with a specific input element
+                    <ul>
+                        <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
+                    </ul>
+                </li>
+                <li>The type attribute of the input element specifies what kind of input field will be displayed
+                    <ul>
+                        <li>example: <code>&lt;input type="text" name="username"&gt;</code></li>
+                    </ul>
+                </li>
+                <li>By nesting an input inside a label element, you create an implicit association between the label and
+                    the
+                    input field
+                    <ul>
+                        <li>example:
+                            <code>&lt;label&gt;&lt;input type="text" name="username"&gt;Name:&lt;/label&gt;</code>
+                        </li>
+                    </ul>
+                </li>
+                <li>The type attribute defines the data type expected from the user</li>
+                <li>There are many kinds of inputs you can create using the type attribute, you can create a password
+                    field,
+                    a
+                    reset button or a control to let users select a file from their computer</li>
+                <li>Or a text element, where a user is to input text</li>
+                <li>In order for the a forms data to be accessed by the location specified in the acion attribute, you
+                    must
+                    give
+                    the text field a name attribute and assign it a value to represent the data being submitted</li>
+                <li>Placeholder text is used to give people a hint about what kind of information to enter into an input
+                </li>
+                <li> If you want to show additional hints to the users about the expected input, you can use the
+                    placeholder
+                    attribute<ul>
+                        <li>example:
+                            <code>&lt;input type="text" name="username" placeholder="Enter your username"&gt;</code>
+                        </li>
+                    </ul>
+                <li>For the placeholder text, you want to provide helpful short text to show the format and type of data
+                    you
+                    expect from your user</li>
+                <li>To prevent a user from submitting your form when required information is missing you need to add the
+                    required attribute to the input element: There is no need to set a value to the input element</li>
+
+                <li>There's no need to set a value to the required attribute. Instead, just add the word required to the
+                    input element, making sure there is space between it and other attributes.</li>
+                <li>Label elements are used to help associate the text for an input element with the input element
+                    itself
+                    <ul>
+                        <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
+                    </ul>
+                </li>
+                <li>To explicitly associate a label with an input, you can use the for attribute<ul>
+                        <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
+                    </ul>
+                </li>
+                <li>The term "implicit" refers to something that is understood or inferred without needing to be
+                    explicitly
+                    stated or defined with additional attributes or elements</li>
+                <li>When using an explicit association, the values for the for attribute and id need to be the same.
+                </li>
+                <li>There is a button element where it creates a clickable button</li>
+                <li>The default behaviour of clicking a form button without any attributes is that the it submits the
+                    form to the location specified in the forms action attribute</li>
+                <li>You can change the button's behaviour by adding the type attribute to it</li>
+                <li>You can use the reset type to create a button that will clear all the input fields in a form when
+                    clicked</li>
+                <li>Another way to create buttons in HTML is to use the input element.
+                    <code>&lt;input type="button" value="Click Me"&gt;</code>
+                </li>
+                <li>Both input and button elements are inline elements, which don't appear on new lines.</li>
+                <li>You can use radio buttons for questions where you want only one answer out of multiple options</li>
+                <li>The input element also has a type attribute with the possible values of submit, reset, and button
+                </li>
+                <li>All input elements are self-closing</li>
+                <li>The ID attribute is used to identify specific HTML elements</li>
+                <li>When elements have multiple attributes, the order of the attributes doesn't matter.</li>
+                attribute is used to indentify specific HTML elements</li>
+                <li>ID attributes need to be unique from all other ID values on the page</li>
+                <li>To group the radio buttons togther we use the name attribute</li>
+                <li>The fieldset element is used to group related inputs and labels togther in a web form</li>
+                <li>Fieldset elements are block-level elements meaning that they appear on a new line</li>
+                <li>The legend element acts as a caption for the content in the fieldset element it gives users
+                    context
+                    about
+                    aht they should eneter into the part of the form</li>
+                <li>Checkbox elements are commonly used for question that may have more than one answer</li>
+                <li>The input element with a type attribute set to checkbox creates a checkbox.</li>
+                <li>Another way to associate an input elements text with the element itself is to use the for
+                    attribute, with the same value at the input elements id attribute</li>
+                <li>To make a checkbox checked or radio button selected by default you need to add the checked attribute
+                    to it,just add the word checked to the input element</li>
+                <li>There's another way to associate an input element's text with the element itself. You can nest the
+                    text within a label element and add a for attribute with the same value as the input element's id
+                    attribute.</li>
+                <li>Adding the name attribute makes it easier for a server to process your web form, especially when
+                    there are multiple checkboxes.</li>
+                <li>Like radio buttons, form data for selected checkboxes are name / value attribute pairs</li>
+                <li>While the value attribute is optional, it's best practice to include it with any checkboxes or
+                    radio buttons on the page</li>
+                <li>In order to make a checkbox checked or radio button selected by default, you need to add the checked
+                    attribute to it.</li>
+                <li>There's no need to set a value to the checked attribute. Instead, just add the word checked to the
+                    input element, making sure there is space between it and other attributes.</li>
             </ul>
-        <li>For the placeholder text, you want to provide helpful short text to show the format and type of data you
-            expect from your user</li>
-        <li>To prevent a user from submitting your form when required information is missing you need to add the
-            required attribute to the input element: There is no need to set a value to the input element</li>
-        <li>Label elements are used to help associate the text for an input element with the input element
-            itself
+        </section>
+        <section>
+            <h2>Keywords</h2>
             <ul>
-                <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
+                <li>form</li>
+                <li>input</li>
+                <li>label</li>
+                <li>button</li>
+                <li>input</li>
+                <li>checkbox</li>
+                <li>radio button</li>
+                <li>button</li>
+                <li>fieldset</li>
+                <li>legend</li>
+                <li>type attribute</li>
+                <li>name attribute</li>
+                <li>for attribute</li>
+                <li>id attribute</li>
+                <li>action attribute</li>
+                <li>placeholder attribute</li>
+                <li>required attribute</li>
+                <li>checked attribute</li>
+                <li>value attribute</li>
+
+
             </ul>
-        </li>
-        <li>To explicitly associate a label with an input, you can use the for attribute<ul>
-                <li>example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></li>
+        </section>
+        <section>
+            <h2>Code Keywords</h2>
+            <ul>
+                <li>&lt;form&gt;</li>
+                <li>&lt;input&gt;</li>
+                <li>&lt;label&gt;</li>
+                <li>&lt;textarea&gt;</li>
+                <li>&lt;select&gt;</li>
+                <li>&lt;option&gt;</li>
+                <li>&lt;optgroup&gt;</li>
+                <li>&lt;button&gt;</li>
+                <li>&lt;fieldset&gt;</li>
+                <li>&lt;legend&gt;</li>
+                <li>type</li>
+                <li>name</li>
+                <li>for</li>
+                <li>id</li>
+                <li>action</li>
+                <li>placeholder</li>
+                <li>required</li>
+                <li>checked</li>
+                <li>method</li>
+                <li>enctype</li>
+                <li>value</li>
+
             </ul>
-        </li>
-        <li>The term "implicit" refers to something that is understood or inferred without needing to be
-            explicitly
-            stated or defined with additional attributes or elements</li>
-        <li>When using an explicit association, the values for the for attribute and id need to be the same.
-        </li>
-        <li>There is a button element where it creates a clickable button</li>
-        <li>The default behaviour of clicking a form button without any attributes is that the it submits the
-            form to
-            the location specified in the forms action attribute</li>
-        <li>You can change the button's behaviour by adding the type attribute to it</li>
-        <li>You can use the reset type to create a button that will clear all the input fields in a form when
-            clicked</li>
-        <li>Another way to create buttons in HTML is to use the input element.
-            <code>&lt;input type="button" value="Click Me"&gt;</code>
-        </li>
-        <li>You can use radio buttons for questions where you want only one answer out of multiple options</li>
-        <li>The input element also has a type attribute with the possible values of submit, reset, and button</li>
-        <li>All input elements are self-closing</li>
-        <li>The ID attribute is used to identify specific HTML elements</li>
-        <li>Each ID attribute is used to indentify specific HTML elements</li>
-        <li>ID attributes need to be unique from all other ID values on the page</li>
-        <li>To group the radio buttons togther we use the name attribute</li>
-        <li>The fieldset element is used to group related inputs and labels togther in a web form</li>
-        <li>Fieldset elements are block-level elements meaning that they appear on a new line</li>
-        <li>The legend element acts as a caption for the content in the fieldset element it gives users context
-            about
-            aht they should eneter into the part of the form</li>
-        <li>Checkbox elements are commonly used for question that may have more than one answer</li>
-        <li>Another way to associate an input elements text with the element itself is to use the for attribute,
-            with
-            the same value at the input elements id attribute</li>
-        <li>To make a checkbox checked or radio button selected by default you need to add the checked attribute
-            to it,
-            just add the word checked to the input element</li>
-    </ul>
+        </section>
+        <section>
+            <h2>Code Examples</h2>
+            <p>The form element is used to create a web form to collect user information</p>
+            <code>&lt;form action="submit.php"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="name" name="username" placeholder="Enter your name" required&gt;<br>
+                &nbsp;&nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                &lt;/form&gt;
+            </code>
+            <p>The input element is used to create various types of input fields in a web form</p>
+            <code>&lt;input type="text" name="username" placeholder="Enter your username" required&gt;</code>
+            <p>There are many kinds of inputs you can create using the type attribute. You can easily create a password
+                field, reset button, or a control to let users select a file from their computer. </p>
+            <p>The label element is used to provide descriptive text for input elements in a web form</p>
+            <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code>
+            <p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+            <code>&lt;input type="text" name="username" required&gt;</code>
+            <p>The button element is used to create clickable buttons in a web form</p>
+            <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>
+
+            <p>The fieldset element is used to group related input elements in a web form</p>
+            <code>&lt;fieldset&gt;<br>
+                &nbsp;&nbsp;&lt;legend&gt;Personal Information&lt;/legend&gt;<br>
+                &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="name" name="username"&gt;<br>
+                &lt;/fieldset&gt;
+            </code>
+            <p>The legend element is used to provide a caption for a fieldset in a web form</p>
+            <code>&lt;legend&gt;Personal Information&lt;/legend&gt;</code>
+            <p>The action attribute specifies where the form data will be sent upon submission.</p>
+            <code>&lt;form action="submit.php"&gt;</code>
+            <p>The method attribute specifies how the form data will be sent.</p>
+            <code>&lt;form method="post"&gt;</code>
+            <p>The enctype attribute specifies how the form data should be encoded when submitted to the server.</p>
+            <code>&lt;form enctype="multipart/form-data"&gt;</code>
+            <p>The value attribute specifies the value associated with an input element.</p>
+            <code>&lt;input type="checkbox" name="subscribe" value="yes"&gt;</code>
+            <p>The checked attribute is used to specify that an input element should be pre-selected when the page
+                loads.</p>
+            <code>&lt;input type="checkbox" name="subscribe" value="yes" checked&gt;</code>
+
+        </section>
+        <section>
+            <h2>Questions</h2>
+            <ul>
+                <li>What is the purpose of the form element in HTML?</li>
+                <li>How do you create a text input field in a web form?</li>
+                <li>What is the role of the label element in a web form?</li>
+                <li>How do you create a clickable button in a web form?</li>
+                <li>What is the purpose of the fieldset element in a web form?</li>
+                <li>How do you provide a caption for a fieldset in a web form?</li>
+                <li>What does the action attribute of the form element specify?</li>
+                <li>How do you make an input field required in a web form?</li>
+                <li>What is the purpose of the method attribute in a form element?</li>
+                <li>What are the different types of input elements available in HTML forms?</li>
+                <li>What is the purpose of the enctype attribute in a form element?</li>
+                <li>How do you associate a label with a specific input element?</li>
+                <li>What is the purpose of the name attribute in a form element?</li>
+                <li>How do you create a radio button in a web form?</li>
+                <li>What is the difference between a checkbox and a radio button in a web form?</li>
+                <li>How do you create a select dropdown in a web form?</li>
+                <li>What is the purpose of the value attribute in a form element?</li>
+                <li>How do you create a textarea in a web form?</li>
+                <li>What is the purpose of the rows and cols attributes in a textarea element?</li>
+                <li>How do you create a file upload input in a web form?</li>
+                <li>What is the purpose of the accept attribute in a file input element?</li>
+                <li>How do you specify multiple file types for a file upload input?</li>
+                <li>What is the difference between the POST and GET methods in a form?</li>
+                <li>What are the advantages of using the POST method over the GET method?</li>
+
+            </ul>
+        </section>
+        <section>
+            <h2>Resources</h2>
+            <ul>
+                <li>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-37">Step
+                        37</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-38">Step
+                        38</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-39">Step
+                        39</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-40">Step
+                        40</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-41">Step
+                        41</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-42">Step
+                        42</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-43">Step
+                        43</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-44">Step
+                        44</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-45">Step
+                        45</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-46">Step
+                        46</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-47">Step
+                        47</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-48">Step
+                        48</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-49">Step
+                        49</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-50">Step
+                        50</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-51">Step
+                        51</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-52">Step
+                        52</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-53">Step
+                        53</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-54">Step
+                        54</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-55">Step
+                        55</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-56">Step
+                        56</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-57">Step
+                        57</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-58">Step
+                        58</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-59">Step
+                        59</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-60">Step
+                        60</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-61">Step
+                        61</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-62">Step
+                        62</a>
+                    <a target="_blank"
+                        href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-62">Step
+                        63</a>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
