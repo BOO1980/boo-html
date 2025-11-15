@@ -1,116 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Attributes</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>Attributes</h1>
+      <h1>Attributes</h1>
+
+      <!-- OVERVIEW -->
+      <section id="overview">
+        <h2>Overview</h2>
         <ul>
-            <li>HTML attributes are special words used inside the opening tag of an element to control the element's
-                behaviour</li>
-            <li>The src attribute is an img element specifies the images url (where the image is located)</li>
-            <li>An example of an img element using an alt attribute</li>
-            <li><code>&lt;img src="https://www.example.com/the-image.jpg&gt;</code></li>
-            <li>All img elements should have an alt attribute</li>
-            <li>The alt attribute text is used for screen readers to improve accessibility and is displayed if the image
-                failts to load</li>
-            <li>The ID attribute adds a unique identifier to an HTML element</li>
-            <li>You can reference the ids within your JavaScript or CSS code</li>
-            <li>ID attribute names need to be unique</li>
-            <li>ID names should not have spacesthey can only contain letters digits and underscores</li>
-            <li>The class attribute does not need to be unique and can contain spaces</li>
-            <li>You can add multiple class names to an element</li>
-            <li>Classes are used when you want to apply a set of styles to many elements if you want to target a
-                specific element it's best to use the ID</li>
+          <li>
+            HTML attributes are special words used inside the opening tag of an element to control the element's
+            behaviour
+          </li>
+          <li>An attribute is a value placed inside the opening tag of an HTML element</li>
+          <li>
+            Attributes provide additional information about the element or specify how the element should behave. Here
+            is the basic syntax for an attribute:
+          </li>
+          <li>the attribute name is followed by an equal sign (=) and a value in quotes.</li>
+          <li>The value can be a string or a number, depending on the attribute.</li>
+
+          <li>An example of an img element using an alt attribute</li>
+          <li><code>&lt;img src="https://www.example.com/the-image.jpg"&gt;</code></li>
+
+          <li>The src attribute is an img element specifies the images url (where the image is located)</li>
+          <li>The alt attribute is not required, but it is recommended for accessibility purposes</li>
+          <li>
+            The alt attribute text is used for screen readers to improve accessibility and is displayed if the image
+            failts to load
+          </li>
+          <li>
+            Accessibility means making sure that everyone, including those with disabilities, can use and understand
+            things like websites, apps, and physical spaces. You will learn more about accessibility in the upcoming
+            lessons.
+          </li>
+
+          <li>
+            This first example uses the href and target attributes. The href attribute specifies the URL of a link and
+            the target attribute specifies where to open the link.
+          </li>
+          <li>
+            Without the href attribute, the link would not work because there would be no destination URL. So you must
+            include this href attribute to make the link functional
+          </li>
+          <li>
+            The target="_blank" enables the link to open in a new browser tab. You will learn more about the target
+            attribute in future lessons.
+          </li>
+
+          <li>Some attributes are a little unique with their syntax like the checked attribute.</li>
+          <li>
+            Enable the interactive editor and try clicking on the checkbox in the preview window to see it alternate
+            between a checked and unchecked state.
+          </li>
+          <li>The checked attribute is used to specify that the checkbox should be checked by default</li>
+          <li>The checked attribute does not require a value</li>
+          <li>
+            If the attribute is not present, the checkbox will be unchecked. This is known as a boolean attribute.
+          </li>
+          <li>
+            There are several common boolean attributes you will encounter in HTML, such as disabled, readonly, and
+            required.
+          </li>
+          <li>
+            These attributes are used to specify the state of an element, such as whether it is disabled, read-only, or
+            required.
+          </li>
+
+          <li>
+            HTML has many attributes that can be used to customize the behavior and appearance of elements on a webpage.
+          </li>
+          <li>Understanding how to use attributes is essential for creating interactive and accessible web content.</li>
+
+          <li>Inputs are used to collect data from users, and the type attribute specifies the type of input</li>
+          <li>
+            Similar to the href attribute, the src attribute is required because it specifies the image file to be
+            displayed.
+          </li>
+
+          <li>The ID attribute adds a unique identifier to an HTML element</li>
+          <li>You can reference the ids within your JavaScript or CSS code</li>
+          <li>ID attribute names need to be unique</li>
+          <li>ID names should not have spaces—they can only contain letters digits and underscores</li>
+
+          <li>The class attribute does not need to be unique and can contain spaces</li>
+          <li>You can add multiple class names to an element</li>
+          <li>
+            Classes are used when you want to apply a set of styles to many elements if you want to target a specific
+            element it's best to use the ID
+          </li>
         </ul>
+      </section>
+
+      <!-- KEYWORDS -->
+      <section id="keywords">
         <h2>Keywords</h2>
         <ul>
-            <li>attribute</li>
-            <li>alt</li>
-            <li>ID</li>
-            <li>class</li>
-            <li>boolean attribute</li>
-            <li>boolean value</li>
+          <li>attribute</li>
+          <li>alt</li>
+          <li>ID</li>
+          <li>class</li>
+          <li>boolean attribute</li>
+          <li>boolean value</li>
         </ul>
+      </section>
+
+      <!-- CODE KEYWORDS -->
+      <section id="codekeywords">
         <h3>Code keywords</h3>
         <ul>
-            <li>
-                <code>href</code>
-            </li>
-            <li>
-                <code>alt</code>
-            </li>
-            <li>
-                <code>src</code>
-            </li>
-            <li>
-                <code>checked</code>
-            </li>
-            <li>
-                <code>input</code>
-            </li>
-            <li>
-                <code>type</code>
-            </li>
-            <li>
-                <code>disabled</code>
-            </li>
-            <li>
-                <code>readonly</code>
-            </li>
-            <li>
-                <code>required</code>
-            </li>
+          <li><code>href</code></li>
+          <li><code>alt</code></li>
+          <li><code>src</code></li>
+          <li><code>checked</code></li>
+          <li><code>input</code></li>
+          <li><code>type</code></li>
+          <li><code>disabled</code></li>
+          <li><code>readonly</code></li>
+          <li><code>required</code></li>
         </ul>
+      </section>
+
+      <!-- CODE EXAMPLES -->
+      <section id="codeexamples">
         <h2>Code examples</h2>
+
         <p>Without the href attribute the link would not work</p>
-        <code>&lt;a href="https://www.example-website.com"&gt;Visit our website</a></code>
-        <p>The alt attribute, which provides alternative descriptive text, or the src which is used to specify the
-            source of an image are other common attributes</p>
+        <code>&lt;a href="https://www.example-website.com"&gt;Visit our website&lt;/a&gt;</code>
+
+        <p>
+          The alt attribute, which provides alternative descriptive text, or the src which is used to specify the source
+          of an image are other common attributes
+        </p>
         <code>&lt;img src="image.jpg" alt="A beautiful image"/&gt;</code>
+
         <p>Some attributes are a little unique with their syntax like the checked attribute</p>
         <code>&lt;input type="checkbox" checked&gt;</code>
+      </section>
+
+      <!-- QUESTIONS -->
+      <section id="questions">
         <h2>Questions</h2>
         <ul>
-            <li>What is the role of an HTML attribute?</li>
-            <li>How do you add an image in HTML?</li>
-            <li>What is the purpose of the alt attribute in an image tag?</li>
-            <li>What is the difference between the ID and class attributes?</li>
-            <li>How do you reference an ID in CSS or JavaScript?</li>
-            <li>Can you have multiple classes on a single element? How?</li>
-            <li>What characters are allowed in an ID name?</li>
-            <li>Give an example of a boolean attribute</li>
-            <li>What is the correct syntax for a boolean attribute</li>
-            <li>Which of the following is an example of a boolean attribute?<ul>
-                    <li><code>src</code></li>
-                    <li><code>href</code></li>
-                    <li><code>disabled</code></li>
-                    <li><code>alt</code></li>
-                </ul>
-            </li>
-            <li>Which of the following is the correct syntax for a boolean attribute?<ul>
-                    <li><code>&lt;input type="checkbox" checked&gt;</code></li>
-                    <li><code>
-                    &lt;input type="checkbox" checked="on"&gt;</code></li>
-                    <li><code>&lt;input type="checkbox" checked="off"&gt;</code></li>
-                    <li><code>&lt;input type="checkbox" checked="isChecked"&gt;></code></li>
-                </ul>
-            </li>
+          <li>What is the role of an HTML attribute?</li>
+          <li>How do you add an image in HTML?</li>
+          <li>What is the purpose of the alt attribute in an image tag?</li>
+          <li>What is the difference between the ID and class attributes?</li>
+          <li>How do you reference an ID in CSS or JavaScript?</li>
+          <li>Can you have multiple classes on a single element? How?</li>
+          <li>What characters are allowed in an ID name?</li>
+          <li>Give an example of a boolean attribute</li>
+          <li>What is the correct syntax for a boolean attribute</li>
+          <li>What is the role of an attribute in HTML?</li>
+
+          <li>
+            Which of the following is an example of a boolean attribute?
+            <ul>
+              <li><code>src</code></li>
+              <li><code>href</code></li>
+              <li><code>disabled</code></li>
+              <li><code>alt</code></li>
+            </ul>
+          </li>
+
+          <li>
+            Which of the following is the correct syntax for a boolean attribute?
+            <ul>
+              <li><code>&lt;input type="checkbox" checked&gt;</code></li>
+              <li><code>&lt;input type="checkbox" checked="on"&gt;</code></li>
+              <li><code>&lt;input type="checkbox" checked="off"&gt;</code></li>
+              <li><code>&lt;input type="checkbox" checked="isChecked"&gt;</code></li>
+            </ul>
+          </li>
         </ul>
+      </section>
+
+      <!-- RESOURCES -->
+      <section id="resources">
         <h2>Resources</h2>
         <ul>
-            <li>
-            <li><a target="_blank"
-                    href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-8">Step
-                    8</a></li>
-            </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-8"
+            >
+              freeCodeCamp: learn HTML by building a cat photo app - Step 8
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-html-attributes/what-are-attributes"
+              target="_blank"
+              rel="noopener noreferrer"
+              >freeCodeCamp: What Are Attributes, and How Do They Work?</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
