@@ -1,142 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
     <title>Images</title>
-</head>
 
-<body>
+    <!-- Include your existing stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Sidebar-specific styling -->
+    <style>
+      /* Sidebar Container */
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 260px;
+        background: linear-gradient(135deg, #ff6b6b, #ff922b);
+        padding: 20px;
+        box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 9999;
+        overflow-y: auto;
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .sidebar h2 {
+        color: white;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
+
+      .sidebar a {
+        display: block;
+        padding: 10px 0;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .sidebar a:hover {
+        text-decoration: underline;
+      }
+
+      /* Sidebar Toggle Button */
+      .sidebar-toggle {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: #ff6b6b;
+        color: white;
+        padding: 10px 16px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        z-index: 10000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border: none;
+      }
+
+      /* Push main content slightly when open (optional) */
+      .sidebar.open ~ main {
+        margin-left: 260px;
+        transition: margin-left 0.3s ease;
+      }
+
+      @media (max-width: 700px) {
+        .sidebar.open ~ main {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- COLLAPSIBLE SIDEBAR -->
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
+
+    <nav class="sidebar" id="sidebar">
+      <h2>Contents</h2>
+      <a href="#overview">Overview</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#codekeywords">Code Keywords</a>
+      <a href="#codeexamples">Code Examples</a>
+      <a href="#questions">Questions</a>
+      <a href="#resources">Resources</a>
+    </nav>
+
+    <!-- Sidebar JS -->
+    <script>
+      function toggleSidebar() {
+        document.getElementById('sidebar').classList.toggle('open');
+      }
+    </script>
+
     <main>
-        <h1>Images</h1>
-        <section>
-            <h2>Overview</h2>
-            <ul>
-                <li>You can add images to your website by using the img element</li>
-                <li>img elements have an opening tag without a closing tag</li>
-                <li>A tag for an element without a closing tag is known as a self-closing tag or void element</li>
-                <li>The src attribute is an img element specifies the images url (where the image is located)</li>
-                <li>An example of an img element using an arc attribute</li>
-                <li><img src="https://www.example.com/the-image.jpg"></li>
-                <li>All img elements should have an alt attribute</li>
-                </li>
-                <li>The alt attribute text is used for screen readers to improve accessibility and is displayed if the
-                    image
-                    failts to load</li>
-                <li>The figure element represents self-contained content and will allow you to associate an image with a
-                    caption.</li>
-                <li>A figure caption (figcaption) element is used to add a caption to describe the image contained
-                    within the figure element.
-                </li>
+      <h1>Images</h1>
 
-            </ul>
-        </section>
-        <section>
-            <h2>Keywords</h2>
-            <ul>
-                <li>img element</li>
-                <li>self-closing tag</li>
-                <li>void element</li>
-                <li>src attribute</li>
-                <li>alt attribute</li>
-                <li>figure element</li>
-                <li>figcaption element</li>
+      <!-- OVERVIEW -->
+      <section id="overview">
+        <h2>Overview</h2>
+        <ul>
+          <li>You can add images to your website by using the img element</li>
+          <li>img elements have an opening tag without a closing tag</li>
+          <li>A tag for an element without a closing tag is known as a self-closing tag or void element</li>
 
-            </ul>
+          <li>The src attribute is an img element specifies the images url (where the image is located)</li>
+          <li>
+            If you wanted to display an image, you will need to include a couple of attributes inside your image
+            element. An attribute is a special value used to adjust the behavior for an HTML element.
+          </li>
+          <li>
+            The src attribute is used to specify the location for that image. For image elements, it's good practice to
+            include another attribute called the alt attribute. The alt attribute is used to provide short, descriptive
+            text for the images.
+          </li>
 
-        </section>
-        <section>
-            <h3>Code Keywords</h3>
-            <ul>
-                <li><code>&lt;img&gt;</code></li>
-                <li><code>src</code></li>
-                <li><code>alt</code></li>
-                <li><code>&lt;figure&gt;</code></li>
-                <li><code>&lt;figcaption&gt;</code></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Code Examples</h2>
-            <p>The <code>src</code> attribute is to specify the location for that image</p>
-            <p>For image elements, its good practice to include another attribute called the <code>alt</code> attribute
-            </p>
-            <code>&lt;img src="example-cat-img-url" alt="Cat sleeping in the grass"&gt;</code>
-            <p>The <code>alt</code> attribute is used to provide short descriptive text for the images</p>
-            <p>This text is used by screen readers to improve accessibility and is displayed if the image fails to
-                load.</p>
-            <p>The <code>figure</code> element is used to associate an image with a caption</p>
-            <code>&lt;figure&gt;<br>
-                &nbsp;&nbsp;&lt;img src="example-cat-img-url" alt="Cat sleeping in the grass"&gt;<br>
-                &nbsp;&nbsp;&lt;figcaption&gt;A cat sleeping in the grass.&lt;/figcaption&gt;<br>
-                &lt;/figure&gt; 
-            </code>
-            <p>The <code>figcaption</code> element is used to add a caption to describe the image contained within the
-                <code>figure</code> element.
-            </p>
-        </section>
-        <section>
-            <h2>Questions</h2>
-            <ul>
-                <li>How do you add an image in HTML?</li>
-                <li>What is the purpose of the alt attribute in an image tag?</li>
-                <li>What is a valid attribute used inside the img element?</li>
-                <li>What is the figure element used for?</li>
-                <li>How do you add a caption to an image using HTML?</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Resources</h2>
-            <ul>
+          <li>An example of an img element using an arc attribute</li>
+          <li><img src="https://www.example.com/the-image.jpg" /></li>
 
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-7">Step
-                        7</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-8">Step
-                        8</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-9">Step
-                        9</a></li>
-                </li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-17">Step
-                        17</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-24">Step
-                        24</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-25">Step
-                        25</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-26">Step
-                        26</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-30">Step
-                        30</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-31">Step
-                        31</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-32">Step
-                        32</a></li>
-                </li>
-                <li><a target="_blank"
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-33">Step
-                        33</a></li>
-                </li>
-        </section>
+          <li>All img elements should have an alt attribute</li>
+          <li>
+            The alt attribute text is used for screen readers to improve accessibility and is displayed if the image
+            failts to load
+          </li>
+
+          <li>
+            The figure element represents self-contained content and will allow you to associate an image with a
+            caption.
+          </li>
+          <li>
+            A figure caption (figcaption) element is used to add a caption to describe the image contained within the
+            figure element.
+          </li>
+        </ul>
+      </section>
+
+      <section id="keywords">
+        <h2>Keywords</h2>
+        <ul>
+          <li>img element</li>
+          <li>self-closing tag</li>
+          <li>void element</li>
+          <li>src attribute</li>
+          <li>alt attribute</li>
+          <li>figure element</li>
+          <li>figcaption element</li>
+        </ul>
+      </section>
+
+      <section id="codekeywords">
+        <h3>Code Keywords</h3>
+        <ul>
+          <li><code>&lt;img&gt;</code></li>
+          <li><code>src</code></li>
+          <li><code>alt</code></li>
+          <li><code>&lt;figure&gt;</code></li>
+          <li><code>&lt;figcaption&gt;</code></li>
+        </ul>
+      </section>
+
+      <section id="codeexamples">
+        <h2>Code Examples</h2>
+
+        <p>The <code>src</code> attribute is to specify the location for that image</p>
+        <p>For image elements, its good practice to include another attribute called the <code>alt</code> attribute</p>
+
+        <pre><code>&lt;img src="example-cat-img-url" alt="Cat sleeping in the grass"&gt;</code></pre>
+
+        <p>The <code>alt</code> attribute is used to provide short descriptive text for the images</p>
+        <p>This text is used by screen readers to improve accessibility and is displayed if the image fails to load.</p>
+
+        <p>The <code>figure</code> element is used to associate an image with a caption</p>
+
+        <pre><code>&lt;figure&gt;
+  &lt;img src="example-cat-img-url" alt="Cat sleeping in the grass"&gt;
+  &lt;figcaption&gt;A cat sleeping in the grass.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+        <p>
+          The <code>figcaption</code> element is used to add a caption to describe the image contained within the
+          <code>figure</code> element.
+        </p>
+      </section>
+
+      <section id="questions">
+        <h2>Questions</h2>
+        <ul>
+          <li>How do you add an image in HTML?</li>
+          <li>What is the purpose of the alt attribute in an image tag?</li>
+          <li>What is a valid attribute used inside the img element?</li>
+          <li>What is the figure element used for?</li>
+          <li>How do you add a caption to an image using HTML?</li>
+          <li>What is a valid attribute used inside the img element?</li>
+        </ul>
+      </section>
+
+      <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-7"
+            >
+              Step 7</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-8"
+            >
+              Step 8</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-9"
+            >
+              Step 9</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-17"
+            >
+              Step 17</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-24"
+            >
+              Step 24</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-25"
+            >
+              Step 25</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-26"
+            >
+              Step 26</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-30"
+            >
+              Step 30</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-31"
+            >
+              Step 31</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-32"
+            >
+              Step 32</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-33"
+            >
+              Step 33</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-html-attributes/what-is-html"
+            >
+              FreeCodeCamp: What Role Does HTML Play on the Web?</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
