@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Study Guide</title>
+    <style>
+        /* Google Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #f7f7fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: #ffffff;
+            background: linear-gradient(135deg, #ff6b6b, #ff922b);
+            padding: 20px 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        section {
+            background: #ffffff;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+            border-left: 10px solid #ff922b;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ff6b6b;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #ff922b;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: #ffe8cc;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-family: Consolas, monospace;

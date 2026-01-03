@@ -1,166 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anchor</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>Anchor</h1>
-        <section>
-            <h2>Overview</h2>
+      <h1>Anchor</h1>
+      <section>
+        <h2>Overview</h2>
+        <ul>
+          <li>You can link to another page with the anchor element.</li>
+          <li>For example: <code>&lt;a href="https://freecodecamp.org"&gt;Visit freeCodeCamp&lt;/a&gt;</code></li>
+          <li>
+            A link text must be placed between the opening and closing tags of an anchor (<code>&lt;a&gt;</code>)
+            element.
+          </li>
+          <li>
+            Adding a <code>target</code> attribute with the value <code>_blank</code> to an anchor link opens the link
+            in a new tab.
+          </li>
+          <li>
+            To open links in a new tab, you can use the <code>target</code> attribute on the anchor element. For
+            example:
             <ul>
-                <li>You can link to another page with the anchor element.</li>
-                <li>For example: <code>&lt;a href="https://freecodecamp.org"&gt;Visit freeCodeCamp&lt;/a&gt;</code></li>
-                <li>A link text must be placed between the opening and closing tags of an anchor
-                    (<code>&lt;a&gt;</code>) element.</li>
-                <li>Adding a <code>target</code> attribute with the value <code>_blank</code> to an anchor link opens
-                    the link in a new tab.</li>
-                <li>
-                    To open links in a new tab, you can use the <code>target</code> attribute on the anchor element. For
-                    example:
-                    <ul>
-                        <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code>
-                        </li>
-                    </ul>
-                    This will open the link in a new browser tab when clicked.
-                </li>
-                <li>The <code>target</code> attribute specifies where to open the linked document.
-                    <code>target="_blank"</code> opens the linked document in a new tab or window.
-                </li>
-                <li>
-                    Common values for the <code>target</code> attribute include:
-                    <ul>
-                        <li><code>_blank</code> - Opens the link in a new tab or window.</li>
-                        <li><code>_self</code> - Opens the link in the same frame as it was clicked (default).</li>
-                        <li><code>_parent</code> - Opens the link in the parent frame.</li>
-                        <li><code>_top</code> - Opens the link in the full body of the window.</li>
-                    </ul>
-                </li>
-                <li>Other types of content can also be turned into a link by wrapping it in anchor tags.</li>
+              <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code></li>
             </ul>
-        </section>
+            This will open the link in a new browser tab when clicked.
+          </li>
+          <li>
+            The <code>target</code> attribute specifies where to open the linked document.
+            <code>target="_blank"</code> opens the linked document in a new tab or window.
+          </li>
+          <li>
+            Common values for the <code>target</code> attribute include:
+            <ul>
+              <li><code>_blank</code> - Opens the link in a new tab or window.</li>
+              <li><code>_self</code> - Opens the link in the same frame as it was clicked (default).</li>
+              <li><code>_parent</code> - Opens the link in the parent frame.</li>
+              <li><code>_top</code> - Opens the link in the full body of the window.</li>
+            </ul>
+          </li>
+          <li>Other types of content can also be turned into a link by wrapping it in anchor tags.</li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>Code Examples</h2>
+      <section>
+        <h2>Code Examples</h2>
+        <ul>
+          <li>
+            Basic anchor element:
             <ul>
-                <li>
-                    Basic anchor element:
-                    <ul>
-                        <li><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></li>
-                    </ul>
-                </li>
-                <li>
-                    Anchor element that opens in a new tab:
-                    <ul>
-                        <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Image as a link:
-                    <ul>
-                        <li>
-                            <code>
-                                &lt;a href="https://www.example.com"&gt;<br>
-                                &nbsp;&nbsp;&lt;img src="image.jpg" alt="Example Image"&gt;<br>
-                                &lt;/a&gt;
-                            </code>
-                        </li>
-                    </ul>
-                </li>
+              <li><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></li>
             </ul>
-        </section>
-        <section>
-            <h2>Keywords</h2>
+          </li>
+          <li>
+            Anchor element that opens in a new tab:
             <ul>
-                <li>anchor</li>
-                <li>link</li>
-                <li>href</li>
-                <li>target</li>
-                <li>_blank</li>
+              <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code></li>
             </ul>
-
-        </section>
-        <section>
-            <h2>Code Keywords</h2>
+          </li>
+          <li>
+            Image as a link:
             <ul>
-                <li>&lt;a&gt;</li>
-                <li>href</li>
-                <li>target</li>
-                <li>_blank</li>
+              <li>
+                <code>
+                  &lt;a href="https://www.example.com"&gt;<br />
+                  &nbsp;&nbsp;&lt;img src="image.jpg" alt="Example Image"&gt;<br />
+                  &lt;/a&gt;
+                </code>
+              </li>
             </ul>
-        </section>
-        <section>
-            <h2>Code Examples</h2>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Keywords</h2>
+        <ul>
+          <li>anchor</li>
+          <li>link</li>
+          <li>href</li>
+          <li>target</li>
+          <li>_blank</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Code Keywords</h2>
+        <ul>
+          <li>&lt;a&gt;</li>
+          <li>href</li>
+          <li>target</li>
+          <li>_blank</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Code Examples</h2>
+        <ul>
+          <li>
+            Basic anchor element:
             <ul>
-                <li>
-                    Basic anchor element:
-                    <ul>
-                        <li><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></li>
-                    </ul>
-                </li>
-                <li>
-                    Anchor element that opens in a new tab:
-                    <ul>
-                        <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Image as a link:
-                    <ul>
-                        <li>
-                            <code>
-                                &lt;a href="https://www.example.com"&gt;<br>
-                                &nbsp;&nbsp;&lt;img src="image.jpg" alt="Example Image"&gt;<br>
-                                &lt;/a&gt;
-                            </code>
-                        </li>
-                    </ul>
-                </li>
+              <li><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></li>
             </ul>
-        </section>
-        <section>
-            <h2>Questions</h2>
+          </li>
+          <li>
+            Anchor element that opens in a new tab:
             <ul>
-                <li>How do you create a link in HTML?</li>
-                <li>What is the purpose of the href attribute in an anchor tag?</li>
-                <li>How do you open a link in a new tab using the anchor element?</li>
-                <li>What is the function of the target attribute in an anchor tag?</li>
-                <li>What is the purpose of the target attribute in HTML?</li>
-                <li>How do you use the target attribute with an anchor tag?</li>
-                <li>What does the value "_blank" do when used with the target attribute?</li>
-                <li>What is the default value for the target attribute if it is not specified?</li>
-                <li>How can you open a link in the same frame as it was clicked?</li>
-                <li>What are some common use cases for using the target attribute?</li>
-                <li>Can you use other elements, like images, as links in HTML? If so, how?</li>
+              <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code></li>
             </ul>
-        </section>
-        <section>
-            <h2>Resources</h2>
+          </li>
+          <li>
+            Image as a link:
             <ul>
-                <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-10"
-                        target="_blank">Step 10</a></li>
-                <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-11"
-                        target="_blank">Step 11</a></li>
-                <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-12"
-                        target="_blank">Step 12</a></li>
-                <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-12"
-                        target="_blank">Step 14</a></li>
-                <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-15"
-                        target="_blank">Step 15</a></li>
-                <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-17"
-                        target="_blank">Step 17</a></li>
-                <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-66"
-                        target="_blank">Step 66</a></li>
+              <li>
+                <code>
+                  &lt;a href="https://www.example.com"&gt;<br />
+                  &nbsp;&nbsp;&lt;img src="image.jpg" alt="Example Image"&gt;<br />
+                  &lt;/a&gt;
+                </code>
+              </li>
             </ul>
-        </section>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Questions</h2>
+        <ul>
+          <li>How do you create a link in HTML?</li>
+          <li>What is the purpose of the href attribute in an anchor tag?</li>
+          <li>How do you open a link in a new tab using the anchor element?</li>
+          <li>What is the function of the target attribute in an anchor tag?</li>
+          <li>What is the purpose of the target attribute in HTML?</li>
+          <li>How do you use the target attribute with an anchor tag?</li>
+          <li>What does the value "_blank" do when used with the target attribute?</li>
+          <li>What is the default value for the target attribute if it is not specified?</li>
+          <li>How can you open a link in the same frame as it was clicked?</li>
+          <li>What are some common use cases for using the target attribute?</li>
+          <li>Can you use other elements, like images, as links in HTML? If so, how?</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Resources</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-37"
+              target="_blank"
+              >freeCodeCamp: Build A Cat Photo App - Step 37</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-10"
+              target="_blank"
+              >freeCodeCamp: Build Cat Photo App - Step 10</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-11"
+              target="_blank"
+              >freeCodeCamp: Build Cat Photo App - Step 11</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-12"
+              target="_blank"
+              >freeCodeCamp: Build Cat Photo App - Step 12</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-12"
+              target="_blank"
+              >freeCodeCamp: Build Cat Photo App - Step 14</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-15"
+              target="_blank"
+              >freeCodeCamp: Build Cat Photo App - Step 15</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-17"
+              target="_blank"
+              >freeCodeCamp: Build Cat Photo App - Step 17</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-66"
+              target="_blank"
+              >freeCodeCamp: Build Cat Photo App - Step 66</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-64"
+              target="_blank"
+              >freeCodeCamp: Build Cat Photo App - Step 64</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
