@@ -1,157 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML Study Guide</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <main>
-      <h1>HTML Study Guide</h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML Study Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <!-- What is HTML -->
-      <section>
-        <h2>What is HTML?</h2>
-        <ul>
-          <!-- WHAT HTML IS -->
-          <li>HTML stands for Hyper Text Markup Language</li>
-          <li>HTML is the standard markup language for creating Web pages.</li>
-          <li>With HTML you can create your own website</li>
+<body>
+  <main>
+    <h1>HTML Study Guide</h1>
 
-          <!-- WHAT HTML DOES -->
-          <li>HTML describes the structure of a Web page</li>
-          <li>HTML represents the content and structure of a webpage through the use of elements</li>
-          <li>
-            When you visit a website and see content like paragraphs, headings, links, images, and videos; that's HTML.
-          </li>
+    <!-- What is HTML -->
+    <section>
+      <h2>What is HTML?</h2>
+      <ul>
+        <!-- WHAT HTML IS -->
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages.</li>
+        <li>With HTML you can create your own website</li>
 
-          <!-- ELEMENTS & TAGS -->
-          <li>HTML consists of a series of elements</li>
-          <li>HTML elements tell the browser how to display the content</li>
-          <li>
-            HTML elements have opening tags like <code>&lt;h1&gt;</code> and closing tags like <code>&lt;/h1&gt;</code>.
-            The text an element will display goes between its opening and closing tags.
-          </li>
-          <li>
-            Sometimes those tags are referred to as start and end tags. In between those two tags, you will have the
-            content. This content can be text or other HTML elements.
-          </li>
-          <li>
-            What distinguishes an opening tag from a closing tag is the forward slash (/) placed immediately after the
-            left angle bracket in a closing tag.
-          </li>
+        <!-- WHAT HTML DOES -->
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML represents the content and structure of a webpage through the use of elements</li>
+        <li>
+          When you visit a website and see content like paragraphs, headings, links, images, and videos; that's HTML.
+        </li>
 
-          <!-- VOID ELEMENTS -->
-          <li>Some HTML elements do not have a closing tag. These are known as void elements.</li>
-          <li>
-            Notice that this image element does not have the closing tag and it does not have any content. Void elements
-            cannot have any content and only have a start tag.
-          </li>
-          <li>Sometimes you will see void elements that use a / before the &gt; like this:</li>
-          <li>
-            While many code formatters like Prettier will choose to include the / in void elements, the HTML spec states
-            that the presence of the / "does not mark the start tag as self-closing but instead is unnecessary and has
-            no effect of any kind".
-          </li>
+        <!-- ELEMENTS & TAGS -->
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>
+          HTML elements have opening tags like <code>&lt;h1&gt;</code> and closing tags like <code>&lt;/h1&gt;</code>.
+          The text an element will display goes between its opening and closing tags.
+        </li>
+        <li>
+          Sometimes those tags are referred to as start and end tags. In between those two tags, you will have the
+          content. This content can be text or other HTML elements.
+        </li>
+        <li>
+          What distinguishes an opening tag from a closing tag is the forward slash (/) placed immediately after the
+          left angle bracket in a closing tag.
+        </li>
 
-          <!-- ATTRIBUTES -->
-          <li>HTML elements can have attributes</li>
-          <li>
-            If you wanted to display an image, you will need to include a couple of attributes inside your image
-            element. An attribute is a special value used to adjust the behavior for an HTML element.
-          </li>
+        <!-- VOID ELEMENTS -->
+        <li>Some HTML elements do not have a closing tag. These are known as void elements.</li>
+        <li>
+          Notice that this image element does not have the closing tag and it does not have any content. Void elements
+          cannot have any content and only have a start tag.
+        </li>
+        <li>Sometimes you will see void elements that use a / before the &gt; like this:</li>
+        <li>
+          While many code formatters like Prettier will choose to include the / in void elements, the HTML spec states
+          that the presence of the / "does not mark the start tag as self-closing but instead is unnecessary and has
+          no effect of any kind".
+        </li>
 
-          <!-- NESTING & INDENTATION -->
-          <li>Putting elements inside other elements is called nesting</li>
-          <li>Nested elements should be two spaces further to the right of the element they are nested in</li>
-          <li>This spacing is called indentation and is used to make HTML easier to read</li>
-          <li>
-            While HTML tag names are case-insensitive, it is a widely accepted convention and best practice to write
-            them in lowercase.
-          </li>
+        <!-- ATTRIBUTES -->
+        <li>HTML elements can have attributes</li>
+        <li>
+          If you wanted to display an image, you will need to include a couple of attributes inside your image
+          element. An attribute is a special value used to adjust the behavior for an HTML element.
+        </li>
 
-          <!-- DOCUMENT STRUCTURE -->
-          <li>The html element is the root element of an HTML page and wraps all content on the page.</li>
-          <li>
-            All pages should begin with &lt;!DOCTYPE html&gt;. This special string is known as a declaration and ensures
-            the browser tries to meet industry-wide specifications.
-          </li>
-          <li>
-            &lt;!DOCTYPE html&gt; tells browsers that the document is an HTML5 document which is the latest version of
-            HTML.
-          </li>
-          <li>Every HTML document should have a DOCTYPE declaration and html element</li>
-          <li>The DOCTYPE tells the browser which version of HTML the document is in.</li>
-          <li>And the html element represents the root element which contains all other elements.</li>
+        <!-- NESTING & INDENTATION -->
+        <li>Putting elements inside other elements is called nesting</li>
+        <li>Nested elements should be two spaces further to the right of the element they are nested in</li>
+        <li>This spacing is called indentation and is used to make HTML easier to read</li>
+        <li>
+          While HTML tag names are case-insensitive, it is a widely accepted convention and best practice to write
+          them in lowercase.
+        </li>
 
-          <li>All page content elements that should be rendered to the page go inside the body element</li>
-          <li>However, other important information goes inside the head element.</li>
-          <li>
-            The head element is used to contain metadata about the document, such as its title, links to stylesheets,
-            and scripts.
-          </li>
-          <li>Metadata is information about the page that isn't displayed directly on the page.</li>
+        <!-- DOCUMENT STRUCTURE -->
+        <li>The html element is the root element of an HTML page and wraps all content on the page.</li>
+        <li>
+          All pages should begin with &lt;!DOCTYPE html&gt;. This special string is known as a declaration and ensures
+          the browser tries to meet industry-wide specifications.
+        </li>
+        <li>
+          &lt;!DOCTYPE html&gt; tells browsers that the document is an HTML5 document which is the latest version of
+          HTML.
+        </li>
+        <li>Every HTML document should have a DOCTYPE declaration and html element</li>
+        <li>The DOCTYPE tells the browser which version of HTML the document is in.</li>
+        <li>And the html element represents the root element which contains all other elements.</li>
 
-          <!-- SEMANTIC HTML -->
-          <li>HTML5 has some elements that identify different content areas</li>
-          <li>
-            These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and
-            accessibility
-          </li>
+        <li>All page content elements that should be rendered to the page go inside the body element</li>
+        <li>However, other important information goes inside the head element.</li>
+        <li>
+          The head element is used to contain metadata about the document, such as its title, links to stylesheets,
+          and scripts.
+        </li>
+        <li>Metadata is information about the page that isn't displayed directly on the page.</li>
 
-          <!-- ANALOGY -->
-          <li>
-            HTML represents the blocks, concrete, and irons that make up the walls. It's the foundation that makes the
-            building strong. CSS represents the interior and exterior design that makes the house look beautiful.
-            JavaScript represents the electrical and water system that ensures uninterrupted access to water and
-            electricity.
-          </li>
+        <!-- SEMANTIC HTML -->
+        <li>HTML5 has some elements that identify different content areas</li>
+        <li>
+          These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and
+          accessibility
+        </li>
 
-          <!-- WHEN HTML ALONE IS ENOUGH -->
-          <li>
-            So, you might be wondering if HTML by itself is enough to build a website. Well, the answer is: it depends.
-            If you're building a small practice project that only displays text and images, HTML alone might be
-            sufficient. However, if you're creating a modern professional website, you will need to have HTML, CSS, and
-            JavaScript.
-          </li>
-        </ul>
-      </section>
+        <!-- ANALOGY -->
+        <li>
+          HTML represents the blocks, concrete, and irons that make up the walls. It's the foundation that makes the
+          building strong. CSS represents the interior and exterior design that makes the house look beautiful.
+          JavaScript represents the electrical and water system that ensures uninterrupted access to water and
+          electricity.
+        </li>
 
-      <!-- Keywords -->
-      <section>
-        <h2>Keywords</h2>
-        <ul>
-          <li>HTML</li>
-          <li>brackets</li>
-          <li>elements</li>
-          <li>start tag</li>
-          <li>closing tag</li>
-          <li>attributes</li>
-          <li>nested elements</li>
-          <li>void elements</li>
-          <li>headings</li>
-          <li>links</li>
-          <li>images</li>
-          <li>tables</li>
-          <li>metadata</li>
-          <li>lists</li>
-        </ul>
+        <!-- WHEN HTML ALONE IS ENOUGH -->
+        <li>
+          So, you might be wondering if HTML by itself is enough to build a website. Well, the answer is: it depends.
+          If you're building a small practice project that only displays text and images, HTML alone might be
+          sufficient. However, if you're creating a modern professional website, you will need to have HTML, CSS, and
+          JavaScript.
+        </li>
+      </ul>
+    </section>
 
-        <h3>Code Keywords</h3>
-        <ul>
-          <li><code>src</code></li>
-          <li><code>alt</code></li>
-          <li><code>href</code></li>
-        </ul>
-      </section>
+    <!-- Keywords -->
+    <section>
+      <h2>Keywords</h2>
+      <ul>
+        <li>HTML</li>
+        <li>brackets</li>
+        <li>elements</li>
+        <li>start tag</li>
+        <li>closing tag</li>
+        <li>attributes</li>
+        <li>nested elements</li>
+        <li>void elements</li>
+        <li>headings</li>
+        <li>links</li>
+        <li>images</li>
+        <li>tables</li>
+        <li>metadata</li>
+        <li>lists</li>
+      </ul>
 
-      <!-- Code Examples -->
-      <section>
-        <h2>Code Examples</h2>
+      <h3>Code Keywords</h3>
+      <ul>
+        <li><code>src</code></li>
+        <li><code>alt</code></li>
+        <li><code>href</code></li>
+      </ul>
+    </section>
 
-        <h3>Basic HTML Document Structure</h3>
-        <pre><code>&lt;!DOCTYPE html&gt;
+    <!-- Code Examples -->
+    <section>
+      <h2>Code Examples</h2>
+
+      <h3>Basic HTML Document Structure</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -163,168 +164,149 @@
 &lt;/html&gt;
 </code></pre>
 
-        <h3>Image Example</h3>
-        <pre><code>&lt;img src="cat.jpg" alt="A cute cat"&gt;</code></pre>
+      <h3>Image Example</h3>
+      <pre><code>&lt;img src="cat.jpg" alt="A cute cat"&gt;</code></pre>
 
-        <h3>Link Example</h3>
-        <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+      <h3>Link Example</h3>
+      <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
 
-        <h3>List Example</h3>
-        <pre><code>&lt;ul&gt;
+      <h3>List Example</h3>
+      <pre><code>&lt;ul&gt;
     &lt;li&gt;Milk&lt;/li&gt;
     &lt;li&gt;Eggs&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-      </section>
+    </section>
 
-      <!-- FULL QUESTIONS LIST RESTORED -->
-      <section>
-        <h2>Questions</h2>
-        <ul>
-          <li>What does HTML stand for? HyperText Markup Language</li>
-          <li>
-            What is the purpose of HTML? It is a language that is used for creating webpages; HTML represents the
-            content and structure of a webpage through the use of elements.
-          </li>
-          <li>
-            What are some common HTML elements?
-            <ul>
-              <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for headings</li>
-              <li><code>&lt;p&gt;</code> for paragraphs</li>
-              <li><code>&lt;a&gt;</code> for links</li>
-              <li><code>&lt;img&gt;</code> for images</li>
-              <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> for lists</li>
-              <li><code>&lt;table&gt;</code> for tables</li>
-            </ul>
-          </li>
-          <li>
-            Which of the following is the correct syntax for a closing tag?
-            <ul>
-              <li><code>&lt;;p&gt;</code></li>
-              <li><code>&lt;p&gt;</code></li>
-              <li><code>&lt;/p&gt;</code></li>
-              <li><code>&lt;///p/&gt;</code></li>
-            </ul>
-          </li>
-          <li>
-            Which of the following is a valid attribute used inside the img element?
-            <ul>
-              <li><code>src</code></li>
-              <li>bold</li>
-              <li>closing</li>
-              <li>div</li>
-            </ul>
-          </li>
-          <li>How do you create a link in HTML? You use the anchor element: <code>&lt;a&gt;</code></li>
-          <li>What is the difference between an internal and external link?</li>
-          <li>How do you add an image in HTML?</li>
-          <li>What is the purpose of the alt attribute in an image tag?</li>
-          <li>How do you create a table in HTML?</li>
-          <li>Which is the correct syntax for a closing tag?</li>
-          <li>What is a valid attribute used inside the img element?</li>
-          <li>What is the purpose of the head element in an HTML document?</li>
-          <li>What is the root element of an HTML document?</li>
-          <li>What is the purpose of the body element in an HTML document?</li>
-          <li>What is the purpose of the title element in an HTML document?</li>
-          <li>What is the purpose of the meta element in an HTML document?</li>
-          <li>What is the purpose of the link element in an HTML document?</li>
-          <li>What is the purpose of the script element in an HTML document?</li>
-          <li>What is the correct doctype declaration for an HTML5 document?</li>
-          <li>What is the purpose of the style element in an HTML document?</li>
-          <li>What is the purpose of the noscript element in an HTML document?</li>
-          <li>What is the purpose of the template element in an HTML document?</li>
-        </ul>
-      </section>
+    <!-- FULL QUESTIONS LIST RESTORED -->
+    <section>
+      <h2>Questions</h2>
+      <ul>
+        <li>What does HTML stand for? HyperText Markup Language</li>
+        <li>
+          What is the purpose of HTML? It is a language that is used for creating webpages; HTML represents the
+          content and structure of a webpage through the use of elements.
+        </li>
+        <li>
+          What are some common HTML elements?
+          <ul>
+            <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for headings</li>
+            <li><code>&lt;p&gt;</code> for paragraphs</li>
+            <li><code>&lt;a&gt;</code> for links</li>
+            <li><code>&lt;img&gt;</code> for images</li>
+            <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> for lists</li>
+            <li><code>&lt;table&gt;</code> for tables</li>
+          </ul>
+        </li>
+        <li>
+          Which of the following is the correct syntax for a closing tag?
+          <ul>
+            <li><code>&lt;;p&gt;</code></li>
+            <li><code>&lt;p&gt;</code></li>
+            <li><code>&lt;/p&gt;</code></li>
+            <li><code>&lt;///p/&gt;</code></li>
+          </ul>
+        </li>
+        <li>
+          Which of the following is a valid attribute used inside the img element?
+          <ul>
+            <li><code>src</code></li>
+            <li>bold</li>
+            <li>closing</li>
+            <li>div</li>
+          </ul>
+        </li>
+        <li>How do you create a link in HTML? You use the anchor element: <code>&lt;a&gt;</code></li>
+        <li>What is the difference between an internal and external link?</li>
+        <li>How do you add an image in HTML?</li>
+        <li>What is the purpose of the alt attribute in an image tag?</li>
+        <li>How do you create a table in HTML?</li>
+        <li>Which is the correct syntax for a closing tag?</li>
+        <li>What is a valid attribute used inside the img element?</li>
+        <li>What is the purpose of the head element in an HTML document?</li>
+        <li>What is the root element of an HTML document?</li>
+        <li>What is the purpose of the body element in an HTML document?</li>
+        <li>What is the purpose of the title element in an HTML document?</li>
+        <li>What is the purpose of the meta element in an HTML document?</li>
+        <li>What is the purpose of the link element in an HTML document?</li>
+        <li>What is the purpose of the script element in an HTML document?</li>
+        <li>What is the correct doctype declaration for an HTML5 document?</li>
+        <li>What is the purpose of the style element in an HTML document?</li>
+        <li>What is the purpose of the noscript element in an HTML document?</li>
+        <li>What is the purpose of the template element in an HTML document?</li>
+      </ul>
+    </section>
 
-      <!-- FULL RESOURCES LIST RESTORED -->
-      <section>
-        <h2>Resources</h2>
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-1"
-              >freeCodeCamp: Workshop Curriculum Outline - Step 1</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-2"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 2</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-3"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 3</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-5"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 5</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-6"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 6</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-7"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 7</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-8"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 8</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-9"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 9</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-67"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 67</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-70"
-              >freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 70</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-1"
-              >freeCodeCamp: Learn Basic CSS by Building a Cafe Menu - Step 1</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-html-attributes/what-is-html"
-              >FreeCodeCamp: What Does HTML Do?</a
-            >
-          </li>
-        </ul>
-      </section>
-    </main>
-  </body>
+    <!-- FULL RESOURCES LIST RESTORED -->
+    <section>
+      <h2>Resources</h2>
+      <ul>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/full-stack-developer/workshop-curriculum-outline/step-1">freeCodeCamp:
+            Workshop Curriculum Outline - Step 1</a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-html-attributes/what-is-html"
+            target="_blank" rel="noopener noreferrer">What Is HTML?</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-2">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 2</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-3">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 3</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-5">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 5</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-6">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 6</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-7">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 7</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-8">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 8</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-9">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 9</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-67">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 67</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-70">freeCodeCamp:
+            Learn HTML by Building a Cat Photo App - Step 70</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-1">freeCodeCamp:
+            Learn Basic CSS by Building a Cafe Menu - Step 1</a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-html-attributes/what-is-html">FreeCodeCamp:
+            What Does HTML Do?</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
 </html>
