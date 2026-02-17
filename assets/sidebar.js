@@ -6,7 +6,7 @@
       <details class="nav-group" open>
         <summary>Home</summary>
         <nav class="nav-list" aria-label="Home">
-          <a href="../tracking.html" data-page="home">Home</a>
+          <a href="../tracking.html" data-page="tracking">Home</a>
         </nav>
       </details>
       <details class="nav-group" open>

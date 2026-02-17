@@ -2,8 +2,20 @@ async function loadSidebar() {
   const mount = document.getElementById('sidebar-mount');
   if (!mount) return;
 
-  const res = await fetch('/partials/sidebar.html');
-  mount.innerHTML = await res.text();
+  // If another script already mounted a sidebar, don't override it.
+  if (mount.childElementCount > 0 || mount.textContent.trim()) return;
+
+  try {
+    const res = await fetch('/partials/sidebar.html');
+    if (!res.ok) return;
+
+    // Guard again in case the sidebar was mounted while fetch was in-flight.
+    if (mount.childElementCount > 0 || mount.textContent.trim()) return;
+
+    mount.innerHTML = await res.text();
+  } catch {
+    // Ignore fetch failures (e.g. opening files directly without a web server).
+  }
 }
 
 function highlightCurrentPage() {
