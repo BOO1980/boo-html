@@ -9,9 +9,11 @@
 
 <body>
   <!-- COLLAPSIBLE SIDEBAR -->
-  <button class="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
+  <button class="sidebar-toggle" type="button" aria-controls="sidebar" aria-expanded="false" onclick="toggleSidebar()">
+    ☰ Contents
+  </button>
 
-  <nav class="sidebar" id="sidebar">
+  <nav class="sidebar" id="sidebar" aria-label="Page contents">
     <h2>Contents</h2>
     <a href="#overview">Overview</a>
     <a href="#keywords">Keywords</a>
@@ -19,9 +21,8 @@
     <a href="#codeexamples">Code Examples</a>
     <a href="#questions">Questions</a>
     <a href="#resources">Resources</a>
-    <a href="#TODO">TODO</a>
+    <a href="#todo">TODO</a>
   </nav>
-
 
   <main>
     <h1>Images</h1>
@@ -68,7 +69,6 @@
       <h2>Keywords</h2>
       <ul>
         <li>img element</li>
-        <li>self-closing tag</li>
         <li>void element</li>
         <li>src attribute</li>
         <li>alt attribute</li>
@@ -78,7 +78,7 @@
     </section>
 
     <section id="codekeywords">
-      <h3>Code Keywords</h3>
+      <h2>Code Keywords</h2>
       <ul>
         <li><code>&lt;img&gt;</code></li>
         <li><code>src</code></li>
@@ -91,159 +91,218 @@
     <section id="codeexamples">
       <h2>Code Examples</h2>
 
-      <p>The <code>src</code> attribute is to specify the location for that image</p>
-      <p>For image elements, its good practice to include another attribute called the <code>alt</code> attribute</p>
+      <p>
+        <code>src</code> sets the image location, and <code>alt</code> describes the image for accessibility.
+      </p>
 
-      <pre><code>&lt;img src="example-cat-img-url" alt="Cat sleeping in the grass"&gt;</code></pre>
+      <pre><code>&lt;img src="./images/cat.jpg" alt="Cat sleeping in the grass"&gt;</code></pre>
 
-      <p>The <code>alt</code> attribute is used to provide short descriptive text for the images</p>
-      <p>This text is used by screen readers to improve accessibility and is displayed if the image fails to load.</p>
-
-      <p>The <code>figure</code> element is used to associate an image with a caption</p>
+      <p>
+        Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> to add a caption.
+      </p>
 
       <pre><code>&lt;figure&gt;
-  &lt;img src="example-cat-img-url" alt="Cat sleeping in the grass"&gt;
+  &lt;img src="./images/cat.jpg" alt="Cat sleeping in the grass"&gt;
   &lt;figcaption&gt;A cat sleeping in the grass.&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 
       <p>
-        The <code>figcaption</code> element is used to add a caption to describe the image contained within the
-        <code>figure</code> element.
+        Tip: Add <code>width</code> and <code>height</code> to reduce layout shift, and use
+        <code>loading="lazy"</code> for offscreen images.
       </p>
+
+      <pre><code>&lt;img
+  src="./images/cat.jpg"
+  alt="Cat sleeping in the grass"
+  width="640"
+  height="480"
+  loading="lazy"
+&gt;</code></pre>
     </section>
 
     <section id="questions">
       <h2>Questions</h2>
       <ul>
         <li>How do you add an image in HTML?</li>
-        <li>What is the purpose of the alt attribute in an image tag?</li>
-        <li>What is a valid attribute used inside the img element?</li>
-        <li>What is the figure element used for?</li>
-        <li>How do you add a caption to an image using HTML?</li>
-        <li>What is a valid attribute used inside the img element?</li>
+        <li>What does the <code>src</code> attribute do?</li>
+        <li>Why is the <code>alt</code> attribute important?</li>
+        <li>What is a void element?</li>
+        <li>What is the <code>&lt;figure&gt;</code> element used for?</li>
+        <li>How do you add a caption to an image?</li>
       </ul>
     </section>
 
     <section id="resources">
       <h2>Resources</h2>
       <ul>
-        <li><a target="_blank" rel="noopener noreferrer"
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-html-attributes/what-is-html">
-            freeCodeCamp: What Role Does HTML Play on the Web?</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: What Role Does HTML Play on the Web?
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lab-debug-pet-adoption-page/lab-debug-pet-adoption-page">
-            freeCodeCamp: Lab: Debug a Pet Adoption Page</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Lab: Debug a Pet Adoption Page
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-7">
-            freeCodeCamp: Workshop: Cat Photo App - Step 7</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 7
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-8">
-            freeCodeCamp: Workshop: Cat Photo App - Step 8</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 8
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-9">
-            freeCodeCamp: Workshop: Cat Photo App - Step 9</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 9
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-25">
-            freeCodeCamp: Workshop: Cat Photo App - Step 25</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 25
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-26">
-            freeCodeCamp: Workshop: Cat Photo App - Step 26</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 26
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-30">
-            freeCodeCamp: Workshop: Cat Photo App - Step 30</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 30
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-31">
-            freeCodeCamp: Workshop: Cat Photo App - Step 31</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 31
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-32">
-            freeCodeCamp: Workshop: Cat Photo App - Step 32</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 32
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-33">
-            freeCodeCamp: Workshop: Cat Photo App - Step 33</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
-            href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-33">
-            freeCodeCamp: Workshop: Cat Photo App - Step 34</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp: Workshop: Cat Photo App - Step 33
+          </a>
+        </li>
+
+        <!-- Keep ONE link for Step 34 (your original had duplicate href for 33/34) -->
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
+            href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-34">
+            freeCodeCamp: Workshop: Cat Photo App - Step 34
+          </a>
+        </li>
+
+        <!-- 2022 curriculum links -->
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-7">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 7</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 7
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-8">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 8</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 8
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-9">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 9</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 9
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-17">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 17</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 17
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-24">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 24</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 24
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-25">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 25</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 25
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-26">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 26</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 26
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-30">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 30</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 30
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-31">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 31</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 31
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-32">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 32</a></li>
-        <li><a target="_blank" rel="noopener noreferrer"
+            freeCodeCamp (2022): Cat Photo App - Step 32
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-33">
-            freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 33</a></li>
+            freeCodeCamp (2022): Cat Photo App - Step 33
+          </a>
+        </li>
       </ul>
     </section>
 
-    <section id="TODO">
+    <section id="todo">
       <h2>TODO</h2>
       <ul>
-        <li>Review the freeCodeCamp resources listed above</li>
-        <li>Practice writing code examples for each of the keywords listed above</li>
-        <li>Answer the questions listed above</li>
-        <li>Consider adding short bullets + one mini example for:<ul>
-            <li>width / height (prevents layout shift)</li>
-            <li>loading="lazy" (performance)</li>
-            <li>responsive images: srcset + sizes (even just “exists + why”)</li>
-          </ul>
-        </li>
-        <li>Consider adding a section on accessibility best practices for images</li>
-        <li>Consider adding a section on SEO best practices for images</li>
-        <li>Consider adding a section on performance best practices for images
-          <ul>
-            <li>Use appropriate image formats (e.g., WebP, JPEG, PNG)</li>
-            <li>Optimize image file sizes using tools like ImageOptim or online services</li>
-            <li>Use responsive images to serve different sizes based on the user's device</li>
-            <li>Implement lazy loading for images that are not immediately visible on the page</li>
-          </ul>
-        </li>
-        <li>Consider adding a section on common issues with images and how to troubleshoot them
-          <ul>
-            <li>Image not displaying: Check the src attribute for typos and ensure the image file is in the correct
-              location</li>
-            <li>Image loading slowly: Optimize the image file size and consider using a CDN</li>
-            <li>Image accessibility issues: Ensure alt text is descriptive and meaningful</li>]
-            <li>Missing Alt</li>
-            <li>Broken Links</li>
-            <li>Incorrect File Paths</li>
-            <li>Unsupported File Formats</li>
-            <li>Image not optimized for performance</li>
-            <li>Using image text as important content (should be text, not baked into an image)</li>
-            <li>Images not responsive (should use srcset and sizes attributes)</li>
-            <li>Lazy loading not implemented (should use loading="lazy" for offscreen images)</li>
-          </ul>
-        </li>
+        <li>Review the freeCodeCamp resources above.</li>
+        <li>Write one code example for each keyword.</li>
+        <li>Answer the questions above.</li>
+        <li>Add a short section for image performance (formats, compression, lazy loading).</li>
+        <li>Add a short section for accessibility (meaningful alt text, decorative images).</li>
+        <li>Add a short section for common issues (broken paths, missing alt, huge files).</li>
       </ul>
     </section>
   </main>
+
   <!-- Sidebar JS -->
   <script>
     function toggleSidebar() {
-      document.getElementById('sidebar').classList.toggle('open');
+      const sidebar = document.getElementById('sidebar');
+      const button = document.querySelector('.sidebar-toggle');
+
+      sidebar.classList.toggle('open');
+
+      const isOpen = sidebar.classList.contains('open');
+      button.setAttribute('aria-expanded', String(isOpen));
     }
   </script>
 </body>
