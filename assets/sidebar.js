@@ -3,7 +3,7 @@
     <aside class="sidebar" aria-label="Main navigation">
       <h2 class="sidebar-title">BOO HTML Vault</h2>
 
-  <details class="nav-group" open>
+      <details class="nav-group" open>
         <summary>Home</summary>
         <nav class="nav-list" aria-label="Home">
           <a href="../tracking.html" data-page="home">Home</a>
@@ -27,9 +27,11 @@
         </nav>
       </details>
       <details class="nav-group">
-        <summary>Labs</summary>
-        <nav class="nav-list" aria-label="Challenges">
-          <a href="../challenges/cat-photo-app.html" data-page="cat-photo-app-challenge">Cat Photo App</a>
+        <summary>Lab</summary>
+        <nav class="nav-list" aria-label="Labs">
+          <a href="../html-work/freecodecamp/Lab-Camperbot/index.html" data-page="camperbot-lab">Camperbot</a>
+        </nav>
+      </details>
       <details class="nav-group">
         <summary>Workshops</summary>
         <nav class="nav-list" aria-label="Workshops">

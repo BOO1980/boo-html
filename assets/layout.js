@@ -2,7 +2,7 @@ async function loadSidebar() {
   const mount = document.getElementById('sidebar-mount');
   if (!mount) return;
 
-  const res = await fetch('../partials/sidebar.html');
+  const res = await fetch('/partials/sidebar.html');
   mount.innerHTML = await res.text();
 }
 
