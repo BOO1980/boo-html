@@ -3,16 +3,34 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/style.css" />
   <title>HTML Study Guide</title>
-  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <main>
-    <h1>HTML Study Guide</h1>
+<body data-page="overview">
+
+  <header class="topic-bar">
+    <div class="topic-bar__title">
+      <h1>HTML Main Overview</h1>
+    </div>
+
+    <nav class="quick-links" aria-label="On this page">
+      <a href="#overview">Overview</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#codekeywords">Code Keywords</a>
+      <a href="#codeexamples">Code Examples</a>
+      <a href="#questions">Questions</a>
+      <a href="#resources">Resources</a>
+      <a href="#todo">TODO</a>
+    </nav>
+  </header>
+  <div id="sidebar-mount"></div>
+
+  <main class="content">
 
     <!-- What is HTML -->
-    <section>
+    <section id="overview">
       <h2>What is HTML?</h2>
       <ul>
         <!-- WHAT HTML IS -->
@@ -122,7 +140,7 @@
     </section>
 
     <!-- Keywords -->
-    <section>
+    <section id="keywords">
       <h2>Keywords</h2>
       <ul>
         <li>HTML</li>
@@ -140,17 +158,26 @@
         <li>metadata</li>
         <li>lists</li>
       </ul>
+    </section>
 
-      <h3>Code Keywords</h3>
+    <section id="codekeywords">
+      <h2>Code Keywords</h2>
       <ul>
-        <li><code>src</code></li>
-        <li><code>alt</code></li>
-        <li><code>href</code></li>
+        <li><code>&lt;!DOCTYPE html&gt;</code></li>
+        <li><code>&lt;html&gt;</code></li>
+        <li><code>&lt;head&gt;</code></li>
+        <li><code>&lt;body&gt;</code></li>
+        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></li>
+        <li><code>&lt;p&gt;</code></li>
+        <li><code>&lt;a&gt;</code></li>
+        <li><code>&lt;img&gt;</code></li>
+        <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code></li>
+        <li><code>&lt;table&gt;</code></li>
       </ul>
     </section>
 
     <!-- Code Examples -->
-    <section>
+    <section id="codeexamples">
       <h2>Code Examples</h2>
 
       <h3>Basic HTML Document Structure</h3>
@@ -180,7 +207,7 @@
     </section>
 
     <!-- FULL QUESTIONS LIST RESTORED -->
-    <section>
+    <section id="questions">
       <h2>Questions</h2>
       <ul>
         <li>What does HTML stand for? HyperText Markup Language</li>
@@ -239,7 +266,7 @@
     </section>
 
     <!-- FULL RESOURCES LIST RESTORED -->
-    <section>
+    <section id="resources">
       <h2>Resources</h2>
       <ul>
         <li><a target="_blank" rel="noopener noreferrer"
@@ -289,7 +316,23 @@
             freeCodeCamp: What Does HTML Do?</a></li>
       </ul>
     </section>
+
+    <section id="todo">
+      <h2>TODO</h2>
+      <ul>
+        <li>Review and add more code examples</li>
+        <li>Review and add more questions</li>
+        <li>Review and add more resources</li>
+        <li>Review and add more keywords</li>
+        <li>Clean up the code using ChatGPT suggestions</li>
+      </ul>
+    </section>
   </main>
+
+  <!-- Sidebar JS -->
+  <script src="../assets/layout.js"></script>
+  <script src="../assets/script.js"></script>
+  <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>

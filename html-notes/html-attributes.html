@@ -3,15 +3,31 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/style.css" />
   <title>Attributes</title>
-  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <main>
-    <h1>Attributes</h1>
+<body data-page="attributes">
+
+  <header class="topic-bar">
+    <div class="topic-bar__title">
+      <h1>Attributes</h1>
+    </div>
+
+    <nav class="quick-links" aria-label="On this page">
+      <a href="#overview">Overview</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#codekeywords">Code Keywords</a>
+      <a href="#codeexamples">Code Examples</a>
+      <a href="#questions">Questions</a>
+      <a href="#resources">Resources</a>
+      <a href="#todo">TODO</a>
+    </nav>
+  </header>
+  <div id="sidebar-mount"></div>
+
+  <main class="content">
 
     <!-- OVERVIEW -->
     <section id="overview">
@@ -235,7 +251,25 @@
             freeCodeCamp: Workshop: Bookstore Page - Step 6</a></li>
       </ul>
     </section>
+
+    <!-- TODO -->
+    <section id="todo">
+      <h2>TODO</h2>
+      <ul>
+        <li>Review the freeCodeCamp exercises linked in the resources section</li>
+        <li>Practice using different attributes in your own HTML projects</li>
+        <li>Explore more boolean attributes and their use cases</li>
+        <li>Clean up the code using ChatGPT suggestions</li>
+        <li>Learn about global attributes that can be applied to any HTML element</li>
+      </ul>
+    </section>
   </main>
+
+
+  <!-- Sidebar JS -->
+  <script src="../assets/layout.js"></script>
+  <script src="../assets/script.js"></script>
+  <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>

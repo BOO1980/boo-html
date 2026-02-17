@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Absolute and Relative Paths</title>
+   <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <nav class="sidebar" id="sidebar" aria-label="Page contents">
+      <h2>Contents</h2>
+      <a href="#overview">Overview</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#codekeywords">Code Keywords</a>
+      <a href="#codeexamples">Code Examples</a>
+      <a href="#questions">Questions</a>
+      <a href="#resources">Resources</a>
+      <a href="#todo">TODO</a>
+   </nav>
+   <main>
+      <h1>Understanding Absolute and Relative Paths</h1>
+      <section id="overview">
+         <h2>Overview</h2>
+         <p>
+            In web development, understanding the difference between absolute and relative paths is crucial for linking
+            resources such as images, stylesheets, and other web pages. Absolute paths provide the full URL to a
+            resource, while relative paths specify the location of a resource in relation to the current page.
+         </p>
+         <h2>Absolute Paths</h2>
+         <ul>
+            <li>
+               An absolute path provides the complete URL to a resource, including the protocol (http or https), domain
+               name,
+               and the path to the file.
+               <pre><code>https://www.example.com/images/photo.jpg</code></pre>
+            </li>
+            <li>
+               Absolute paths are useful when linking to resources that are hosted on a different domain or when you
+               want
+               to
+               ensure the link works regardless of the current page's location.</li>
+         </ul>
+         <h2>Relative Paths</h2>
+         <ul>
+            <li>
+               A relative path provides a link to a resource based on the current page's location. It does not include
+               the
+               domain name or protocol.
+               <pre><code>images/photo.jpg</code></pre>
+            </li>
+            <li>
+               Relative paths are useful for linking to resources within the same website, as they make it easier to
+               move
+               files around without breaking links.</li>
+         </ul>
+
+         <h2>Path Syntax</h2>
+         <ul>
+            <li>
+               Absolute paths start with a protocol (http:// or https://) and include the full URL.</li>
+            <li>
+               Relative paths can start with a forward slash (/) to indicate the root directory or can be relative to
+               the
+               current directory (e.g., ./ or ../).</li>
+            <li>
+               When using relative paths, you can navigate up the directory structure using ../ to go up one level.</li>
+            <li>
+               Example of a relative path to go up one directory: <code>../images/photo.jpg</code></li>
+
+            <li>
+               Example of a relative path to stay in the same directory: <code>./photo.jpg</code></li>
+            <li>
+               When linking to a file in the same directory, you can simply use the file name: <code>photo.jpg</code>
+            </li>
+
+            <li>
+               When linking to a file in a subdirectory, you can specify the subdirectory: <code>images/photo.jpg</code>
+            </li>
+            <li>
+               When linking to a file in a parent directory, you can use ../: <code>../images/photo.jpg</code></li>
+            <li>
+               When linking to a file in a sibling directory, you can use ../ to go up one level:
+               <code>../sibling/photo.jpg</code>
+            </li>
+            <li>
+               When linking to a file in a deeper subdirectory, you can specify the full path:
+               <code>images/subfolder/photo.jpg</code>
+            </li>
+            <li>
+               When linking to a file in a different domain, you must use an absolute path:
+               <code>https://www.example.com/images/photo.jpg</code>
+            </li>
+         </ul>
+      </section>
+      <section id="keywords">
+         <h2>Keywords</h2>
+         <ul>
+            <li><code>absolute path</code></li>
+            <li><code>relative path</code></li>
+            <li><code>URL</code></li>
+            <li><code>protocol</code></li>
+            <li><code>domain name</code></li>
+            <li><code>directory structure</code></li>
+         </ul>
+      </section>
+      <section id="codekeywords">
+         <h2>Code Keywords</h2>
+         <ul>
+            <li><code>http://</code></li>
+            <li><code>https://</code></li>
+            <li><code>/</code></li>
+            <li><code>./</code></li>
+            <li><code>../</code></li>
+         </ul>
+      </section>
+      <section id="codeexamples"></section>
+      <h2>Code Examples</h2>
+      <ul>
+         <li>
+            Example of an absolute path:
+            <pre><code>&lt;img src="https://www.example.com/images/photo.jpg" alt="Photo"&gt;</code></pre>
+         </li>
+         <li>
+            Example of a relative path to a file in the same directory:
+            <pre><code>&lt;img src="photo.jpg" alt="Photo"&gt;</code></pre>
+         </li>
+         <li>
+            Example of a relative path to a file in a subdirectory:
+            <pre><code>&lt;img src="images/photo.jpg" alt="Photo"&gt;</code></pre>
+         </li>
+         <li>
+            Example of a relative path to a file in a parent directory:
+            <pre><code>&lt;img src="../photo.jpg" alt="Photo"&gt;</code></pre>
+         </li>
+      </ul>
+      <section id="questions">
+         <h2>Questions</h2>
+         <ul>
+            <li>What is the difference between absolute and relative paths?</li>
+            <li>When should you use an absolute path versus a relative path?</li>
+            <li>How do you navigate up the directory structure using relative paths?</li>
+            <li>What happens if you move a file that is linked using a relative path?</li>
+            <li>Can you use absolute paths to link to resources within the same website?</li>
+         </ul>
+      </section>
+      <section id="resources">
+         <h2>Resources</h2>
+         <ul>
+            <li><a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files#absolute_and_relative_paths">MDN
+                  Web Docs: Absolute and Relative Paths</a></li>
+            <li><a href="https://www.w3schools.com/html/html_filepaths.asp">W3Schools: HTML File Paths</a></li>
+            <li><a href="https://www.tutorialspoint.com/html/html_file_paths.htm">TutorialsPoint: HTML File Paths</a>
+            </li>
+         </ul>
+      </section>
+      <section id="todo">
+         <h2>TODO</h2>
+         <ul>
+            <li>Expand the code examples section with more complex scenarios.</li>
+            <li>Add a section on common mistakes when using paths and how to avoid them.</li>
+            <li>Include a quiz or interactive exercise to test understanding of absolute and relative paths.</li>
+         </ul>
+      </section>
+   </main>
+</body>
+
+</html>

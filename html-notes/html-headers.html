@@ -2,15 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style.css" />
     <title>HTML Headers</title>
 </head>
 
-<body>
-    <main>
-        <h1>HTML Headers</h1>
-        <section>
+<body data-page="headers">
+    <header class="topic-bar">
+        <div class="topic-bar__title">
+            <h1>Headers</h1>
+        </div>
+
+        <nav class="quick-links" aria-label="On this page">
+            <a href="#overview">Overview</a>
+            <a href="#keywords">Keywords</a>
+            <a href="#codekeywords">Code Keywords</a>
+            <a href="#codeexamples">Code Examples</a>
+            <a href="#questions">Questions</a>
+            <a href="#resources">Resources</a>
+            <a href="#todo">TODO</a>
+        </nav>
+    </header>
+    <div id="sidebar-mount"></div>
+    <main class="content">
+        <section id="overview">
             <h2>Overview</h2>
             <ul>
                 <li>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</li>
@@ -41,7 +57,7 @@
                     and h6 being the least</li>
             </ul>
         </section>
-        <section>
+        <section id="keywords">
             <h2>Keywords</h2>
             <ul>
                 <li>headings</li>
@@ -54,7 +70,7 @@
             </ul>
 
         </section>
-        <section>
+        <section id="codekeywords">
             <h2>Code Keywords</h2>
             <ul>
                 <li>&lt;h1&gt;</li>
@@ -65,7 +81,7 @@
                 <li>&lt;h6&gt;</li>
             </ul>
         </section>
-        <section>
+        <section id="codeexamples">
             <h2>Code Examples</h2>
             <ul>
                 <li>Heading level 1:
@@ -100,7 +116,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="questions">
             <h2>Questions</h2>
             <ul>
                 <li>What is the purpose of headings in HTML?</li>
@@ -110,7 +126,7 @@
                 <li>Can you use multiple headings on a single page?</li>
             </ul>
         </section>
-        <section>
+        <section id="resources">
             <h2>Resources</h2>
             <ul>
                 <li><a target="_blank" rel="noopener noreferrer"
@@ -166,7 +182,22 @@
                         freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 28</a></li>
             </ul>
         </section>
+        <section id="todo">
+            <h2>TODO</h2>
+            <ul>
+                <li>Review freeCodeCamp exercises related to HTML headers.</li>
+                <li>Practice creating different levels of headings in HTML.</li>
+                <li>Experiment with styling headings using CSS.</li>
+                <li>Read more about the importance of headings for SEO.</li>
+                <li>Explore how screen readers interpret headings for accessibility.</li>
+                <li>Clean up the code using ChatGPT suggestions</li>
+            </ul>
+        </section>
     </main>
+    <!-- Sidebar JS -->
+    <script src="../assets/layout.js"></script>
+    <script src="../assets/script.js"></script>
+    <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>

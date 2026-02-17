@@ -3,29 +3,31 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Images</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <title>HTML Images</title>
 </head>
 
-<body>
-  <!-- COLLAPSIBLE SIDEBAR -->
-  <button class="sidebar-toggle" type="button" aria-controls="sidebar" aria-expanded="false" onclick="toggleSidebar()">
-    ☰ Contents
-  </button>
+<body data-page="images">
 
-  <nav class="sidebar" id="sidebar" aria-label="Page contents">
-    <h2>Contents</h2>
-    <a href="#overview">Overview</a>
-    <a href="#keywords">Keywords</a>
-    <a href="#codekeywords">Code Keywords</a>
-    <a href="#codeexamples">Code Examples</a>
-    <a href="#questions">Questions</a>
-    <a href="#resources">Resources</a>
-    <a href="#todo">TODO</a>
-  </nav>
+  <header class="topic-bar">
+    <div class="topic-bar__title">
+      <h1>HTML Images</h1>
+    </div>
 
-  <main>
-    <h1>Images</h1>
+    <nav class="quick-links" aria-label="On this page">
+      <a href="#overview">Overview</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#codekeywords">Code Keywords</a>
+      <a href="#codeexamples">Code Examples</a>
+      <a href="#questions">Questions</a>
+      <a href="#resources">Resources</a>
+      <a href="#todo">TODO</a>
+    </nav>
+  </header>
+  <div id="sidebar-mount"></div>
+
+  <main class="content">
 
     <!-- OVERVIEW -->
     <section id="overview">
@@ -286,6 +288,7 @@
         <li>Review the freeCodeCamp resources above.</li>
         <li>Write one code example for each keyword.</li>
         <li>Answer the questions above.</li>
+        <li>Clean up the code using ChatGPT suggestions</li>
         <li>Add a short section for image performance (formats, compression, lazy loading).</li>
         <li>Add a short section for accessibility (meaningful alt text, decorative images).</li>
         <li>Add a short section for common issues (broken paths, missing alt, huge files).</li>
@@ -294,17 +297,9 @@
   </main>
 
   <!-- Sidebar JS -->
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const button = document.querySelector('.sidebar-toggle');
-
-      sidebar.classList.toggle('open');
-
-      const isOpen = sidebar.classList.contains('open');
-      button.setAttribute('aria-expanded', String(isOpen));
-    }
-  </script>
+  <script src="../assets/layout.js"></script>
+  <script src="../assets/script.js"></script>
+  <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>
