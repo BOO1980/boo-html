@@ -6,37 +6,37 @@
       <details class="nav-group" open>
         <summary>Home</summary>
         <nav class="nav-list" aria-label="Home">
-          <a href="../tracker/tracking.html" data-page="tracking">Home</a>
+          <a href="/tracker/tracking.html" data-page="tracking">Home</a>
         </nav>
       </details>
       <details class="nav-group" open>
         <summary>Notes</summary>
         <nav class="nav-list" aria-label="Notes">
-          <a href="../html-notes/html-overview.html" data-page="overview">Main Overview</a>
-          <a href="../html-notes/html-basic-elements.html" data-page="basic-elements">Basic Elements</a>
-          <a href="../html-notes/html-attributes.html" data-page="attributes">Attributes</a>
-          <a href="../html-notes/html-headers.html" data-page="headers">Headers</a>
-          <a href="../html-notes/html-html5-elements.html" data-page="html5-elements">HTML5 Elements</a>
-          <a href="../html-notes/html-boilerplate.html" data-page="boilerplate">Boilerplate</a>
-          <a href="../html-notes/html-meta-element.html" data-page="meta-element">Meta Element</a> 
-          <a href="../html-notes/html-section.html" data-page="section">Section Element</a>
-          <a href="../html-notes/html-images.html" data-page="images">Images</a>
-          <a href="../html-notes/html-anchor.html" data-page="anchor">Anchor</a>
-          <a href="../html-notes/html-lists.html" data-page="lists">Lists</a>
-          <a href="../html-notes/html-emphasis-and-idiomatic-elements.html" data-page="emphasis-and-idiomatic-elements">Emphasis and Idiomatic Elements</a>
+          <a href="/html-notes/html-overview.html" data-page="overview">Main Overview</a>
+          <a href="/html-notes/html-basic-elements.html" data-page="basic-elements">Basic Elements</a>
+          <a href="/html-notes/html-attributes.html" data-page="attributes">Attributes</a>
+          <a href="/html-notes/html-headers.html" data-page="headers">Headers</a>
+          <a href="/html-notes/html-html5-elements.html" data-page="html5-elements">HTML5 Elements</a>
+          <a href="/html-notes/html-boilerplate.html" data-page="boilerplate">Boilerplate</a>
+          <a href="/html-notes/html-meta-element.html" data-page="meta-element">Meta Element</a> 
+          <a href="/html-notes/html-section.html" data-page="section">Section Element</a>
+          <a href="/html-notes/html-images.html" data-page="images">Images</a>
+          <a href="/html-notes/html-anchor.html" data-page="anchor">Anchor</a>
+          <a href="/html-notes/html-lists.html" data-page="lists">Lists</a>
+          <a href="/html-notes/html-emphasis-and-idiomatic-elements.html" data-page="emphasis-and-idiomatic-elements">Emphasis and Idiomatic Elements</a>
         </nav>
       </details>
       <details class="nav-group">
         <summary>Lab</summary>
         <nav class="nav-list" aria-label="Labs">
-          <a href="../html-work/freecodecamp/Lab-Camperbot/index.html" data-page="camperbot-lab">Camperbot</a>
+          <a href="/html-work/freecodecamp/Lab-Camperbot/index.html" data-page="camperbot-lab">Camperbot</a>
         </nav>
       </details>
       <details class="nav-group">
         <summary>Workshops</summary>
         <nav class="nav-list" aria-label="Workshops">
-          <a href="../workshops/cat-photo-app.html" data-page="cat-photo-app">Cat Photo App</a>
-          <a href="../workshops/pet-adoption-debug.html" data-page="pet-adoption-debug">Pet Adoption Debug</a>
+          <a href="/workshops/cat-photo-app.html" data-page="cat-photo-app">Cat Photo App</a>
+          <a href="/workshops/pet-adoption-debug.html" data-page="pet-adoption-debug">Pet Adoption Debug</a>
         </nav>
       </details>
     </aside>
