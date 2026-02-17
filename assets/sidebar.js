@@ -11,6 +11,7 @@
           <a href="../html-notes/html-attributes.html" data-page="attributes">Attributes</a>
           <a href="../html-notes/html-headers.html" data-page="headers">Headers</a>
           <a href="../html-notes/html-html5-elements.html" data-page="html5-elements">HTML5 Elements</a>
+          <a href="../html-notes/html-boilerplate.html" data-page="boilerplate">Boilerplate</a>
         </nav>
       </details>
 
