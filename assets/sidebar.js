@@ -3,6 +3,12 @@
     <aside class="sidebar" aria-label="Main navigation">
       <h2 class="sidebar-title">BOO HTML Vault</h2>
 
+  <details class="nav-group" open>
+        <summary>Home</summary>
+        <nav class="nav-list" aria-label="Home">
+          <a href="../tracking.html" data-page="home">Home</a>
+        </nav>
+      </details>
       <details class="nav-group" open>
         <summary>Notes</summary>
         <nav class="nav-list" aria-label="Notes">
@@ -20,7 +26,10 @@
           <a href="../html-notes/html-emphasis-and-idiomatic-elements.html" data-page="emphasis-and-idiomatic-elements">Emphasis and Idiomatic Elements</a>
         </nav>
       </details>
-
+      <details class="nav-group">
+        <summary>Labs</summary>
+        <nav class="nav-list" aria-label="Challenges">
+          <a href="../challenges/cat-photo-app.html" data-page="cat-photo-app-challenge">Cat Photo App</a>
       <details class="nav-group">
         <summary>Workshops</summary>
         <nav class="nav-list" aria-label="Workshops">
