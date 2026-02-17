@@ -12,6 +12,12 @@
           <a href="../html-notes/html-headers.html" data-page="headers">Headers</a>
           <a href="../html-notes/html-html5-elements.html" data-page="html5-elements">HTML5 Elements</a>
           <a href="../html-notes/html-boilerplate.html" data-page="boilerplate">Boilerplate</a>
+          <a href="../html-notes/html-meta-element.html" data-page="meta-element">Meta Element</a> 
+          <a href="../html-notes/html-section.html" data-page="section">Section Element</a>
+          <a href="../html-notes/html-images.html" data-page="images">Images</a>
+          <a href="../html-notes/html-anchor.html" data-page="anchor">Anchor</a>
+          <a href="../html-notes/html-lists.html" data-page="lists">Lists</a>
+          <a href="../html-notes/html-emphasis-and-idiomatic-elements.html" data-page="emphasis-and-idiomatic-elements">Emphasis and Idiomatic Elements</a>
         </nav>
       </details>
 

@@ -3,15 +3,30 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/style.css" />
   <title>Anchor</title>
 </head>
 
-<body>
-  <main>
-    <h1>Anchor</h1>
-    <section>
+<body data-page="anchor">
+  <header class="topic-bar">
+    <div class="topic-bar__title">
+      <h1>Anchor</h1>
+    </div>
+
+    <nav class="quick-links" aria-label="On this page">
+      <a href="#overview">Overview</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#codekeywords">Code Keywords</a>
+      <a href="#codeexamples">Code Examples</a>
+      <a href="#questions">Questions</a>
+      <a href="#resources">Resources</a>
+      <a href="#todo">TODO</a>
+    </nav>
+  </header>
+  <div id="sidebar-mount"></div>
+  <main class="content">
+    <section id="overview">
       <h2>Overview</h2>
       <ul>
         <li>You can link to another page with the anchor element.</li>
@@ -48,7 +63,7 @@
         <li>Other types of content can also be turned into a link by wrapping it in anchor tags.</li>
       </ul>
     </section>
-    <section>
+    <section id="codeexamples">
       <h2>Code Examples</h2>
       <ul>
         <li>
@@ -77,7 +92,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="keywords">
       <h2>Keywords</h2>
       <ul>
         <li>anchor</li>
@@ -87,7 +102,7 @@
         <li>_blank</li>
       </ul>
     </section>
-    <section>
+    <section id="codekeywords">
       <h2>Code Keywords</h2>
       <ul>
         <li>&lt;a&gt;</li>
@@ -96,7 +111,7 @@
         <li>_blank</li>
       </ul>
     </section>
-    <section>
+    <section id="codeexamples">
       <h2>Code Examples</h2>
       <ul>
         <li>
@@ -125,7 +140,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="questions">
       <h2>Questions</h2>
       <ul>
         <li>How do you create a link in HTML?</li>
@@ -141,7 +156,7 @@
         <li>Can you use other elements, like images, as links in HTML? If so, how?</li>
       </ul>
     </section>
-    <section>
+    <section id="resources">
       <h2>Resources</h2>
       <ul>
         <li><a target="_blank" rel="noopener noreferrer"
@@ -188,7 +203,19 @@
             freeCodeCamp: Learn Basic CSS by Building a Cafe Menu - Step 64</a></li>
       </ul>
     </section>
+    <section id="todo">
+      <h2>TODO</h2>
+      <ul>
+        <li>Review freeCodeCamp exercises related to the anchor element</li>
+        <li>Practice writing HTML code using the anchor element and its attributes</li>
+        <li>Clean up the code using ChatGPT suggestions</li>
+      </ul>
+    </section>
   </main>
+  <!-- Sidebar JS -->
+  <script src="../assets/layout.js"></script>
+  <script src="../assets/script.js"></script>
+  <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>

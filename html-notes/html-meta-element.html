@@ -2,14 +2,31 @@
 <html>
 
 <head>
-  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/style.css" />
   <title>Meta Element</title>
 </head>
 
-<body>
-  <main>
-    <h1>Meta Element</h1>
-    <section>
+<body data-page="meta-element">
+  <header class="topic-bar">
+    <div class="topic-bar__title">
+      <h1>Meta Element</h1>
+    </div>
+
+    <nav class="quick-links" aria-label="On this page">
+      <a href="#overview">Overview</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#codekeywords">Code Keywords</a>
+      <a href="#codeexamples">Code Examples</a>
+      <a href="#questions">Questions</a>
+      <a href="#resources">Resources</a>
+      <a href="#todo">TODO</a>
+    </nav>
+  </header>
+  <div id="sidebar-mount"></div>
+  <main class="content">
+
+    <section id="overview">
       <h2>Overview</h2>
       <ul>
         <li>The meta element provides metadata about the HTML document.</li>
@@ -75,7 +92,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="keywords">
       <h2>Keywords</h2>
       <ul>
         <li>Meta Element</li>
@@ -92,7 +109,7 @@
         <li>lang Attribute</li>
       </ul>
     </section>
-    <section>
+    <section id="codekeywords">
       <h2>Code Keywords</h2>
       <ul>
         <li>&lt;meta&gt;</li>
@@ -103,7 +120,7 @@
         <li>lang</li>
       </ul>
     </section>
-    <section>
+    <section id="questions">
       <h2>Questions</h2>
       <ul>
         <li>What is the purpose of the meta element in HTML?</li>
@@ -128,7 +145,7 @@
         <li>How many bits are inside of a byte?</li>
       </ul>
     </section>
-    <section>
+    <section id="resources">
       <h2>Resources</h2>
       <ul>
         <li><a target="_blank" rel="noopener noreferrer"
@@ -160,7 +177,17 @@
             freeCodeCamp: Learn Basic Colours - Step 4</a></li>
       </ul>
     </section>
+    <section id="todo">
+      <h2>TODO</h2>
+      <ul>
+        <li>Clean up the code using ChatGPT suggestions</li>
+        <li>Review freeCodeCamp exercises related to the meta element</li>
+        <li>Practice writing HTML code using the meta element and its attributes</li>
   </main>
+  <!-- Sidebar JS -->
+  <script src="../assets/layout.js"></script>
+  <script src="../assets/script.js"></script>
+  <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>

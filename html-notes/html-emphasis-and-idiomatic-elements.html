@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <title>When should you use the elmpahsis element over the idomatic text element </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>Emphasis Element over the Idiomatic Text Element</title>
 </head>
 
-<body>
-    <main>
-        <h1>When should you use the emphasis element over the idiomatic text element</h1>
-        <section>
+<body data-page="emphasis-and-idiomatic-elements">
+
+    <header class="topic-bar">
+        <div class="topic-bar__title">
+            <h1>Emphasis Element over the Idiomatic Text Element</h1>
+        </div>
+
+        <nav class="quick-links" aria-label="On this page">
+            <a href="#overview">Overview</a>
+            <a href="#keywords">Keywords</a>
+            <a href="#codekeywords">Code Keywords</a>
+            <a href="#codeexamples">Code Examples</a>
+            <a href="#questions">Questions</a>
+            <a href="#resources">Resources</a>
+            <a href="#todo">TODO</a>
+        </nav>
+    </header>
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+
+        <section id="overview">
             <h2>Overview</h2>
             <ul>
                 <li>
@@ -24,10 +44,12 @@
                     The <em> element is typically used for emphasis in a sentence, while the <i> element is used for
                             stylistic purposes, such as indicating a foreign word or a technical term. </li>
                 <li>
-                    The <em> element is often used in conjunction with other semantic elements, such as <strong> or
-                            <cite>,
-                                to provide additional context and meaning, while the <i> element is used primarily for
-                                    visual styling. </li>
+                    The <em> element is often used in conjunction with other semantic elements, such as &lt;strong&gt;
+                        or
+                        &lt;cite&gt;,
+                        to provide additional context and meaning, while the <i> element is used primarily for
+                            visual styling. </li>
+
                 <li>
                     The <em> element is more commonly used in modern web development, while the <i> element is often
                             used in
@@ -62,7 +84,7 @@
                 <li>language attribute</li>
             </ul>
         </section>
-        <section id="code-keywords">
+        <section id="codekeywords">
             <h2>Code Keywords</h2>
             <ul>
                 <li>&lt;em&gt;</li>
@@ -70,7 +92,7 @@
                 <li>lang attribute</li>
             </ul>
         </section>
-        <section id="code-examples">
+        <section id="codeexamples">
             <h2>Code Examples</h2>
             <ul>
                 <li>
@@ -98,7 +120,7 @@
                     text?</li>
             </ul>
         </section>
-        <section>
+        <section id="resources">
             <h2>Resources</h2>
             <ul>
                 <li><a target="_blank" rel="noopener noreferrer"
@@ -111,7 +133,25 @@
                         href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-html-text-formatting/when-to-use-emphasis-and-idiomatic-text-elements">
                         freeCodeCamp: When to Use Emphasis and Idiomatic Text Elements</a></li>
             </ul>
+        </section>
+        <section id="todo">
+            <h2>TODO</h2>
+            <ul>
+                <li>Review the freeCodeCamp resources listed above to gain a deeper understanding of when to use the
+                    emphasis element and the idiomatic text element in HTML.</li>
+                <li>Experiment with using both elements in your own HTML code to see how they affect the meaning and
+                    styling of your text.</li>
+                <li>Clean up the code using ChatGPT suggestions</li>
+
+                <li>Consider the accessibility implications of using these elements and how they can enhance the user
+                    experience for all users, including those using assistive technologies.</li>
+            </ul>
+        </section>
     </main>
+    <!-- Sidebar JS -->
+    <script src="../assets/layout.js"></script>
+    <script src="../assets/script.js"></script>
+    <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>
