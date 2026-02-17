@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>Images</title>
-
-  <!-- Include your existing stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -43,26 +41,23 @@
         <li>Sometimes code formatters like Prettier will choose to include the / in void elements</li>
         <li>The HTML spec states that the presence of the / does not mark the start tag as self closing but instead it
           is unnecessary and has no effect of any kind</li>
-        <li>The src attribute is an img element specifies the images url (where the image is located)</li>
         <li>
           If you wanted to display an image, you will need to include a couple of attributes inside your image
           element. An attribute is a special value used to adjust the behavior for an HTML element.
         </li>
         <li>
-          The src attribute is used to specify the location for that image. For image elements, it's good practice to
-          include another attribute called the alt attribute. The alt attribute is used to provide short, descriptive
-          text for the images.
+          The src attribute is used to specify the location for that image. The value of the src attribute can be a URL
+          to an image on the web or a relative path to an image file on your computer.
         </li>
-
-        <li>An example of an img element using an arc attribute</li>
-        <li><img src="https://www.example.com/the-image.jpg" /></li>
-
         <li>All img elements should have an alt attribute</li>
         <li>
           The alt attribute text is used for screen readers to improve accessibility and is displayed if the image
-          failts to load
+          fails to load.
         </li>
-
+        <li>
+          The alt attribute should be used to provide short descriptive text for the images. This is important for
+          accessibility and SEO purposes.
+        </li>
         <li>
           The figure element represents self-contained content and will allow you to associate an image with a
           caption.
@@ -206,6 +201,21 @@
         <li><a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-33">
             freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 33</a></li>
+      </ul>
+    </section>
+
+    <section id="TODO">
+      <h2>TODO</h2>
+      <ul>
+        <li>Review the freeCodeCamp resources listed above</li>
+        <li>Practice writing code examples for each of the keywords listed above</li>
+        <li>Answer the questions listed above</li>
+        <li>Consider adding short bullets + one mini example for:<ul>
+            <li>width / height (prevents layout shift)</li>
+            <li>loading="lazy" (performance)</li>
+            <li>responsive images: srcset + sizes (even just “exists + why”)</li>
+          </ul>
+        </li>
       </ul>
     </section>
   </main>
