@@ -21,12 +21,6 @@
     <a href="#resources">Resources</a>
   </nav>
 
-  <!-- Sidebar JS -->
-  <script>
-    function toggleSidebar() {
-      document.getElementById('sidebar').classList.toggle('open');
-    }
-  </script>
 
   <main>
     <h1>Images</h1>
@@ -216,9 +210,41 @@
             <li>responsive images: srcset + sizes (even just “exists + why”)</li>
           </ul>
         </li>
+        <li>Consider adding a section on accessibility best practices for images</li>
+        <li>Consider adding a section on SEO best practices for images</li>
+        <li>Consider adding a section on performance best practices for images
+          <ul>
+            <li>Use appropriate image formats (e.g., WebP, JPEG, PNG)</li>
+            <li>Optimize image file sizes using tools like ImageOptim or online services</li>
+            <li>Use responsive images to serve different sizes based on the user's device</li>
+            <li>Implement lazy loading for images that are not immediately visible on the page</li>
+          </ul>
+        </li>
+        <li>Consider adding a section on common issues with images and how to troubleshoot them
+          <ul>
+            <li>Image not displaying: Check the src attribute for typos and ensure the image file is in the correct
+              location</li>
+            <li>Image loading slowly: Optimize the image file size and consider using a CDN</li>
+            <li>Image accessibility issues: Ensure alt text is descriptive and meaningful</li>]
+            <li>Missing Alt</li>
+            <li>Broken Links</li>
+            <li>Incorrect File Paths</li>
+            <li>Unsupported File Formats</li>
+            <li>Image not optimized for performance</li>
+            <li>Using image text as important content (should be text, not baked into an image)</li>
+            <li>Images not responsive (should use srcset and sizes attributes)</li>
+            <li>Lazy loading not implemented (should use loading="lazy" for offscreen images)</li>
+          </ul>
+        </li>
       </ul>
     </section>
   </main>
+  <!-- Sidebar JS -->
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+    }
+  </script>
 </body>
 
 </html>
