@@ -6,7 +6,7 @@ async function loadSidebar() {
   if (mount.childElementCount > 0 || mount.textContent.trim()) return;
 
   try {
-    const res = await fetch('/partials/sidebar.html');
+    const res = await fetch('../partials/sidebar.html');
     if (!res.ok) return;
 
     // Guard again in case the sidebar was mounted while fetch was in-flight.
