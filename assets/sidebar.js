@@ -6,7 +6,7 @@
       <details class="nav-group" open>
         <summary>Home</summary>
         <nav class="nav-list" aria-label="Home">
-          <a href="../tracker/tracking.html" data-page="tracking">Home</a>
+          <a href="/tracker/tracking.html" data-page="tracking">Home</a>
         </nav>
       </details>
       <details class="nav-group" open>
@@ -29,14 +29,14 @@
       <details class="nav-group">
         <summary>Lab</summary>
         <nav class="nav-list" aria-label="Labs">
-          <a href="../html-work/freecodecamp/Lab-Camperbot/index.html" data-page="camperbot-lab">Camperbot</a>
+          <a href="/html-work/freecodecamp/Lab-Camperbot/index.html" data-page="camperbot-lab">Camperbot</a>
         </nav>
       </details>
       <details class="nav-group">
         <summary>Workshops</summary>
         <nav class="nav-list" aria-label="Workshops">
-          <a href="../workshops/cat-photo-app.html" data-page="cat-photo-app">Cat Photo App</a>
-          <a href="../workshops/pet-adoption-debug.html" data-page="pet-adoption-debug">Pet Adoption Debug</a>
+          <a href="/workshops/cat-photo-app.html" data-page="cat-photo-app">Cat Photo App</a>
+          <a href="/workshops/pet-adoption-debug.html" data-page="pet-adoption-debug">Pet Adoption Debug</a>
         </nav>
       </details>
     </aside>
