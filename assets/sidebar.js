@@ -47,13 +47,13 @@
         <summary>Lab</summary>
         <nav class="nav-list" aria-label="Labs">
           <a href="${href('html-work/freecodecamp/Lab-Camperbot/index.html')}" data-page="camperbot-lab">Camperbot</a>
+          <a href="${href('html-work/freecodecamp/Lab-Pet-Adoption-Page/index.html')}" data-page="pet-adoption-lab">Pet Adoption</a>
         </nav>
       </details>
       <details class="nav-group">
         <summary>Workshops</summary>
         <nav class="nav-list" aria-label="Workshops">
-          <a href="${href('workshops/cat-photo-app.html')}" data-page="cat-photo-app">Cat Photo App</a>
-          <a href="${href('workshops/pet-adoption-debug.html')}" data-page="pet-adoption-debug">Pet Adoption Debug</a>
+          <a href="${href('html-work/freecodecamp/Build-A-Cat-Photo-App/index.html')}" data-page="cat-photo-app">Cat Photo App</a>
         </nav>
       </details>
     </aside>
