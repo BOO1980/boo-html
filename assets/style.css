@@ -295,12 +295,13 @@ pre code {
 }
 
 .track-item {
-  padding: 1rem 1.5rem;
-  border-left: 6px solid;
-  border-radius: 6px;
-  position: relative;
+  padding: 1.25rem 1.75rem;
+  border-left: 8px solid;
+  border-radius: 10px;
+  background: white;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
-
 .track-item::before {
   content: '';
   position: absolute;
@@ -313,15 +314,15 @@ pre code {
 
 /* Status colors */
 
-.complete {
+.track-item[data-status='complete'] {
   border-left-color: #2ecc71;
 }
 
-.in-progress {
+.track-item[data-status='in-progress'] {
   border-left-color: #f39c12;
 }
 
-.not-started {
+.track-item[data-status='not-started'] {
   border-left-color: #e74c3c;
 }
 
