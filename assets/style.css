@@ -124,13 +124,6 @@ body {
   opacity: 1;
 }
 
-.track-item {
-  padding: 1rem 1.5rem;
-  border-left-width: 6px;
-  border-left-style: solid;
-  border-radius: 6px;
-}
-
 /* =========================
    TOPIC BAR (fixed, offset from sidebar)
 ========================= */
@@ -299,6 +292,23 @@ pre code {
   height: 14px;
   border-radius: 50%;
   margin-right: 0.5rem;
+}
+
+.track-item {
+  padding: 1rem 1.5rem;
+  border-left: 6px solid;
+  border-radius: 6px;
+  position: relative;
+}
+
+.track-item::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  background: white; /* matches your card */
 }
 
 /* Status colors */
