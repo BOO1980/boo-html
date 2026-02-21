@@ -4,35 +4,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../prettierrc.json" />
+
   <link rel="stylesheet" href="../assets/style.css" />
 
   <title>Learning Tracker</title>
 </head>
 
-<body data-page="tracking">
-  <header class="topic-bar">
-    <div class="topic-bar__inner">
-      <div class="topic-bar__title">
-        <h1>Tracking</h1>
-        <div class="meta">
-          <span class="pill">One page, all progress</span>
-          <span class="pill">Links open in a new tab</span>
-        </div>
+<a class="skip-link" href="#overview">Skip to content</a>
+<header class="topic-bar">
+  <div class="topic-bar__inner">
+    <div class="topic-bar__title">
+      <h1>Tracking</h1>
+      <div class="meta">
+        <span class="pill">One page, all progress</span>
+        <span class="pill">Links open in a new tab</span>
       </div>
-
-      <nav class="quick-links" aria-label="On this page">
-        <a href="#overview">Overview</a>
-        <a href="#fcc">freeCodeCamp</a>
-        <a href="#older">Older notes</a>
-        <a href="#todo">TODO</a>
-      </nav>
     </div>
-  </header>
 
-  <div id="sidebar-mount"></div>
+    <nav class="quick-links" aria-label="On this page">
+      <a href="#overview">Overview</a>
+      <a href="#fcc">freeCodeCamp</a>
+      <a href="#older">Older notes</a>
+      <a href="#todo">TODO</a>
+    </nav>
+  </div>
+</header>
+
+<div id="sidebar-mount"></div>
+
+<body><a class="skip-link" href="#overview">Skip to content</a>
 
   <main class="content">
+    <section class="card" aria-label=" Progress legend">
+      <h2>Progress Legend</h2>
+      <ul class="legend-list">
+        <li><span class="legend-dot complete"></span> Complete</li>
+        <li><span class="legend-dot in-progress"></span> In Progress</li>
+        <li><span class="legend-dot not-started"></span> Not Started</li>
+      </ul>
+    </section>
     <section id="overview" class="card" aria-labelledby="overview-title">
       <h2 id="overview-title">Overview</h2>
       <p class="muted">
@@ -44,8 +54,8 @@
     <section id="fcc" class="card" aria-labelledby="fcc-title">
       <h2 id="fcc-title">freeCodeCamp</h2>
 
-      <!-- Section: Workshop Curriculum -->
-      <section>
+      <!-- article: Workshop Curriculum -->
+      <article class="track-item complete">
         <h3>Workshop Curriculum Outline [11/11] - Complete</h3>
         <ul>
           <li>
@@ -60,10 +70,10 @@
               target="_blank" rel="noopener noreferrer">Workshop Curriculum Outline - Step 11</a>
           </li>
         </ul>
-      </section>
+      </article>
 
-      <!--Section: Camperbot-->
-      <section>
+      <!--article: Camperbot-->
+      <article class="track-item complete">
         <h3>Debug Camperbot [1/1] - Complete</h3>
         <ul>
           <li>
@@ -71,10 +81,10 @@
               target="_blank" rel="noopener noreferrer">Lab: Debug Camperbot</a>
           </li>
         </ul>
-      </section>
+      </article>
 
-      <!-- Section: What Role Does HTML Play on the Web?-->
-      <section>
+      <!-- article: What Role Does HTML Play on the Web?-->
+      <article class="track-item complete">
         <h3>Understanding HTML Attributes - Complete</h3>
         <ul>
           <li>
@@ -86,10 +96,10 @@
               target="_blank" rel="noopener noreferrer">What Are Attributes, and How Do They Work</a>
           </li>
         </ul>
-      </section>
+      </article>
 
-      <!--Section: Debug a pet Adoption Page-->
-      <section>
+      <!--article: Debug a pet Adoption Page-->
+      <article class="track-item complete">
         <h3>Debug a Pet Adoption Page [1/1] - Complete</h3>
         <ul>
           <li>
@@ -97,10 +107,10 @@
               target="_blank" rel="noopener noreferrer">Lab: Debug a Pet Adoption Page</a>
           </li>
         </ul>
-      </section>
+      </article>
 
-      <!--Section: Understanding the HTML Boilerplate 3/3 -->
-      <section>
+      <!--article: Understanding the HTML Boilerplate 3/3 -->
+      <article class="track-item complete">
         <h3>Understanding the HTML Boilerplate [3/3] - Complete</h3>
         <ul>
           <li>
@@ -122,9 +132,9 @@
               Important?</a>
           </li>
         </ul>
-      </section>
-      <!--Section: New Build A Cat Photo App-->
-      <section>
+      </article>
+      <!--article: New Build A Cat Photo App-->
+      <article class="track-item complete">
         <h3>Build a Cat Photo App [42/42] - Complete</h3>
         <ul>
           <li>
@@ -138,11 +148,11 @@
               target="_blank" rel="noopener noreferrer">Workshop: Build a Cat Photo App - Step 42</a>
           </li>
         </ul>
-      </section>
-      <!--Section: Build a recipe page 0/1-->
-      <!--Section: HTML Fundamentals 0/4-->
-      <!--Section: Build a Bookstore Page 0/16-->
-      <section>
+      </article>
+      <!--article: Build a recipe page 0/1-->
+      <!--article: HTML Fundamentals 0/4-->
+      <!--article: Build a Bookstore Page 0/16-->
+      <article class="track-item not-started">
         <h3>Build a Bookstore Page [0/16]</h3>
         <ul>
           <li>
@@ -157,7 +167,7 @@
               target="_blank" rel="noopener noreferrer">freeCodeCamp: Build A Bookstore Page - Step 16</a>
           </li>
         </ul>
-      </section>
+      </article>
 
       <!-- Section: Older Stuff -->
       <section>
@@ -820,6 +830,13 @@
         <li>THIS HERE: <!--Section: Build a recipe page 0/1--></li>
         <li>Un-comment and add: “Build a Recipe Page” and “HTML Fundamentals”.</li>
         <li>Optional: add a tiny status legend (Complete / In progress / Not started).</li>
+        <li>Instead of hardcoding 0/3, 2/5, etc., you could later:
+
+          Add data-progress="2/5"
+
+          Use JavaScript to auto-calculate percentage
+
+          Add a tiny progress bar</li>
         <li>Check out: <a href="https://www.freecodecamp.org/learn/responsive-web-design-v9/" target="_blank"
             rel="noopener noreferrer">Responsive Web Design v9</a></li>
         <li>Check Out: <a href="https://www.codecademy.com/resources/docs/html" target="_blank"
@@ -854,7 +871,6 @@
     </section>
   </main>
 
-  <script src="../assets/layout.js"></script>
   <script src="../assets/script.js"></script>
   <script src="../assets/sidebar.js"></script>
 </body>

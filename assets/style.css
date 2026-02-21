@@ -124,6 +124,13 @@ body {
   opacity: 1;
 }
 
+.track-item {
+  padding: 1rem 1.5rem;
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-radius: 6px;
+}
+
 /* =========================
    TOPIC BAR (fixed, offset from sidebar)
 ========================= */
@@ -262,6 +269,62 @@ pre code {
 .skip-link:focus {
   left: calc(var(--sidebar-width) + 20px);
   z-index: 100;
+}
+
+/* ===== Progress Legend ===== */
+
+.status-legend {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border, #ccc);
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.legend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.legend-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Status colors */
+
+.complete {
+  border-left-color: #2ecc71;
+}
+
+.in-progress {
+  border-left-color: #f39c12;
+}
+
+.not-started {
+  border-left-color: #e74c3c;
+}
+
+.legend-dot.complete {
+  background: #2ecc71;
+}
+
+.legend-dot.in-progress {
+  background: #f39c12;
+}
+
+.legend-dot.not-started {
+  background: #e74c3c;
 }
 
 /* =========================
