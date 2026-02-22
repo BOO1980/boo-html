@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
 
+/* ========== CSS VARIABLES / THEME ========== */
 :root {
   --bg: #f7f7fc;
   --text: #333;
@@ -18,7 +19,7 @@
   --content-max: 900px;
 
   /* Adjust if your quick links wrap */
-  --topic-bar-height: 160px;
+  --topic-bar-height: 110px;
 
   --radius-lg: 20px;
   --radius-md: 16px;
