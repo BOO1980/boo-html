@@ -392,8 +392,76 @@ pre {
   color: #b45309;
 }
 
+.code-declaration {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent-2);
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  letter-spacing: 0.3px;
+}
+
 pre code {
   background: transparent;
+}
+
+.code-keyword {
+  color: #2563eb; /* blue */
+  font-weight: 600;
+}
+
+.code-doctype {
+  color: #7c3aed; /* purple */
+  font-weight: 500;
+}
+
+.code-bracket {
+  color: #64748b; /* muted slate */
+}
+
+.code-tag-name {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.code-note {
+  margin: 1.4rem 0 0.4rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+p code,
+li > code,
+.code-note code {
+  background: #fff8f1;
+  color: #5b21b6;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+/* =========================
+   Definition Lists (Grid Version)
+   ========================= */
+
+dl {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0.5rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+dt {
+  font-weight: 600;
+  color: var(--accent);
+  align-self: start;
+}
+
+dd {
+  margin: 0;
+  color: var(--text);
 }
 
 /* =========================

@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Notes on HTML attributes, including an overview, keywords, code examples, and resources for further learning." />
   <link rel="stylesheet" href="../assets/style.css" />
   <title>Attributes</title>
 </head>
 
 <body data-page="attributes">
-
+  <a class="skip-link" href="#overview">Skip to content</a>
   <header class="topic-bar">
     <div class="topic-bar__title">
       <h1>Attributes</h1>
@@ -18,8 +20,8 @@
     <nav class="quick-links" aria-label="On this page">
       <a href="#overview">Overview</a>
       <a href="#keywords">Keywords</a>
-      <a href="#codekeywords">Code Keywords</a>
-      <a href="#codeexamples">Code Examples</a>
+      <a href="#code-keywords">Code Keywords</a>
+      <a href="#code-examples">Code Examples</a>
       <a href="#questions">Questions</a>
       <a href="#resources">Resources</a>
       <a href="#todo">TODO</a>
@@ -28,7 +30,6 @@
   <div id="sidebar-mount"></div>
 
   <main class="content">
-
     <!-- OVERVIEW -->
     <section id="overview">
       <h2>Overview</h2>
@@ -44,10 +45,6 @@
         </li>
         <li>the attribute name is followed by an equal sign (=) and a value in quotes.</li>
         <li>The value can be a string or a number, depending on the attribute.</li>
-
-        <li>An example of an img element using an alt attribute</li>
-        <li><code>&lt;img src="https://www.example.com/the-image.jpg"&gt;</code></li>
-
         <li>The src attribute is an img element specifies the images url (where the image is located)</li>
         <li>The alt attribute is not required, but it is recommended for accessibility purposes</li>
         <li>
@@ -59,7 +56,6 @@
           things like websites, apps, and physical spaces. You will learn more about accessibility in the upcoming
           lessons.
         </li>
-
         <li>
           This first example uses the href and target attributes. The href attribute specifies the URL of a link and
           the target attribute specifies where to open the link.
@@ -74,7 +70,6 @@
         </li>
         <li>
           You can also specify the language of your page by adding the lang attribute to the html element.</li>
-
         <li>Some attributes are a little unique with their syntax like the checked attribute.</li>
         <li>
           Enable the interactive editor and try clicking on the checkbox in the preview window to see it alternate
@@ -125,60 +120,100 @@
     <!-- KEYWORDS -->
     <section id="keywords">
       <h2>Keywords</h2>
-      <ul>
-        <li>attribute</li>
-        <li>alt</li>
-        <li>ID</li>
-        <li>class</li>
-        <li>boolean attribute</li>
-        <li>boolean value</li>
-        <li>href</li>
-        <li>src</li>
-        <li>checked</li>
-        <li>input</li>
-        <li>type</li>
-        <li>disabled</li>
-        <li>readonly</li>
-      </ul>
+      <dl>
+        <dt>attribute</dt>
+        <dd>Provides additional information about an element</dd>
+        <dt>alt</dt>
+        <dd>Specifies alternative text for an image</dd>
+        <dt>ID</dt>
+        <dd>Specifies a unique id for an element</dd>
+        <dt>class</dt>
+        <dd>Specifies one or more class names for an element</dd>
+        <dt>boolean attribute</dt>
+        <dd>An attribute that can be true or false</dd>
+        <dt>boolean value</dt>
+        <dd>The value of a boolean attribute</dd>
+        <dt>href</dt>
+        <dd>Specifies the URL of a link</dd>
+        <dt>src</dt>
+        <dd>Specifies the source of an image or script</dd>
+        <dt>checked</dt>
+        <dd>Specifies that an input element should be checked by default</dd>
+        <dt>input</dt>
+        <dd>Specifies an input element</dd>
+        <dt>type</dt>
+        <dd>Specifies the type of an input element</dd>
+        <dt>disabled</dt>
+        <dd>Specifies that an element should be disabled</dd>
+        <dt>readonly</dt>
+        <dd>Specifies that an input element should be read-only</dd>
+      </dl>
     </section>
 
     <!-- CODE KEYWORDS -->
-    <section id="codekeywords">
-      <h3>Code keywords</h3>
-      <ul>
-        <li><code>href</code></li>
-        <li><code>alt</code></li>
-        <li><code>src</code></li>
-        <li><code>checked</code></li>
-        <li><code>input</code></li>
-        <li><code>type</code></li>
-        <li><code>disabled</code></li>
-        <li><code>readonly</code></li>
-        <li><code>required</code></li>
-      </ul>
+    <section id="code-keywords">
+      <h2>Code keywords</h2>
+      <p>Here are some common HTML code keywords:</p>
+      <p class="code-note">The <code>href</code> attribute specifies the URL of a link.</p>
+      <pre><code><span class="code-attr">href</span></code></pre>
+      <p class="code-note">The <code>alt</code> attribute provides alternative text for an image.</p>
+      <pre><code><span class="code-attr">alt</span></code></pre>
+      <p class="code-note">The <code>src</code> attribute specifies the source of an image or script.</p>
+      <pre><code><span class="code-attr">src</span></code></pre>
+      <p class="code-note">The <code>checked</code> attribute specifies that an input element should be checked by
+        default.</p>
+      <pre><code><span class="code-attr">checked</span></code></pre>
+      <p class="code-note">The <code>input</code> element is used to create interactive controls for web-based forms.
+      </p>
+      <pre><code><span class="code-attr">input</span></code></pre>
+      <p class="code-note">The <code>type</code> attribute specifies the type of an input element.</p>
+      <pre><code><span class="code-attr">type</span></code></pre>
+      <p class="code-note">The <code>disabled</code> attribute specifies that an element should be disabled.</p>
+      <pre><code><span class="code-attr">disabled</span></code></pre>
+      <p class="code-note">The <code>readonly</code> attribute specifies that an input element should be read-only.</p>
+      <pre><code><span class="code-attr">readonly</span></code></pre>
+      <p class="code-note">The <code>required</code> attribute specifies that an input element must be filled out before
+        submitting the form.</p>
+      <pre><code><span class="code-attr">required</span></code></pre>
+      <p class="code-note">The <code>id</code> attribute adds a unique identifier to an HTML element.</p>
+      <pre><code><span class="code-attr">id</span></code></pre>
+      <p class="code-note">The <code>class</code> attribute specifies one or more class names for an element.</p>
+      <pre><code><span class="code-attr">class</span></code></pre>
+      <p class="code-note">The <code>style</code> attribute allows you to apply inline CSS styles to an element.</p>
+      <pre><code><span class="code-attr">style</span></code></pre>
+
+
     </section>
 
     <!-- CODE EXAMPLES -->
-    <section id="codeexamples">
+    <section id="code-examples">
       <h2>Code examples</h2>
 
-      <p>Without the href attribute the link would not work</p>
-      <code>&lt;a href="https://www.example-website.com"&gt;Visit our website&lt;/a&gt;</code>
+      <p class="code-note">Without the href attribute the link would not work</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">a</span> <span class="code-attr">href</span>=<span class="code-string">"https://www.example-website.com"</span><span class="code-bracket">&gt;</span>Visit our website<span class="code-bracket">&lt;/</span><span class="code-tag-name">a</span><span class="code-bracket">&gt;</span></code></pre>
 
-      <p>
+      <p class="code-note">
         The alt attribute, which provides alternative descriptive text, or the src which is used to specify the source
         of an image are other common attributes
       </p>
-      <code>&lt;img src="image.jpg" alt="A beautiful image"/&gt;</code>
 
-      <p>Some attributes are a little unique with their syntax like the checked attribute</p>
-      <code>&lt;input type="checkbox" checked&gt;</code>
+      <p class="code-note">An example of an img element using an alt attribute</li>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">img</span> <span class="code-attr">src</span>=<span class="code-string">"https://www.example.com/the-image.jpg"</span> <span class="code-attr">alt</span>=<span class="code-string">"Description of the image"</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">img</span> <span class="code-attr">src</span>=<span class="code-string">"image.jpg"</span> <span class="code-attr">alt</span>=<span class="code-string">"A beautiful image"</span><span class="code-bracket">/&gt;</span></code></pre>
+
+      <p class="code-note">The checked attribute is used to specify that the checkbox should be checked by default</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">input</span> <span class="code-attr">type</span>=<span class="code-string">"checkbox"</span> <span class="code-attr">checked</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">The id attribute adds a unique identifier to an HTML element</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">div</span> <span class="code-attr">id</span>=<span class="code-string">"unique-id"</span><span class="code-bracket">&gt;</span>Content here<span class="code-bracket">&lt;/</span><span class="code-tag-name">div</span><span class="code-bracket">&gt;</span></code></pre>
+
     </section>
 
     <!-- QUESTIONS -->
     <section id="questions">
       <h2>Questions</h2>
-      <ul>
+      <ul class="question-list">
         <li>What is the role of an HTML attribute?</li>
         <li>How do you add an image in HTML?</li>
         <li>What is the purpose of the alt attribute in an image tag?</li>
@@ -189,26 +224,8 @@
         <li>Give an example of a boolean attribute</li>
         <li>What is the correct syntax for a boolean attribute</li>
         <li>What is the role of an attribute in HTML?</li>
-
-        <li>
-          Which of the following is an example of a boolean attribute?
-          <ul>
-            <li><code>src</code></li>
-            <li><code>href</code></li>
-            <li><code>disabled</code></li>
-            <li><code>alt</code></li>
-          </ul>
-        </li>
-
-        <li>
-          Which of the following is the correct syntax for a boolean attribute?
-          <ul>
-            <li><code>&lt;input type="checkbox" checked&gt;</code></li>
-            <li><code>&lt;input type="checkbox" checked="on"&gt;</code></li>
-            <li><code>&lt;input type="checkbox" checked="off"&gt;</code></li>
-            <li><code>&lt;input type="checkbox" checked="isChecked"&gt;</code></li>
-          </ul>
-        </li>
+        <li>Give an example of a boolean attribute?</li>
+        <li>What is the correct syntax for a boolean attribute?</li>
       </ul>
     </section>
 
@@ -267,7 +284,6 @@
 
 
   <!-- Sidebar JS -->
-  <script src="../assets/layout.js"></script>
   <script src="../assets/script.js"></script>
   <script src="../assets/sidebar.js"></script>
 </body>

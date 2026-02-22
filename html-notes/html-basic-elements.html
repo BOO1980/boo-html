@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Notes on basic HTML elements, including an overview, keywords, code examples, and resources for further learning." />
   <link rel="stylesheet" href="../assets/style.css" />
   <title>Basic HTML Elements</title>
 </head>
 
 <body data-page="basic-elements">
-
+  <a class="skip-link" href="#overview">Skip to content</a>
   <header class="topic-bar">
     <div class="topic-bar__title">
       <h1>Basic HTML Elements</h1>
@@ -18,24 +20,26 @@
     <nav class="quick-links" aria-label="On this page">
       <a href="#overview">Overview</a>
       <a href="#keywords">Keywords</a>
-      <a href="#codekeywords">Code Keywords</a>
-      <a href="#codeexamples">Code Examples</a>
+      <a href="#code-keywords">Code Keywords</a>
+      <a href="#code-examples">Code Examples</a>
       <a href="#questions">Questions</a>
       <a href="#resources">Resources</a>
       <a href="#todo">TODO</a>
     </nav>
   </header>
   <div id="sidebar-mount"></div>
-  <main class="content">
 
+  <main class="content">
+    <!-- OVERVIEW -->
     <section id="overview">
       <h2>Overview</h2>
       <ul>
-        <li>The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document</li>
-        <li>The &lt;html&gt; element is the root element of an HTML page</li>
-        <li>The &lt;head&gt; element contains meta information about the HTML page</li>
+        <li>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document</li>
+        <li>The <code>&lt;html&gt;</code> element is the root element of an HTML page</li>
+        <li>The <code>&lt;head&gt;</code> element contains meta information about the HTML page</li>
         <li>
-          The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in
+          The <code>&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser's
+          title bar or in
           the page's tab)
         </li>
         <li>
@@ -44,48 +48,55 @@
         </li>
 
         <li>
-          The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as
+          The <code>&lt;body&gt;</code> element defines the document's body, and is a container for all the visible
+          contents, such as
           headings, paragraphs, images, hyperlinks, tables, lists, etc.
         </li>
-        <li>The &lt;h1&gt; element defines a large heading</li>
-        <li>The &lt;p&gt; element defines a paragraph</li>
+        <li>The <code>&lt;h1&gt;</code> element defines a large heading</li>
+        <li>The <code>&lt;p&gt;</code> element defines a paragraph</li>
         <li>An HTML element is defined by a start tag, some content, and an end tag</li>
         <li>
-          Some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty elements.
+          Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty
+          elements.
           Empty elements do not have an end tag! These elements have no content
         </li>
         <li>
           HTML5 introduce more descriptive HTML tags. These include:
           <ul>
-            <li>main</li>
-            <li>header</li>
-            <li>footer</li>
-            <li>nav</li>
-            <li>article</li>
-            <li>video</li>
-            <li>section</li>
+            <li><code>&lt;main&gt;</code></li>
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
+            <li><code>&lt;nav&gt;</code></li>
+            <li><code>&lt;article&gt;</code></li>
+            <li><code>&lt;video&gt;</code></li>
+            <li><code>&lt;section&gt;</code></li>
           </ul>
         </li>
         <li>HTML5 has some elements that identify different content areas. These elements make your HTML easier to read
           and help with Search Engine Optimization (SEO) and accessibility.</li>
-        <li>The main element is used to represent the main content of the body of an HTML document.</li>
-        <li>HTML elements have opening tags like &lt;h1&gt; and closing tags like &lt;/h1&gt;</li>
+        <li>The <code>&lt;main&gt;</code> element is used to represent the main content of the body of an HTML document.
+        </li>
+        <li>HTML elements have opening tags like <code>&lt;h1&gt;</code> and closing tags like <code>&lt;/h1&gt;</code>
+        </li>
         <li>The text for an element goes between its opening and closing tag</li>
         <li>These tags give a describe structure to your HTML, making your HTML easier to read</li>
         <li>The tags also help with SEO (Search Engine Optimization) and accessibility</li>
-        <l1>The &lt;h1&gt; through &lt;h61&gt; heading elements are used to signify the importance of content below
-          them.</l1>
-        <l1>The lower the number, the higher the importance, so &lt;h2&gt; elements have less importance than &lt;h1&gt;
-          elements</l1>
-        <l1>Only use one &lt;h1&gt; element per page and place lower importance headings below higher importance
-          headings</l1>
+        <li>The <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> heading elements are used to signify the
+          importance of content below them.
+        </li>
+        <li>The lower the number, the higher the importance, so <code>&lt;h2&gt;</code> elements have less
+          importance than <code>&lt;h1&gt;</code>
+          elements</li>
+        <li>Only use one <code>&lt;h1&gt;</code> element per page and place lower importance headings below higher
+          importance
+          headings</li>
         <li>Commenting allows you to leave messages without affecting the browser display</li>
         <li>Commenting also allows you to make code inactive</li>
-        <li>A comment in HTML starts with &lt;!-- and end with --&gt;</li>
+        <li>A comment in HTML starts with <code></code>&lt;!--</code> and end with <code>--&gt;</code></li>
         <li>Nested elements should be indented to make it easier for your code to read</li>
-        <li>a Tag for an element without a closing tage is known as a self closing tag.</li>
-        <li>em tag allows you to add emphasis to an element</li>
-        <li>strong tag adds boldness to any text nested in between</li>
+        <li>A tag for an element without a closing tag is known as a self-closing tag.</li>
+        <li><code>&lt;em&gt;</code> tag allows you to add emphasis to an element</li>
+        <li><code>&lt;strong&gt;</code> tag adds boldness to any text nested in between</li>
         <li>The strong element is used to indicate that some text is of strong importance or urgent.</li>
         <li>
           To add a paragraph to your page you use the paragraph element:
@@ -94,95 +105,123 @@
           </ul>
         </li>
         <li>
-          he title element gives search engines extra information about the page. It also displays the content of that
+          The <code>&lt;title&gt;</code> element gives search engines extra information about the page. It also displays
+          the content of that
           title element in two more ways: in the title bar when the page is open in the browser tab for the page when
           you hover on it. Even if that tab is not active, once you hover on the tab, the title text is displayed.
         </li>
       </ul>
     </section>
+
+    <!-- KEYWORDS -->
     <section id="keywords">
       <h2>Keywords</h2>
-      <ul>
-        <li>HTML</li>
-        <li>Elements</li>
-        <li>Attributes</li>
-        <li>Tags</li>
-        <li>Headings</li>
-        <li>Paragraphs</li>
-        <li>Lists</li>
-        <li>Images</li>
-        <li>Comments</li>
-        <li>Self-closing tags</li>
-        <li>Emphasis</li>
-        <li>Strong importance</li>
-        <li>Paragraphs</li>
-      </ul>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>Elements</dt>
+        <dd>The building blocks of HTML</dd>
+        <dt>Attributes</dt>
+        <dd>Provide additional information about an element</dd>
+        <dt>Tags</dt>
+        <dd>Used to define HTML elements</dd>
+        <dt>Headings</dt>
+        <dd>Elements used to define headings</dd>
+        <dt>Paragraphs</dt>
+        <dd>Elements used to define paragraphs</dd>
+        <dt>Lists</dt>
+        <dd>Elements used to define lists</dd>
+        <dt>Images</dt>
+        <dd>Elements used to embed images</dd>
+        <dt>Comments</dt>
+        <dd>Elements used to add comments</dd>
+        <dt>Self-closing tags</dt>
+        <dd>Elements that do not have closing tags</dd>
+        <dt>Emphasis</dt>
+        <dd>Elements used to add emphasis</dd>
+        <dt>Strong importance</dt>
+        <dd>Elements used to indicate strong importance</dd>
+      </dl>
     </section>
+
+    <!-- CODE KEYWORDS -->
     <section id="code-keywords">
       <h2>Code Keywords</h2>
-      <ul>
-        <li>DOCTYPE</li>
-        <li>html</li>
-        <li>head</li>
-        <li>meta</li>
-        <li>title</li>
-        <li>body</li>
-        <li>p</li>
-        <li>strong</li>
-        <li>em</li>
-        <li>self-closing</li>
-      </ul>
+      <p class="code-note">The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document type and version of
+        HTML.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-keyword">!DOCTYPE</span> <span class="code-doctype">html</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Setting the language of the document in the <code>&lt;html&gt;</code> tag:</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">html</span> <span class="code-attr">lang</span>=<span class="code-string">"en"</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Head elements: the head contains meta information about the document</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">head</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Body element: the body contains the content of the document</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">body</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Meta element: provides metadata about the HTML document</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">meta</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Title element: specifies the title of the document</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">title</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Paragraph element: defines a paragraph of text</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Strong element: indicates strong importance</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">strong</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Emphasis element: indicates emphasis</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">em</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Self-closing element: an element that does not have a closing tag</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">br</span><span class="code-bracket">&gt;</span></code></pre>
+
     </section>
+
+    <!-- CODE EXAMPLES -->
     <section id="code-examples">
       <h2>Code Examples</h2>
-      <p>The p elements is used to create a paragraph of texts on websites</p>
-      <code>&lt;p&gt; Everyone loves cute cats online! &lt;/p&gt;</code>
-      <p>Only use h1 elements per page and place lower important headings below</p>
-      <code>&lt;h1&gt;Cat Photos&lt;/h1&gt;</code>
-      <ul>
-        <li>
-          Paragraph element:
-          <ul>
-            <li><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Strong element:
-          <ul>
-            <li><code>&lt;strong&gt;This text is important.&lt;/strong&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Emphasis element:
-          <ul>
-            <li><code>&lt;em&gt;This text is emphasized.&lt;/em&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Self-closing element:
-          <ul>
-            <li><code>&lt;br&gt;</code></li>
-          </ul>
-        </li>
-      </ul>
+
+      <p class="code-note">The<code>&lt;p&gt;</code> elements is used to create a paragraph of texts on websites</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span>Everyone loves cute cats online!<span class="code-bracket">&lt;/</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span></code></pre>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span>This is a paragraph<span class="code-bracket">&lt;/</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">Only use <code>&lt;h1&gt;</code> elements per page and place lower important headings below
+      </p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span>Cat Photos<span class="code-bracket">&lt;/</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">Some HTML element are self closing elements, meaning they do not have a closing tag. An
+        example of a self
+        closing element is the <code>&lt;br&gt;</code> element, which creates a line break in the text.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">br</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">The strong element is used to indicate that some text is of strong importance or urgent.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">strong</span><span class="code-bracket">&gt;</span>This text is important!<span class="code-bracket">&lt;/</span><span class="code-tag-name">strong</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">The emphasis element is used to indicate emphasis on a word or phrase.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">em</span><span class="code-bracket">&gt;</span>This text is emphasized.<span class="code-bracket">&lt;/</span><span class="code-tag-name">em</span><span class="code-bracket">&gt;</span></code></pre>
+
     </section>
+
+    <!-- QUESTIONS -->
     <section id="questions">
       <h2>Questions</h2>
-      <ul>
-        <li>What is the purpose of the &lt;!DOCTYPE html&gt; declaration?</li>
+      <ul class="question-list">
+        <li>What is the purpose of the <code>&lt;!DOCTYPE html&gt;</code> declaration?</li>
         <li>What is the root element of an HTML page?</li>
-        <li>What is the purpose of the &lt;head&gt; element?</li>
-        <li>What does the &lt;title&gt; element specify?</li>
-        <li>What is the purpose of the &lt;body&gt; element?</li>
+        <li>What is the purpose of the <code>&lt;head&gt;</code> element?</li>
+        <li>What does the <code>&lt;title&gt;</code> element specify?</li>
+        <li>What is the purpose of the <code>&lt;body&gt;</code> element?</li>
         <li>How do you create a paragraph in HTML?</li>
-        <li>What is the difference between the &lt;strong&gt; and &lt;em&gt; elements?</li>
+        <li>What is the difference between the <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> elements?</li>
         <li>What is a self-closing tag in HTML?</li>
-        <li>What is the purpose of the &lt;meta&gt; element?</li>
+        <li>What is the purpose of the <code>&lt;meta&gt;</code> element?</li>
         <li>How do you add comments in HTML?</li>
-        <li>What is the purpose of the &lt;link&gt; element?</li>
-        <li>What is the purpose of the &lt;script&gt; element?</li>
+        <li>What is the purpose of the <code>&lt;link&gt;</code> element?</li>
+        <li>What is the purpose of the <code>&lt;script&gt;</code> element?</li>
+        <li>What is the purpose of the <code>&lt;style&gt;</code> element?</li>
+        <li>What is the purpose of the <code>&lt;main&gt;</code> element?</li>
+        <li>What is the purpose of the <code>&lt;header&gt;</code> element?</li>
+        <li>What is the purpose of the <code>&lt;footer&gt;</code> element?</li>
+        <li>What is the purpose of the <code>&lt;nav&gt;</code> element?</li>
+        <li>What is the purpose of the <code>&lt;article&gt;</code> element?</li>
+        <li>What is the purpose of the <code>&lt;video&gt;</code> element?</li>
       </ul>
     </section>
+
+    <!-- RESOURCES -->
     <section id="resources">
       <h2>Resources</h2>
       <ul>
@@ -257,6 +296,8 @@
             freeCodeCamp: Workshop: Bookstore Page - Step 1</a></li>
       </ul>
     </section>
+
+    <!-- TODO -->
     <section id="todo">
       <h2>TODO</h2>
       <ul>

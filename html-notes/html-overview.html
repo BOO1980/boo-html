@@ -19,8 +19,8 @@
     <nav class="quick-links" aria-label="On this page">
       <a href="#overview">Overview</a>
       <a href="#keywords">Keywords</a>
-      <a href="#codekeywords">Code Keywords</a>
-      <a href="#codeexamples">Code Examples</a>
+      <a href="#code-keywords">Code Keywords</a>
+      <a href="#code-examples">Code Examples</a>
       <a href="#questions">Questions</a>
       <a href="#resources">Resources</a>
       <a href="#todo">TODO</a>
@@ -95,11 +95,13 @@
         <!-- DOCUMENT STRUCTURE -->
         <li>The html element is the root element of an HTML page and wraps all content on the page.</li>
         <li>
-          All pages should begin with &lt;!DOCTYPE html&gt;. This special string is known as a declaration and ensures
+          All pages should begin with <code>&lt;!DOCTYPE html&gt;</code>. This special string is known as a declaration
+          and ensures
           the browser tries to meet industry-wide specifications.
         </li>
         <li>
-          &lt;!DOCTYPE html&gt; tells browsers that the document is an HTML5 document which is the latest version of
+          <code>&lt;!DOCTYPE html&gt;</code> tells browsers that the document is an HTML5 document which is the latest
+          version of
           HTML.
         </li>
         <li>Every HTML document should have a DOCTYPE declaration and html element.</li>
@@ -139,7 +141,7 @@
       </ul>
     </section>
 
-    <!-- Keywords -->
+    <!-- KEYWORDS -->
     <section id="keywords">
       <h2>Keywords</h2>
       <dl>
@@ -174,65 +176,52 @@
       </dl>
     </section>
 
-    <section id="codekeywords">
+    <!-- CODE KEYWORDS -->
+    <section id="code-keywords">
       <h2>Code Keywords</h2>
-      <ul class="code-keywords-list">
-        <li>
-          <pre><code>
-<span class="code-tag">&lt;!DOCTYPE html&gt;</span>
-    </code></pre>
-        </li>
+      <p class="code-note">The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document type and version of
+        HTML.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-keyword">!DOCTYPE</span> <span class="code-doctype">html</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Setting the language of the document in the <code>&lt;html&gt;</code> tag:</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">html</span> <span class="code-attr">lang</span>=<span class="code-string">"en"</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Head elements: the head contains meta information about the document</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">head</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Body element: the body contains the content of the document</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">body</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Headings: headings are used to define the structure of the content</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span> to <span class="code-bracket">&lt;</span><span class="code-tag-name">h6</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Paragraphs: paragraphs are used to group sentences together</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Links: links are used to create hyperlinks to other pages or resources</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">a</span> <span class="code-attr">href</span>=<span class="code-string">"https://www.example.com"</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Images: images are used to embed images in the document</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">img</span> <span class="code-attr">src</span>=<span class="code-string">"image.jpg"</span> <span class="code-attr">alt</span>=<span class="code-string">"Description of image"</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Tables: tables are used to display tabular data</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">table</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">Lists: lists are used to group related items together</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">ul</span><span class="code-bracket">&gt;</span> for unordered lists and <span class="code-bracket">&lt;</span><span class="code-tag-name">ol</span><span class="code-bracket">&gt;</span> for ordered lists</code></pre>
 
-        <li>
-          <pre><code>
-<span class="code-tag">&lt;html&gt;</span>
-    </code></pre>
-        </li>
-
-        <li>
-          <pre><code>
-<span class="code-tag">&lt;head&gt;</span>
-    </code></pre>
-        </li>
-
-        <li>
-          <pre><code>
-<span class="code-tag">&lt;body&gt;</span>
-    </code></pre>
-        </li>
-
-        <li>
-          <pre><code>
-<span class="code-tag">&lt;h1&gt;</span> to <span class="code-tag">&lt;h6&gt;</span>
-    </code></pre>
-        </li>
-
-        <li>
-          <pre><code>
-<span class="code-tag">&lt;p&gt;</span>
-    </code></pre>
-        </li>
-      </ul>
     </section>
 
-    <!-- Code Examples -->
-    <section id="codeexamples">
+    <!-- CODE EXAMPLES -->
+    <section id="code-examples">
       <h2>Code Examples</h2>
 
       <h3>Basic HTML Document Structure</h3>
-      <pre><code><span class="code-tag">&lt;!DOCTYPE html&gt;</span>
-<span class="code-tag">&lt;html</span> <span class="code-attr">lang</span>=<span class="code-string">"en"</span><span class="code-tag">&gt;</span>
-<span class="code-tag">&lt;head&gt;</span>
-    <span class="code-tag">&lt;meta</span> <span class="code-attr">charset</span>=<span class="code-string">"UTF-8"</span><span class="code-tag">&gt;</span>
-    <span class="code-tag">&lt;title&gt;</span>My First Page<span class="code-tag">&lt;/title&gt;</span>
-<span class="code-tag">&lt;/head&gt;</span>
-<span class="code-tag">&lt;body&gt;</span>
-    <span class="code-tag">&lt;h1&gt;</span>Hello World<span class="code-tag">&lt;/h1&gt;</span>
-<span class="code-tag">&lt;/body&gt;</span>
-<span class="code-tag">&lt;/html&gt;</span></code></pre>
+      <p class="code-note">This is a basic structure of an HTML document:</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-keyword">!DOCTYPE</span> <span class="code-doctype">html</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket">&lt;</span><span class="code-tag-name">html</span> <span class="code-attr">lang</span>=<span class="code-string">"en"</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket">&lt;</span><span class="code-tag-name">head</span><span class="code-bracket">&gt;</span>
+    <span class="code-bracket">&lt;</span><span class="code-tag-name">meta</span> <span class="code-attr">charset</span>=<span class="code-string">"UTF-8"</span><span class="code-bracket">&gt;</span>
+    <span class="code-bracket">&lt;</span><span class="code-tag-name">title</span><span class="code-bracket">&gt;</span>My First Page<span class="code-bracket">&lt;/</span><span class="code-tag-name">title</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket">&lt;/</span><span class="code-tag-name">head</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket">&lt;</span><span class="code-tag-name">body</span><span class="code-bracket">&gt;</span>
+    <span class="code-bracket">&lt;</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span>Hello World<span class="code-bracket">&lt;/</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket">&lt;/</span><span class="code-tag-name">body</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket">&lt;/</span><span class="code-tag-name">html</span><span class="code-bracket">&gt;</span></code></pre>
     </section>
 
-    <!-- FULL QUESTIONS LIST RESTORED -->
+    <!-- QUESTIONS  -->
     <section id="questions">
       <h2>Questions</h2>
       <ul class="question-list">
@@ -256,7 +245,7 @@
       </ul>
     </section>
 
-    <!-- FULL RESOURCES LIST RESTORED -->
+    <!--RESOURCES -->
     <section id="resources">
       <h2>Resources</h2>
       <ul>
@@ -338,6 +327,7 @@
       </ul>
     </section>
 
+    <!--TODO-->
     <section id="todo">
       <h2>TODO</h2>
       <ul>

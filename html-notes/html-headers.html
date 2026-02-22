@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Notes on HTML headers, including an overview, keywords, code examples, and resources for further learning." />
     <link rel="stylesheet" href="../assets/style.css" />
     <title>HTML Headers</title>
 </head>
 
 <body data-page="headers">
+    <a class="skip-link" href="#overview">Skip to content</a>
     <header class="topic-bar">
         <div class="topic-bar__title">
             <h1>Headers</h1>
@@ -17,8 +20,8 @@
         <nav class="quick-links" aria-label="On this page">
             <a href="#overview">Overview</a>
             <a href="#keywords">Keywords</a>
-            <a href="#codekeywords">Code Keywords</a>
-            <a href="#codeexamples">Code Examples</a>
+            <a href="#code-keywords">Code Keywords</a>
+            <a href="#code-examples">Code Examples</a>
             <a href="#questions">Questions</a>
             <a href="#resources">Resources</a>
             <a href="#todo">TODO</a>
@@ -26,6 +29,7 @@
     </header>
     <div id="sidebar-mount"></div>
     <main class="content">
+        <!-- OVERVIEW -->
         <section id="overview">
             <h2>Overview</h2>
             <ul>
@@ -57,75 +61,82 @@
                     and h6 being the least</li>
             </ul>
         </section>
+
+        <!-- KEYWORDS -->
         <section id="keywords">
             <h2>Keywords</h2>
-            <ul>
-                <li>headings</li>
-                <li>h1 to h6</li>
-                <li>structure</li>
-                <li>readability</li>
-                <li>SEO</li>
-                <li>hierarchy</li>
-                <li>logical order</li>
-            </ul>
+            <dl>
+                <dt>headings</dt>
+                <dd>Elements used to define headings</dd>
+                <dt>h1 to h6</dt>
+                <dd>Elements representing different levels of headings</dd>
+                <dt>structure</dt>
+                <dd>The organization of content on a web page</dd>
+                <dt>readability</dt>
+                <dd>How easy it is to read and understand the content</dd>
+                <dt>SEO</dt>
+                <dd>Search Engine Optimization</dd>
+                <dt>hierarchy</dt>
+                <dd>The arrangement of headings in a logical order</dd>
+                <dt>logical order</dt>
+                <dd>The sequence in which headings should be used</dd>
+            </dl>
 
         </section>
-        <section id="codekeywords">
+
+        <!-- CODE KEYWORDS -->
+        <section id="code-keywords">
             <h2>Code Keywords</h2>
-            <ul>
-                <li>&lt;h1&gt;</li>
-                <li>&lt;h2&gt;</li>
-                <li>&lt;h3&gt;</li>
-                <li>&lt;h4&gt;</li>
-                <li>&lt;h5&gt;</li>
-                <li>&lt;h6&gt;</li>
-            </ul>
+
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h1</span><span class="code-bracket">&gt;</span></code></pre>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h2</span><span class="code-bracket">&gt;</span></code></pre>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h3</span><span class="code-bracket">&gt;</span></code></pre>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h4</span><span class="code-bracket">&gt;</span></code></pre>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h5</span><span class="code-bracket">&gt;</span></code></pre>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h6</span><span class="code-bracket">&gt;</span></code></pre>
+
         </section>
-        <section id="codeexamples">
+
+        <!-- CODE EXAMPLES -->
+        <section id="code-examples">
             <h2>Code Examples</h2>
-            <ul>
-                <li>Heading level 1:
-                    <ul>
-                        <li><code>&lt;h1&gt;This is a level 1 heading&lt;/h1&gt;</code></li>
-                    </ul>
-                </li>
-                <li>Heading level 2:
-                    <ul>
-                        <li><code>&lt;h2&gt;This is a level 2 heading&lt;/h2&gt;</code></li>
-                    </ul>
-                </li>
-                <li>Heading level 3:
-                    <ul>
-                        <li><code>&lt;h3&gt;This is a level 3 heading&lt;/h3&gt;</code></li>
-                    </ul>
-                </li>
-                <li>Heading level 4:
-                    <ul>
-                        <li><code>&lt;h4&gt;This is a level 4 heading&lt;/h4&gt;</code></li>
-                    </ul>
-                </li>
-                <li>Heading level 5:
-                    <ul>
-                        <li><code>&lt;h5&gt;This is a level 5 heading&lt;/h5&gt;</code></li>
-                    </ul>
-                </li>
-                <li>Heading level 6:
-                    <ul>
-                        <li><code>&lt;h6&gt;This is a level 6 heading&lt;/h6&gt;</code></li>
-                    </ul>
-                </li>
-            </ul>
+
+            <p class="code-note">Heading level 1:</p>
+
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h1</span><span class="code-bracket">&gt;</span>This is a level 1 heading<span class="code-bracket">&lt;/</span><span class="code-tag">h1</span><span class="code-bracket">&gt;</span></code></pre>
+
+            <p class="code-note">Heading level 2:</p>
+
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h2</span><span class="code-bracket">&gt;</span>This is a level 2 heading<span class="code-bracket">&lt;/</span><span class="code-tag">h2</span><span class="code-bracket">&gt;</span></code></pre>
+
+            <p class="code-note">Heading level 3:</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h3</span><span class="code-bracket">&gt;</span>This is a level 3 heading<span class="code-bracket">&lt;/</span><span class="code-tag">h3</span><span class="code-bracket">&gt;</span></code></pre>
+
+            <p class="code-note">Heading level 4:</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h4</span><span class="code-bracket">&gt;</span>This is a level 4 heading<span class="code-bracket">&lt;/</span><span class="code-tag">h4</span><span class="code-bracket">&gt;</span></code></pre>
+
+            <p class="code-note">Heading level 5:</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h5</span><span class="code-bracket">&gt;</span>This is a level 5 heading<span class="code-bracket">&lt;/</span><span class="code-tag">h5</span><span class="code-bracket">&gt;</span></code></pre>
+
+            <p class="code-note">Heading level 6:</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">h6</span><span class="code-bracket">&gt;</span>This is a level 6 heading<span class="code-bracket">&lt;/</span><span class="code-tag">h6</span><span class="code-bracket">&gt;</span></code></pre>
+
+
         </section>
+
+        <!-- QUESTIONS -->
         <section id="questions">
             <h2>Questions</h2>
-            <ul>
+            <ul class="question-list">
                 <li>What is the purpose of headings in HTML?</li>
                 <li>How do you create a heading in HTML?</li>
-                <li>What is the difference between &lt;h1&gt; and &lt;h6&gt;?</li>
+                <li>What is the difference between <code>&lt;h1&gt;</code> and <code>&lt;h6&gt;</code>?</li>
                 <li>How do headings affect SEO?</li>
                 <li>Can you use multiple headings on a single page?</li>
             </ul>
         </section>
+
+        <!-- RESOURCES -->
         <section id="resources">
             <h2>Resources</h2>
             <ul>
@@ -182,6 +193,8 @@
                         freeCodeCamp: Learn HTML by Building a Cat Photo App - Step 28</a></li>
             </ul>
         </section>
+
+        <!--TODO-->
         <section id="todo">
             <h2>TODO</h2>
             <ul>
