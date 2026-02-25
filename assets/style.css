@@ -442,6 +442,11 @@ li > code,
   border-radius: 6px;
   font-weight: 600;
 }
+
+.code-comment {
+  color: #6b7280; /* muted grey */
+  font-style: italic;
+}
 /* =========================
    Definition Lists (Grid Version)
    ========================= */

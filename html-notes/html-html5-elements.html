@@ -92,45 +92,159 @@
         <!-- Code Keywords Section -->
         <section id="code-keywords">
             <h2>Code Keywords</h2>
-            <ul>
-                <li>&lt;header&gt;</li>
-                <li>&lt;footer&gt;</li>
-                <li>&lt;article&gt;</li>
-                <li>&lt;section&gt;</li>
-                <li>&lt;nav&gt;</li>
-                <li>&lt;main&gt;</li>
-                <li>&lt;aside&gt;</li>
-                <li>&lt;figure&gt;</li>
-                <li>&lt;figcaption&gt;</li>
-                <li>&lt;time&gt;</li>
-                <li>&lt;mark&gt;</li>
-            </ul>
+            <p class="code-note">The header element represents introductory content, typically a group of introductory
+                or navigational aids.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">header</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The footer element represents the footer for its nearest sectioning content or
+                sectioning root element.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">footer</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The article element represents a self-contained composition in a document, page,
+                application, or site, which is intended to be independently distributable or reusable.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">article</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The section element represents a standalone section — which doesn't have a more
+                specific semantic element to represent it — contained within an HTML document.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">section</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The nav element represents a section of a page that links to other pages or to parts
+                within the page: a section with navigation links.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">nav</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The main element represents the dominant content of the
+
+                <body> of a document.
+            </p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">main</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The aside element represents a portion of a document whose content is only indirectly
+                related to the document's main content.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">aside</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The figure element represents self-contained content, frequently with a caption, and
+                is typically referenced as a single unit.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">figure</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The figcaption element represents a caption or legend for a figure.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">figcaption</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The time element represents a specific period in time.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">time</span><span class="code-bracket">&gt;</span></code></pre>
+            <p class="code-note">The mark element represents text highlighted for reference purposes, due to its
+                relevance in another context.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">mark</span><span class="code-bracket">&gt;</span></code></pre>
+
         </section>
 
         <!-- Code Example Section -->
         <section id="code-examples">
             <h2>Code Example</h2>
             <p>Example of using semantic elements in HTML5:</p>
-            <ul>
-                <li><code>&lt;main&gt;</code></li>
-                <li><code>&lt;header&gt;</code></li>
-                <li><code>&lt;footer&gt;</code></li>
-                <li><code>&lt;article&gt;</code></li>
-                <li><code>&lt;section&gt;</code></li>
-                <li><code>&lt;nav&gt;</code></li>
-                <li><code>&lt;aside&gt;</code></li>
-                <li><code>&lt;figure&gt;</code></li>
-                <li><code>&lt;figcaption&gt;</code></li>
-                <li><code>&lt;time&gt;</code></li>
-                <li><code>&lt;mark&gt;</code></li>
-            </ul>
+            <p class="code-note">In this example, we have a <code>&lt;main&gt;</code> element that contains the main
+                content of the page. Inside the <code>&lt;main&gt;</code> element, we have a heading, a paragraph, and
+                an
+                article element. The article element contains its own heading and paragraph, representing an
+                independent piece of content.</p>
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">main</span><span class="code-bracket">&gt;</span>
+    <span class="code-comment">&lt;!-- The main content of the page starts here --&gt;</span>
+    <span class="code-bracket">&lt;</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span>HTML Tutorial<span class="code-bracket">&lt;/</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span>
+    <span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span>
+        Welcome to our HTML tutorial! In this tutorial, you will learn the basics of HTML
+        and how to use it to create your own web pages.
+    <span class="code-bracket">&lt;/</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span>
+    <span class="code-bracket">&lt;</span><span class="code-tag-name">article</span><span class="code-bracket">&gt;</span>
+        <span class="code-bracket">&lt;</span><span class="code-tag-name">h2</span><span class="code-bracket">&gt;</span>
+        Chapter 1: Introduction to HTML
+        <span class="code-bracket">&lt;/</span><span class="code-tag-name">h2</span><span class="code-bracket">&gt;</span>
+        <span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span>
+        HTML (Hypertext Markup Language) is a markup language used to structure
+        and format content on the web.
+        <span class="code-bracket">&lt;/</span><span class="code-tag-name">p</span><span class="code-bracket">&gt;</span>
+    <span class="code-bracket">&lt;/</span><span class="code-tag-name">article</span><span class="code-bracket">&gt;</span>
+    <span class="code-comment">&lt;!-- The main content of the page ends here --&gt;</span>
+<span class="code-bracket">&lt;/</span><span class="code-tag-name">main</span><span class="code-bracket">&gt;</span></code></pre>
+
+            <p class="code-note">In this example, we have a <code>&lt;main&gt;</code> element that contains the main
+                content of the page. Inside
+            <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">header</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket">&lt;</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span>My Website<span class="code-bracket">&lt;/</span><span class="code-tag-name">h1</span><span class="code-bracket">&gt;</span>
+  <span class="code-bracket">&lt;</span><span class="code-tag-name">nav</span><span class="code-bracket">&gt;</span>
+    <span class="code-bracket">&lt;</span><span class="code-tag-name">a</span> <span class="code-attr">href</span>=<span class="code-string">"#home"</span><span class="code-bracket">&gt;</span>Home<span class="code-bracket">&lt;/</span><span class="code-tag-name">a</span><span class="code-bracket">&gt;</span>
+    <span class="code-bracket">&lt;</span><span class="code-tag-name">a</span> <span class="code-attr">href</span>=<span class="code-string">"#about"</span><span class="code-bracket">&gt;</span>About<span class="code-bracket">&lt;/</span><span class="code-tag-name">a</span><span class="code-bracket">&gt;</span>
+  <span class="code-bracket">&lt;/</span><span class="code-tag-name">nav</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket">&lt;/</span><span class="code-tag-name">header</span><span class="code-bracket">&gt;</span></code></pre>
+
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">main</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">section</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">h2</span><span
+                class="code-bracket">&gt;</span>Welcome<span class="code-bracket">&lt;/</span><span
+                class="code-tag-name">h2</span><span class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>
+            This is a simple example of a semantic HTML layout.
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">section</span><span
+                class="code-bracket">&gt;</span>
+
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">article</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">h2</span><span
+                class="code-bracket">&gt;</span>Blog Post Title<span class="code-bracket">&lt;/</span><span
+                class="code-tag-name">h2</span><span class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>
+            This is an independent piece of content inside an article.
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>
+
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">figure</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">img</span> <span
+                class="code-attr">src</span>=<span class="code-string">"image.jpg"</span> <span
+                class="code-attr">alt</span>=<span class="code-string">"Example image"</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">figcaption</span><span
+                class="code-bracket">&gt;</span>
+            Example image caption.
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">figcaption</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">figure</span><span
+                class="code-bracket">&gt;</span>
+
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>
+            Published on
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">time</span> <span
+                class="code-attr">datetime</span>=<span class="code-string">"2025-03-21"</span><span
+                class="code-bracket">&gt;</span>March 21, 2025<span class="code-bracket">&lt;/</span><span
+                class="code-tag-name">time</span><span class="code-bracket">&gt;</span>.
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">article</span><span
+                class="code-bracket">&gt;</span>
+
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">aside</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>
+            Related links and additional information go here.
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">aside</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">main</span><span
+                class="code-bracket">&gt;</span>
+
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">footer</span><span
+                class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;</span><span class="code-tag-name">p</span><span
+                class="code-bracket">&gt;</span>&amp;copy; 2025 My Website<span class="code-bracket">&lt;/</span><span
+                class="code-tag-name">p</span><span class="code-bracket">&gt;</span>
+            <span class="code-bracket">&lt;/</span><span class="code-tag-name">footer</span><span
+                class="code-bracket">&gt;</span></code></pre>
+            -
         </section>
 
 
         <!-- Questions Section -->
         <section id="questions">
             <h2>Questions</h2>
-            <ul>
+            <ul class="question-list">
                 <li>What are some new semantic elements introduced in HTML5?</li>
                 <li>How do semantic elements improve accessibility?</li>
                 <li>Why is it important to use semantic elements for SEO?</li>
