@@ -11,17 +11,17 @@
 </head>
 
 <body data-page="boilerplate">
+  <a class="skip-link" href="#overview">Skip to content</a>
   <header class="topic-bar">
     <div class="topic-bar__title">
       <h1>HTML Boilerplate</h1>
-
     </div>
 
     <nav class="quick-links" aria-label="On this page">
       <a href="#overview">Overview</a>
       <a href="#keywords">Keywords</a>
-      <a href="#codekeywords">Code Keywords</a>
-      <a href="#codeexamples">Code Examples</a>
+      <a href="#code-keywords">Code Keywords</a>
+      <a href="#code-examples">Code Examples</a>
       <a href="#questions">Questions</a>
       <a href="#resources">Resources</a>
       <a href="#todo">TODO</a>
@@ -32,7 +32,6 @@
     <!-- OVERVIEW -->
     <section id="overview">
       <h2>Overview</h2>
-
       <ul>
         <!-- WHAT A BOILERPLATE IS -->
         <li>An HTML boilerplate is a template for your web pages</li>
@@ -142,34 +141,69 @@
     </section>
 
     <!-- CODE KEYWORDS -->
-    <section id="codekeywords">
+    <section id="code-keywords">
       <h2>Code Keywords</h2>
-      <ul>
-        <li>DOCTYPE</li>
-        <li>head</li>
-        <li>meta</li>
-        <li>body</li>
-        <li>title</li>
-        <li>link</li>
-      </ul>
+      <p class="code-note">The Doctype declaration defines the document type and version of HTML.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">!DOCTYPE</span><span class="code-declaration">html</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">The head element contains metadata and links to resources.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">head</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">The html element is the root element of an HTML document.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">html</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">The lang attribute specifies the language of the document.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">html</span> <span class="code-attr">lang</span>=<span class="code-string">"en"</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">The meta element provides metadata about the document, such as character encoding.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">meta</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">The body element contains the content of the document.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">body</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">The title element specifies the title of the document.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">title</span><span class="code-bracket">&gt;</span></code></pre>
+      <p class="code-note">The link element is used to link external resources like stylesheets.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">link</span><span class="code-bracket">&gt;</span></code></pre>
     </section>
 
     <!-- CODE EXAMPLE -->
-    <section id="codeexamples">
+    <section id="code-examples">
       <h2>Code Example</h2>
 
-      <p>
+      <p class="code-note">
         By setting the character encoding to UTF-8 it will ensure that the ascented "e" character is displayed
         correctly on the page
       </p>
-      <code>&lt;meta charset="UTF-8" /&gt;</code>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">meta</span> <span class="code-attr">charset</span>=<span class="code-string">"UTF-8"</span> <span class="code-bracket">/&gt;</span></code></pre>
 
-      <ul>
-        <li>
-          &lt;link rel="stylesheet" href="./styles.css" /&gt;: This line links an external CSS file named styles.css
-          to the HTML document, allowing you to apply styles defined in that file to the content of the page.
-        </li>
-      </ul>
+      <p class="code-note">The link element is used to link external resources like stylesheets.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">link</span> <span class="code-attr">rel</span>=<span class="code-string">"stylesheet"</span> <span class="code-attr">href</span>=<span class="code-string">"./styles.css"</span> <span class="code-bracket">/&gt;</span></code></pre>
+
+      <p class="code-note">The preconnect value for the rel attribute tells the browser to create an early connection to
+        the value specified in the href attribute.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">link</span> <span class="code-attr">rel</span>=<span class="code-string">"preconnect"</span> <span class="code-attr">href</span>=<span class="code-string">"https://fonts.googleapis.com"</span> <span class="code-bracket">/&gt;</span></code></pre>
+
+      <p class="code-note">A favicon, which is short for favorite icon, is a small icon typically displayed in the
+        browser tab next to the site title.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">link</span> <span class="code-attr">rel</span>=<span class="code-string">"icon"</span> <span class="code-attr">href</span>=<span class="code-string">"favicon.ico"</span> <span class="code-bracket">/&gt;</span></code></pre>
+
+      <p class="code-note">The DOCTYPE declaration defines the document type and version of HTML.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">!DOCTYPE</span><span class="code-declaration">html</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">The html element is the root element of an HTML document.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">html</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">The lang attribute specifies the language of the document.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">html</span> <span class="code-attr">lang</span>=<span class="code-string">"en"</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">The head element contains metadata and links to resources.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">head</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">The meta element provides metadata about the document, such as character encoding.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">meta</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">The body element contains the content of the document.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">body</span><span class="code-bracket">&gt;</span></code></pre>
+
+      <p class="code-note">The title element specifies the title of the document.</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">title</span><span class="code-bracket">&gt;</span>Document Title<span class="code-bracket">&lt;/</span><span class="code-tag">title</span><span class="code-bracket">&gt;</span></code></pre>
+
+
     </section>
 
     <!-- QUESTIONS -->
@@ -241,7 +275,6 @@
     </section>
   </main>
   <!-- Sidebar JS -->
-  <script src="../assets/layout.js"></script>
   <script src="../assets/script.js"></script>
   <script src="../assets/sidebar.js"></script>
 </body>
