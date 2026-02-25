@@ -41,9 +41,7 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   SIDEBAR (fixed)
-========================= */
+/* ========== SIDEBAR ========== */
 .sidebar {
   position: fixed;
   top: 0;
@@ -125,9 +123,7 @@ body {
   opacity: 1;
 }
 
-/* =========================
-   TOPIC BAR (fixed, offset from sidebar)
-========================= */
+/* ========== TOPIC BAR ========== */
 .topic-bar {
   position: fixed;
   top: 0;
@@ -186,9 +182,7 @@ body {
   outline: 2px solid rgba(255, 146, 43, 0.7);
 }
 
-/* =========================
-   MAIN CONTENT (offset for sidebar + fixed header)
-========================= */
+/* ========== MAIN CONTENT ========== */
 .content {
   margin-left: var(--sidebar-width);
   padding: calc(var(--topic-bar-height) + 10px) 20px 40px;
@@ -248,7 +242,7 @@ pre code {
   padding: 12px;
 }
 
-/* Optional: skip link if you add it */
+/*skip link*/
 .skip-link {
   position: absolute;
   left: -999px;
@@ -270,7 +264,7 @@ pre code {
   line-height: 1.5;
 }
 
-/* ===== Progress Legend ===== */
+/* ===== PROGRESS LEGEND===== */
 
 .status-legend {
   margin: 2rem 0;
@@ -336,7 +330,7 @@ pre code {
   background: #e74c3c;
 }
 
-/* ===== Code Blocks ===== */
+/* ===== CODE BLOCKS ===== */
 
 pre {
   background: #111827;
@@ -355,7 +349,6 @@ li > code {
   font-size: 0.85rem;
 }
 
-/* Code blocks */
 pre {
   background: #fff8f1; /* very light warm tone */
   color: #2c2c2c;
@@ -447,10 +440,8 @@ li > code,
   color: #6b7280; /* muted grey */
   font-style: italic;
 }
-/* =========================
-   Definition Lists (Grid Version)
-   ========================= */
 
+/* ===== DEFINITION LISTS ===== */
 dl {
   display: grid;
   grid-template-columns: 160px 1fr;
@@ -469,9 +460,7 @@ dd {
   color: var(--text);
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* ===== MOBILE ===== */
 @media (max-width: 900px) {
   :root {
     --sidebar-width: 0px;
