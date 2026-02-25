@@ -7,14 +7,14 @@
   <main name="description"
     content="Notes on the HTML anchor element, including an overview, keywords, code examples, and resources for further learning." />
   <link rel="stylesheet" href="../assets/style.css" />
-  <title>Anchor</title>
+  <title>HTML Anchor</title>
 </head>
 
 <body data-page="anchor">
   <a class="skip-link" href="#overview">Skip to content</a>
   <header class="topic-bar">
     <div class="topic-bar__title">
-      <h1>Anchor</h1>
+      <h1>HTML Anchor</h1>
     </div>
 
     <nav class="quick-links" aria-label="On this page">
@@ -28,7 +28,9 @@
     </nav>
   </header>
   <div id="sidebar-mount"></div>
+
   <main class="content">
+    <!-- Overview -->
     <section id="overview">
       <h2>Overview</h2>
       <ul>
@@ -66,35 +68,8 @@
         <li>Other types of content can also be turned into a link by wrapping it in anchor tags.</li>
       </ul>
     </section>
-    <section id="code-examples">
-      <h2>Code Examples</h2>
-      <ul>
-        <li>
-          Basic anchor element:
-          <ul>
-            <li><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Anchor element that opens in a new tab:
-          <ul>
-            <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Image as a link:
-          <ul>
-            <li>
-              <code>
-                  &lt;a href="https://www.example.com"&gt;<br />
-                  &nbsp;&nbsp;&lt;img src="image.jpg" alt="Example Image"&gt;<br />
-                  &lt;/a&gt;
-                </code>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+
+    <!-- Keywords -->
     <section id="keywords">
       <h2>Keywords</h2>
       <dl>
@@ -110,49 +85,32 @@
         <dd>Opens the link in a new tab or window</dd>
       </dl>
     </section>
+
+    <!-- Code Keywords -->
     <section id="code-keywords">
       <h2>Code Keywords</h2>
-      <ul>
-        <li>&lt;a&gt;</li>
-        <li>href</li>
-        <li>target</li>
-        <li>_blank</li>
-      </ul>
+      <p class="code-note"></p>
+      <pre><code><span class="code-bracket">&lt;<span class="code-tag">a</span>&gt;</span></code></pre>
+      <pre><code><span class="code-attr">href</span></code></pre>
+      <pre><code><span class="code-attr">target</span></code></pre>
+      <pre><code><span class="code-value">_blank</span></code></pre>
     </section>
-    <section id="codeexamples">
+
+    <!-- Code Examples -->
+    <section id="code-examples">
       <h2>Code Examples</h2>
-      <ul>
-        <li>
-          Basic anchor element:
-          <ul>
-            <li><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Anchor element that opens in a new tab:
-          <ul>
-            <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Image as a link:
-          <ul>
-            <li>
-              <code>
-                  &lt;a href="https://www.example.com"&gt;<br />
-                  &nbsp;&nbsp;&lt;img src="image.jpg" alt="Example Image"&gt;<br />
-                  &lt;/a&gt;
-                </code>
-            </li>
-          </ul>
-        </li>
-        <h3>Link Example</h3>
-        <pre><code><span class="code-tag">&lt;a</span> 
-<span class="code-attr">href</span>=<span class="code-value">"https://example.com"</span><span class="code-tag">&gt;</span>
-Visit Example
-<span class="code-tag">&lt;/a&gt;</span></code></pre>
-      </ul>
+
+      <p class="code-note">Example of a basic anchor element in HTML:</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-value">"https://www.example.com"</span>&gt;</span>Visit Example.com<span class="code-bracket">&lt;/<span class="code-tag">a</span>&gt;</span></code></pre>
+
+      <p class="code-note">Anchor element that opens in a new tab:</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-value">"https://www.example.com"</span> <span class="code-attr">target</span>=<span class="code-value">"_blank"</span>&gt;</span>Visit Example.com<span class="code-bracket">&lt;/<span class="code-tag">a</span>&gt;</span></code></pre>
+
+      <p class="code-note">Image as a link:</p>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag">a</span> <span class="code-attr">href</span>=<span class="code-value">"https://www.example.com"</span>&gt;</span><span class="code-bracket">&lt;</span><span class="code-tag">img</span> <span class="code-attr">src</span>=<span class="code-value">"image.jpg"</span> <span class="code-attr">alt</span>=<span class="code-value">"Example Image"</span>&gt;</span><span class="code-bracket">&lt;/<span class="code-tag">a</span>&gt;</span></code></pre>
     </section>
+
+    <!-- Questions -->
     <section id="questions">
       <h2>Questions</h2>
       <ul>
@@ -169,6 +127,8 @@ Visit Example
         <li>Can you use other elements, like images, as links in HTML? If so, how?</li>
       </ul>
     </section>
+
+    <!-- Resources -->
     <section id="resources">
       <h2>Resources</h2>
       <ul>
@@ -216,6 +176,8 @@ Visit Example
             freeCodeCamp: Learn Basic CSS by Building a Cafe Menu - Step 64</a></li>
       </ul>
     </section>
+
+    <!-- TODO -->
     <section id="todo">
       <h2>TODO</h2>
       <ul>

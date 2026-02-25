@@ -31,7 +31,7 @@
 
   <main class="content">
 
-    <!-- OVERVIEW -->
+    <!-- Overview -->
     <section id="overview">
       <h2>Overview</h2>
       <ul>
@@ -69,6 +69,7 @@
       </ul>
     </section>
 
+    <!-- Keywords -->
     <section id="keywords">
       <h2>Keywords</h2>
       <dl>
@@ -87,53 +88,56 @@
       </dl>
     </section>
 
+    <!-- Code Keywords -->
     <section id="code-keywords">
       <h2>Code Keywords</h2>
-      <ul>
-        <li><code>&lt;img&gt;</code></li>
-        <li><code>src</code></li>
-        <li><code>alt</code></li>
-        <li><code>&lt;figure&gt;</code></li>
-        <li><code>&lt;figcaption&gt;</code></li>
-      </ul>
+
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">img</span><span class="code-bracket">&gt;</span></code></pre>
+      <pre><code><span class="code-attr">src</span></code></pre>
+      <pre><code><span class="code-attr">alt</span></code></pre>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">figure</span><span class="code-bracket">&gt;</span></code></pre>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">figcaption</span><span class="code-bracket">&gt;</span></code></pre>
+
     </section>
 
+    <!-- Code Examples -->
     <section id="code-examples">
       <h2>Code Examples</h2>
 
-      <p>
+      <p class="code-note">
         <code>src</code> sets the image location, and <code>alt</code> describes the image for accessibility.
       </p>
 
-      <pre><code>&lt;img src="./images/cat.jpg" alt="Cat sleeping in the grass"&gt;</code></pre>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">img</span> <span class="code-attr">src</span>=<span class="code-value">"./images/cat.jpg"</span> <span class="code-attr">alt</span>=<span class="code-value">"Cat sleeping in the grass"</span><span class="code-bracket">&gt;</span></code></pre>
 
-      <p>
+      <p class="code-note">
         Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> to add a caption.
       </p>
 
-      <pre><code>&lt;figure&gt;
-  &lt;img src="./images/cat.jpg" alt="Cat sleeping in the grass"&gt;
-  &lt;figcaption&gt;A cat sleeping in the grass.&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">figure</span><span class="code-bracket">&gt;</span>
+  <span class="code-bracket">&lt;</span><span class="code-tag-name">img</span> <span class="code-attr">src</span>=<span class="code-value">"./images/cat.jpg"</span> <span class="code-attr">alt</span>=<span class="code-value">"Cat sleeping in the grass"</span><span class="code-bracket">&gt;</span>
+  <span class="code-bracket">&lt;</span><span class="code-tag-name">figcaption</span><span class="code-bracket">&gt;</span>A cat sleeping in the grass.<span class="code-bracket">&lt;/</span><span class="code-tag-name">figcaption</span><span class="code-bracket">&gt;</span>
+<span class="code-bracket"></span>&lt;/</span><span class="code-tag-name">figure</span><span class="code-bracket">&gt;</span></code></pre>
 
-      <p>
+      <p class="code-note">
         Tip: Add <code>width</code> and <code>height</code> to reduce layout shift, and use
         <code>loading="lazy"</code> for offscreen images.
       </p>
 
-      <pre><code>&lt;img
-  src="./images/cat.jpg"
-  alt="Cat sleeping in the grass"
-  width="640"
-  height="480"
-  loading="lazy"
+      <pre><code><span class="code-bracket">&lt;</span><span class="code-tag-name">img</span>
+  <span class="code-attr">src</span>=<span class="code-value">"./images/cat.jpg"</span>
+  <span class="code-attr">alt</span>=<span class="code-value">"Cat sleeping in the grass"</span>
+  <span class="code-attr">width</span>=<span class="code-value">"640"</span>
+  <span class="code-attr">height</span>=<span class="code-value">"480"</span>
+  <span class="code-attr">loading</span>=<span class="code-value">"lazy"</span>
 &gt;</code></pre>
-      <h3>Image Example</h3>
+      <p class="code-note">This code will display an image of a cat with the alt text "A cute cat".</p>
       <pre><code><span class="code-tag">&lt;img</span> 
-<span class="code-attr">src</span>=<span class="code-value">"cat.jpg"</span> 
-<span class="code-attr">alt</span>=<span class="code-value">"A cute cat"</span><span class="code-tag">&gt;</span></code></pre>
+  <span class="code-attr">src</span>=<span class="code-value">"cat.jpg"</span> 
+  <span class="code-attr">alt</span>=<span class="code-value">"A cute cat"</span><span class="code-tag">&gt;</span></code></pre>
     </section>
 
+    <!-- Questions -->
     <section id="questions">
       <h2>Questions</h2>
       <ul>
@@ -148,6 +152,7 @@
       </ul>
     </section>
 
+    <!-- Resources -->
     <section id="resources">
       <h2>Resources</h2>
       <ul>
@@ -296,6 +301,7 @@
       </ul>
     </section>
 
+    <!-- TODO -->
     <section id="todo">
       <h2>TODO</h2>
       <ul>
