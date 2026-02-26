@@ -19,6 +19,7 @@
   --accent-2: #ff922b;
   --accent-3: #334155;
   --accent-soft: #fff2e8;
+  --muted: #64748b;
 
   /* Fonts */
   --titles-font-colour: #fff2e8;
@@ -34,8 +35,8 @@
   --sidebar-bg: #111;
   --sidebar-text: #fff2e8;
 
-  --sidebar-width: 320px;
-  --content-max: 900px;
+  --sidebar-width: 20rem;
+  --content-max: 98rem;
 
   /* Adjust if your quick links wrap */
 
@@ -248,6 +249,7 @@ section[id] {
   background: var(--card);
   padding: 22px 26px;
   margin: 18px auto;
+  margin-left: calc(var(--sidebar-width));
   border-radius: var(--radius-md);
   box-shadow: var(--card-shadow);
   border-left: 8px solid var(--accent-2);
@@ -520,6 +522,12 @@ dd {
   margin-left: var(--sidebar-width);
   border-left: 10px solid var(--accent-2);
   padding: 10px;
+}
+
+.nav-list a,
+.quick-links a,
+.track-item {
+  transition: all 0.2s ease;
 }
 
 /* =========================
