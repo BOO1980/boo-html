@@ -27,6 +27,13 @@
   --code-attr: #7c3aed;
   --code-value: #b45309;
 
+  --code-selector: hsl(29, 90%, 49%);
+  --code-property: hsl(197, 80%, 16%);
+  --code-css-value: #a3e635;
+  --code-brace: #c792ea;
+  --code-class: #ffd166;
+  --code-id: #ef476f;
+
   /* Sidebar */
   --sidebar-bg: #111;
   --sidebar-text: #fff2e8;
