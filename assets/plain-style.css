@@ -17,7 +17,6 @@
   /* Accents (keep these consistent across UI) */
   --accent-1: #f97316;
   --accent-2: #ff922b;
-  --accent-3: #334155;
   --accent-soft: #fff2e8;
   --muted: #64748b;
 
@@ -43,6 +42,9 @@
   --status-complete: #16a34a;
   --status-progress: #f59e0b;
   --status-not: #dc2626;
+
+  --code-bg-soft: #fff8f1;
+  --code-accent: #334155;
 }
 
 *,
@@ -74,6 +76,16 @@ section[id] {
 }
 
 /* ========== SIDEBAR ========== */
+
+#sidebar-mount {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  background: var(--sidebar-bg);
+  z-index: 40; /* below .sidebar (60), above page bg */
+}
 .sidebar {
   position: fixed;
   top: 0;
@@ -382,7 +394,7 @@ p code {
 
 /* Code blocks */
 pre {
-  background: #fff8f1;
+  background: var(--code-bg-soft);
   color: #2c2c2c;
   padding: 0.85rem 1rem;
   border-radius: 10px;
@@ -390,7 +402,7 @@ pre {
   margin: 0.75rem 0;
   border: 1px solid #f4d7c4;
   border-left: 6px solid #f97316;
-  border-left: 6px solid #334155;
+  border-left: 6px solid var(--code-accent);
 }
 
 pre code {
@@ -458,7 +470,7 @@ pre code {
 p code,
 li > code,
 .code-note code {
-  background: #fff8f1;
+  background: var(--code-bg-soft);
   color: #5b21b6;
   padding: 0.2rem 0.45rem;
   border-radius: 6px;
@@ -466,7 +478,7 @@ li > code,
 }
 
 .code-comment {
-  color: #6b7280; /* muted grey */
+  color: var(--muted); /* muted grey */
   font-style: italic;
 }
 /* =========================
