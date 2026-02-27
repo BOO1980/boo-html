@@ -23,6 +23,9 @@
   <a class="skip-link" href="#overview">Skip to content</a>
   <header class="topic-bar">
     <div class="topic-bar__title">
+      <button class="nav-toggle" type="button" aria-controls="sidebar-mount" aria-expanded="false">
+        ☰ <span class="sr-only">Menu</span>
+      </button>
       <h1>Meta Element</h1>
     </div>
 
@@ -159,7 +162,7 @@
     <!-- Questions -->
     <section id="questions">
       <h2>Questions</h2>
-      <ul>
+      <ul class="question-list">
         <li>What is the purpose of the meta element in HTML?</li>
         <li>Where should the meta element be placed in an HTML document?</li>
         <li>How do you specify the character set for an HTML document using a meta tag?</li>
@@ -225,10 +228,9 @@
         <li>Review freeCodeCamp exercises related to the meta element</li>
         <li>Practice writing HTML code using the meta element and its attributes</li>
   </main>
-  <!-- Sidebar JS -->
-
   <script src="../assets/script.js"></script>
   <script src="../assets/sidebar.js"></script>
+  <script src="../assets/nav-toggle.js"></script>
 </body>
 
 </html>

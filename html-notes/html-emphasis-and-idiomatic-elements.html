@@ -21,6 +21,9 @@
     <a class="skip-link" href="#overview">Skip to content</a>
     <header class="topic-bar">
         <div class="topic-bar__title">
+            <button class="nav-toggle" type="button" aria-controls="sidebar-mount" aria-expanded="false">
+                ☰ <span class="sr-only">Menu</span>
+            </button>
             <h1>Emphasis Element over the Idiomatic Text Element</h1>
         </div>
 
@@ -168,7 +171,7 @@
         <!--Questions-->
         <section id="questions">
             <h2>Questions</h2>
-            <ul>
+            <ul class="question-list">
                 <li>What is the purpose of the &lt;em&gt; element in HTML?</li>
                 <li>How does the &lt;i&gt; element differ from the &lt;em&gt; element in terms of meaning and usage?
                 </li>
@@ -209,9 +212,9 @@
             </ul>
         </section>
     </main>
-    <!-- Sidebar JS -->
     <script src="../assets/script.js"></script>
     <script src="../assets/sidebar.js"></script>
+    <script src="../assets/nav-toggle.js"></script>
 </body>
 
 </html>

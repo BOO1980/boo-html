@@ -553,21 +553,72 @@ dd {
   border: 0;
 }
 
-/* Mobile layout */
+/* Screen-reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.nav-toggle {
+  visibility: hidden; /* hidden by default, shown on mobile */
+}
+
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 900px) {
   :root {
-    --topic-bar-height: 130px; /* quick links often wrap on mobile */
+    --topic-bar-height: 130px; /* quick links wrap more on small screens */
   }
 
-  /* Topic bar should span full width (no sidebar offset) */
+  .topic-bar__title h1 {
+    font-size: 1.8rem;
+  }
+
+  .sidebar {
+    position: static;
+    /*position: sticky;
+    width: 25%;
+    height: auto;
+    z-index: 70;*/
+    width: 100%;
+    height: 100%;
+  }
+
   .topic-bar {
+    position: sticky;
+    top: 0;
     left: 0;
+    z-index: 50;
+    background: linear-gradient(0deg, #ffffff, var(--accent-soft));
+    border-bottom: 1px solid var(--border);
+    padding: 12px 16px;
   }
-
-  /* Content should span full width */
   .content {
     margin-left: 0;
-    padding: calc(var(--topic-bar-height) + 10px) 14px 30px;
+    padding-top: calc(var(--topic-bar-height) + 10px);
+  }
+
+  .skip-link:focus {
+    left: 20px;
+  }
+
+  /* Backdrop */
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+    z-index: 70;
   }
 
   /* Keep sidebar mount painted to avoid flashes, but make it a drawer */
@@ -583,24 +634,6 @@ dd {
     transition: transform 200ms ease;
   }
 
-  /* If your injected sidebar uses .sidebar, make it behave as drawer too */
-  .sidebar {
-    position: static; /* it lives inside #sidebar-mount now */
-    width: 100%;
-    height: 100%;
-  }
-
-  /* Backdrop */
-  .sidebar-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 200ms ease;
-    z-index: 70;
-  }
-
   /* Toggle button */
   .nav-toggle {
     position: absolute;
@@ -612,6 +645,7 @@ dd {
     padding: 10px 12px;
     font-weight: 800;
     cursor: pointer;
+    visibility: visible;
   }
 
   /* Open state */
@@ -626,43 +660,5 @@ dd {
   /* Optional: stop page scrolling when drawer open */
   body.nav-open {
     overflow: hidden;
-  }
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 900px) {
-  :root {
-    --sidebar-width: 0px;
-    --topic-bar-height: 190px; /* quick links wrap more on small screens */
-  }
-
-  .topic-bar__title h1 {
-    font-size: 1.8rem;
-  }
-
-  .sidebar {
-    position: sticky;
-    width: 25%;
-    height: auto;
-    z-index: 70;
-  }
-
-  .topic-bar {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: linear-gradient(0deg, #ffffff, var(--accent-soft));
-    border-bottom: 1px solid var(--border);
-    padding: 12px 16px;
-  }
-  .content {
-    margin-left: 0;
-    padding-top: calc(var(--topic-bar-height) + 10px);
-  }
-
-  .skip-link:focus {
-    left: 20px;
   }
 }
