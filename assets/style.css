@@ -260,13 +260,20 @@ section[id] {
   padding: 22px 26px;
   margin: 18px auto;
   margin-left: calc(var(--sidebar-width));
-  margin-top: calc(var(--topic-bar-height) + 5px);
   border-radius: var(--radius-md);
   box-shadow: var(--card-shadow);
   border-left: 8px solid var(--accent-2);
   border: 1px solid var(--border);
 }
-
+section[id] {
+  scroll-margin-top: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-padding-top: calc(var(--topic-bar-height) + 25px);
+}
 h2 {
   margin: 0 0 10px;
   font-size: 1.8rem;
