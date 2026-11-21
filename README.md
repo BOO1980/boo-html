@@ -20,13 +20,12 @@ Then visit:
 - `http://localhost:8000/html-notes/`
 - `http://localhost:8000/html-work/freecodecamp/`
 
-## Suggested improvement plan
+## Add a freeCodeCamp exercise
 
-1. **Standardize HTML boilerplate** in all pages (`<!doctype html>`, `lang`, `meta charset`, `meta viewport`, descriptive `<title>`).
-2. **Improve navigation** with index pages in each folder (notes/projects/tutorials).
-3. **Fix naming consistency** (e.g. typo fixes such as `Catalouge` -> `Catalogue`, `replaceed` -> `replaced`) where feasible.
-4. **Add lightweight linting** (e.g. `htmlhint`) to catch missing tags, invalid nesting, and accessibility issues.
-5. **Introduce reusable templates** for note pages to keep structure consistent.
+1. Create a folder under `html-work/freecodecamp/` and save your own exercise code as `index.html`. Keep any CSS, JavaScript, and local images for that exercise in the same folder.
+2. Add a link to the folder in `html-work/freecodecamp/index.html` so you can open it from the exercise list.
+3. Add the lesson link and your progress to `tracker/tracking.html` if you want to pick up where you left off.
+4. Open the exercise through your local server and check that the page and its assets load.
 
 ## Training tracking (original links)
 

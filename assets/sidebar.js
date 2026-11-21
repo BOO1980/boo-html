@@ -23,13 +23,14 @@
       <details class="nav-group" open>
         <summary>Home</summary>
         <nav class="nav-list" aria-label="Home">
-          <a href="${href('tracker/tracking.html')}" data-page="tracking">Home</a>
+          <a href="${href('html-notes/html-overview.html')}" data-page="overview">Home</a>
+          <a href="${href('tracker/tracking.html')}" data-page="tracking">Learning Tracker</a>
         </nav>
       </details>
       <details class="nav-group" open>
         <summary>Notes</summary>
         <nav class="nav-list" aria-label="Notes">
-          <a href="${href('html-notes/html-overview.html')}" data-page="overview">Main Overview</a>
+          <a href="${href('html-notes/index.html')}" data-page="notes-index">All HTML Notes</a>
           <a href="${href('html-notes/html-basic-elements.html')}" data-page="basic-elements">Basic Elements</a>
           <a href="${href('html-notes/html-attributes.html')}" data-page="attributes">Attributes</a>
           <a href="${href('html-notes/html-headers.html')}" data-page="headers">Headers</a>
@@ -50,10 +51,11 @@
         </nav>
       </details>
       <details class="nav-group">
-        <summary>Workshops</summary>
-        <nav class="nav-list" aria-label="Workshops">
-          <a href="${href('workshops/cat-photo-app.html')}" data-page="cat-photo-app">Cat Photo App</a>
-          <a href="${href('workshops/pet-adoption-debug.html')}" data-page="pet-adoption-debug">Pet Adoption Debug</a>
+        <summary>Exercises</summary>
+        <nav class="nav-list" aria-label="Exercises">
+          <a href="${href('html-work/freecodecamp/index.html')}" data-page="fcc-index">All freeCodeCamp Exercises</a>
+          <a href="${href('html-work/freecodecamp/CatPhotoApp.html')}" data-page="cat-photo-app">Cat Photo App</a>
+          <a href="${href('html-work/w3-schools/index.html')}" data-page="w3-index">W3Schools Exercises</a>
         </nav>
       </details>
     </aside>
