@@ -44,6 +44,7 @@
         </li>
         <li>the attribute name is followed by an equal sign (=) and a value in quotes.</li>
         <li>The value can be a string or a number, depending on the attribute.</li>
+        <li>When elements have multiple attributes, the order of the attributes doesn't matter.</li>
 
         <li>An example of an img element using an alt attribute</li>
         <li><code>&lt;img src="https://www.example.com/the-image.jpg"&gt;</code></li>
@@ -173,6 +174,24 @@
 
       <p>Some attributes are a little unique with their syntax like the checked attribute</p>
       <code>&lt;input type="checkbox" checked&gt;</code>
+
+      <p>The label element is used to provide descriptive text for input elements in a web form</p>
+      <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code>
+      <p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+      <code>&lt;input type="text" name="username" required&gt;</code>
+
+      <p>
+        Tip: Add <code>width</code> and <code>height</code> to reduce layout shift, and use
+        <code>loading="lazy"</code> for offscreen images.
+      </p>
+
+      <pre><code>&lt;img
+  src="./images/cat.jpg"
+  alt="Cat sleeping in the grass"
+  width="640"
+  height="480"
+  loading="lazy"
+&gt;</code></pre>
     </section>
 
     <!-- QUESTIONS -->
