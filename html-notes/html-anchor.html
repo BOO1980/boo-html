@@ -16,6 +16,8 @@
 
     <nav class="quick-links" aria-label="On this page">
       <a href="#overview">Overview</a>
+      <a href="#link-destinations">Destinations</a>
+      <a href="#link-states">Link States</a>
       <a href="#keywords">Keywords</a>
       <a href="#codekeywords">Code Keywords</a>
       <a href="#codeexamples">Code Examples</a>
@@ -32,20 +34,8 @@
         <li>You can link to another page with the anchor element.</li>
         <li>For example: <code>&lt;a href="https://freecodecamp.org"&gt;Visit freeCodeCamp&lt;/a&gt;</code></li>
         <li>
-          A link text must be placed between the opening and closing tags of an anchor (<code>&lt;a&gt;</code>)
-          element.
-        </li>
-        <li>
-          Adding a <code>target</code> attribute with the value <code>_blank</code> to an anchor link opens the link
-          in a new tab.
-        </li>
-        <li>
-          To open links in a new tab, you can use the <code>target</code> attribute on the anchor element. For
-          example:
-          <ul>
-            <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code></li>
-          </ul>
-          This will open the link in a new browser tab when clicked.
+          Use descriptive text between the anchor tags so readers know where the link goes.
+          If an image is the sole content of the link, its <code>alt</code> text should describe the destination.
         </li>
         <li>
           The <code>target</code> attribute specifies where to open the linked document.
@@ -63,34 +53,34 @@
         <li>Other types of content can also be turned into a link by wrapping it in anchor tags.</li>
       </ul>
     </section>
-    <section id="codeexamples">
-      <h2>Code Examples</h2>
+    <section id="link-destinations">
+      <h2>Link Destinations</h2>
       <ul>
-        <li>
-          Basic anchor element:
-          <ul>
-            <li><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Anchor element that opens in a new tab:
-          <ul>
-            <li><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;</code></li>
-          </ul>
-        </li>
-        <li>
-          Image as a link:
-          <ul>
-            <li>
-              <code>
-                  &lt;a href="https://www.example.com"&gt;<br />
-                  &nbsp;&nbsp;&lt;img src="image.jpg" alt="Example Image"&gt;<br />
-                  &lt;/a&gt;
-                </code>
-            </li>
-          </ul>
-        </li>
+        <li>An absolute web URL includes the scheme and host, as in <code>https://www.example.com/notes/</code>.</li>
+        <li>A relative URL is resolved against the document's base URL. Usually that means
+          <code>html-images.html</code> or <code>./html-images.html</code> opens a file in the same folder,
+          and <code>../index.html</code> goes up one folder.</li>
+        <li>A leading slash starts at the website's root when served over HTTP. A page opened directly from disk
+          or hosted under a subfolder can resolve that path differently from a page-relative link.</li>
+        <li>A fragment such as <code>#resources</code> jumps to the element with <code>id="resources"</code>.
+          It also works across pages, as in <code>html-images.html#resources</code>.</li>
       </ul>
+      <p>An empty fragment (<code>href="#"</code>) typically jumps to the top of the page. Use a real URL for
+        navigation and a <code>&lt;button&gt;</code> for actions such as opening a dialog.</p>
+      <p>The <a href="html-link-element.html"><code>&lt;link&gt;</code> element</a> declares relationships to
+        resources such as stylesheets and favicons. The <code>&lt;a&gt;</code> element creates links readers can follow.</p>
+    </section>
+    <section id="link-states">
+      <h2>Link States</h2>
+      <ul>
+        <li><code>:link</code> matches unvisited links, and <code>:visited</code> matches visited links.</li>
+        <li><code>:hover</code> applies when the pointer is over a link. <code>:focus-visible</code> lets you style
+          a visible focus indicator, such as when a reader tabs to the link.</li>
+        <li><code>:active</code> applies while the link is being activated.</li>
+      </ul>
+      <p>When link-state color rules have equal specificity, write them in this order so later states can override
+        earlier ones: <code>:link</code>, <code>:visited</code>, <code>:hover</code>, <code>:active</code>.
+        Keep the keyboard focus outline visible.</p>
     </section>
     <section id="keywords">
       <h2>Keywords</h2>
@@ -127,12 +117,16 @@
           </ul>
         </li>
         <li>
+          Link to a section on another page:
+          <code>&lt;a href="html-images.html#resources"&gt;Image resources&lt;/a&gt;</code>
+        </li>
+        <li>
           Image as a link:
           <ul>
             <li>
               <code>
                   &lt;a href="https://www.example.com"&gt;<br />
-                  &nbsp;&nbsp;&lt;img src="image.jpg" alt="Example Image"&gt;<br />
+                  &nbsp;&nbsp;&lt;img src="logo.png" alt="Example.com home"&gt;<br />
                   &lt;/a&gt;
                 </code>
             </li>
@@ -143,6 +137,9 @@
     <section id="questions">
       <h2>Questions</h2>
       <ul>
+        <li>What is the difference between <code>../index.html</code> and <code>/index.html</code>?</li>
+        <li>How does a fragment link find the element it should jump to?</li>
+        <li>Which link state helps a keyboard user tell where they are on the page?</li>
         <li>How do you create a link in HTML?</li>
         <li>What is the purpose of the href attribute in an anchor tag?</li>
         <li>How do you open a link in a new tab using the anchor element?</li>
@@ -159,6 +156,8 @@
     <section id="resources">
       <h2>Resources</h2>
       <ul>
+        <li><a href="html-absolute-and-relative-paths.html">Absolute and Relative Paths</a></li>
+        <li><a href="html-link-states.html">Link States</a></li>
         <li><a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-9">
             freeCodeCamp: Workshop: Cat Photo App - Step 9</a></li>
