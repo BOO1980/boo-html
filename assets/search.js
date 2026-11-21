@@ -97,7 +97,7 @@
     if (!response.ok) throw new Error('Could not load page text');
 
     const page = new DOMParser().parseFromString(await response.text(), 'text/html');
-    const content = page.querySelector('main') || page.body;
+    const content = page.body;
     content.querySelectorAll('script, style, template, noscript, nav, [hidden]').forEach((element) => element.remove());
     const walker = page.createTreeWalker(content, NodeFilter.SHOW_TEXT);
     const parts = [];
