@@ -17,6 +17,8 @@
 
         <nav class="quick-links" aria-label="On this page">
             <a href="#overview">Overview</a>
+            <a href="#strong">Strong and Bring Attention Elements</a>
+            <a href="#annotations">U, S, and Ruby Elements</a>
             <a href="#keywords">Keywords</a>
             <a href="#codekeywords">Code Keywords</a>
             <a href="#codeexamples">Code Examples</a>
@@ -33,42 +35,28 @@
             <h2>Overview</h2>
             <ul>
                 <li>
-                    The <em> element is used to indicate emphasis on a word or phrase, while the <i> element is used to
-                            indicate a change in the normal text style, such as italicizing a word for stylistic
-                            purposes.
+                    The <code>&lt;em&gt;</code> element is typically used for emphasis in a sentence, while the
+                    <code>&lt;i&gt;</code> element is used for stylistic purposes, such as indicating a foreign word
+                    or a technical term.
                 </li>
-                <li>
-                    The <em> element is used to convey meaning and importance, while the <i> element is used for visual
-                            styling without conveying any additional meaning. </li>
-                <li>
-                    The <em> element is typically used for emphasis in a sentence, while the <i> element is used for
-                            stylistic purposes, such as indicating a foreign word or a technical term. </li>
-                <li>
-                    The <em> element is often used in conjunction with other semantic elements, such as &lt;strong&gt;
-                        or
-                        &lt;cite&gt;,
-                        to provide additional context and meaning, while the <i> element is used primarily for
-                            visual styling. </li>
-
-                <li>
-                    The <em> element is more commonly used in modern web development, while the <i> element is often
-                            used in
-                            older websites or for specific stylistic purposes. </li>
-                <li>
-                    The <em> element is designed to be accessible to screen readers and assistive technologies, while
-                        the
-                        <i> element may not be as accessible, as it does not convey any additional meaning beyond visual
-                            styling. </li>
-                <li>
-                    The <em> element is often used to indicate a change in tone or emphasis in a sentence, while the <i>
-                            element is used for stylistic purposes, such as indicating a quote or a title. </li>
-                <li>
-                    The <em> element is used to indicate a change in the meaning of a word or phrase, while the <i>
-                            element
-                            is used for visual styling without conveying any additional meaning. </li>
-                <li>
                 <li>The lang attribute inside the open i tag is used to specify the language of the context.</li>
             </ul>
+        </section>
+        <section id="strong">
+            <h2>When should you use the strong element over the bring attention to element</h2>
+            <p>The <code>&lt;strong&gt;</code> element is used to indicate that the text is of strong importance.</p>
+            <pre><code>&lt;figcaption&gt;Cats &lt;strong&gt;hate&lt;/strong&gt; other cats.&lt;/figcaption&gt;</code></pre>
+        </section>
+        <section id="annotations">
+            <h2>What Are the U, S, and Ruby Elements Used For, and How Do They Work?</h2>
+            <ul>
+                <li>If you want to style a piece of text with a underline, then you should use CSS instead of HTML.</li>
+                <li><strong>S Element</strong>: The <code>&lt;s&gt;</code> element is used to indicate text that is no longer accurate or relevant, often displayed with a strikethrough. It can be used to show corrections or changes in content.</li>
+                <li><strong>Ruby Element</strong>: The <code>&lt;ruby&gt;</code> element is used for East Asian typography, allowing for annotations or pronunciation guides (known as "ruby text") to be displayed alongside the main text. It is particularly useful for languages like Japanese and Chinese.</li>
+            </ul>
+            <p>Here is an example of using the u element to highlight various spelling errors:</p>
+            <pre><code>You can use the unarticulated annotation element to highlight
+&lt;u&gt;inccccort&lt;/u&gt; &lt;u&gt;spling&lt;/u&gt; &lt;u&gt;issses&lt;/u&gt;.</code></pre>
         </section>
         <section id="keywords">
             <h2>Keywords</h2>
@@ -81,7 +69,6 @@
                 <li>meaning</li>
                 <li>importance</li>
                 <li>tone</li>
-                <li>language attribute</li>
             </ul>
         </section>
         <section id="codekeywords">
@@ -115,7 +102,6 @@
                 <li>What is the purpose of the &lt;em&gt; element in HTML?</li>
                 <li>How does the &lt;i&gt; element differ from the &lt;em&gt; element in terms of meaning and usage?
                 </li>
-                <li>When should you use the &lt;em&gt; element instead of the &lt;i&gt; element in your HTML code?</li>
                 <li>How does the lang attribute affect the behavior of the &lt;i&gt; element when used for idiomatic
                     text?</li>
             </ul>
@@ -123,6 +109,7 @@
         <section id="resources">
             <h2>Resources</h2>
             <ul>
+                <li><a href="html-strong-and-bring-attention-elements.html">Strong and Bring Attention Elements</a></li>
                 <li><a target="_blank" rel="noopener noreferrer"
                         href="https://www.freecodecamp.org/learn/responsive-web-design-v9/workshop-cat-photo-app/step-27">
                         freeCodeCamp: Workshop: Cat Photo App - Step 27</a></li>
