@@ -38,23 +38,13 @@
         <li>A boilerplate includes basic structure and essential elements every HTML document needs</li>
         <li>It saves you time and helps ensure your pages are set up properly.</li>
         <li>
-          The boilerplate is important as it insure pages are structured correctly and works well across different
-          browsers
-        </li>
-        <li>Using a boilerplate helps you avoid common mistakes and follow best practices</li>
-        <li>
           It's a great starting point for any web project. Remember, you can customize your own boilerplate to fit
           your needs
         </li>
-        <li>As you gain experience, you might add your own preferred elements or meta tags.</li>
 
         <!-- DOCTYPE + HTML ELEMENT -->
         <li>DOCTYPE html: tells the browser what version of HTML you are using</li>
-        <li>there is the DOCTYPE declaration It tells browsers which version of HTML you're using.</li>
         <li>The html tag wraps around all of your page, it also contains the language</li>
-        <li>
-          Next, comes the html tag:This wraps around all your content, and can specify the language of your page.
-        </li>
 
         <!-- HEAD + METADATA -->
         <li>Inside the html tag, you'll find two main sections - a head, and a body:</li>
@@ -67,6 +57,7 @@
           Your site's title, found in the title element, determines the text that appears in the browser tab or
           window.
         </li>
+        <li>Common uses include specifying character set, author, description, and viewport settings.</li>
 
         <!-- CHARACTER ENCODING -->
         <li>
@@ -75,9 +66,7 @@
         </li>
         <li>UTF-8 or UCS Transformation Format 8 is a standardized character encoding widely used on the web</li>
         <li>All text on the web page is a sequence of characters stored as one or more bytes.</li>
-        <li>In computing, a byte is a unit of data consisting of 8 bits, or binary digits. UTF-8 supports every
-          character in the Unicode character set</li>
-        <li>UTF-8 includes characters and symbols from all writing systems, languages, and technical symbols.</li>
+        <li>In computing, a byte is a unit of data consisting of 8 bits, or binary digits.</li>
 
         <!-- LINK ELEMENT -->
         <li>The link element is used to link to external resources like stylesheets and site icons</li>
@@ -86,10 +75,6 @@
           this situation, we need to specify that this linked resource is a stylesheet.
         </li>
         <li>It is considered best practice to separate your HTML and CSS in different files.</li>
-        <li>
-          Developers will use the link element for their external CSS file instead of writing everything in the HTML
-          document.
-        </li>
         <li>The href attribute is used to specify the location of the URL for the external resource.</li>
         <li>The link element should be placed inside the head element</li>
         <li>
@@ -115,11 +100,8 @@
         </li>
 
         <!-- BODY -->
-        <li>he body section is where all your content goes:</li>
-        <li>
-          hy is a boilerplate important? It ensures your pages are structured correctly and work well across different
-          browsers.
-        </li>
+        <li>All page content elements that should be rendered to the page go inside the body element</li>
+        <li>JavaScript can be included directly within the script tags or linked to an external file using the src attribute.</li>
       </ul>
     </section>
 
@@ -156,22 +138,24 @@
         By setting the character encoding to UTF-8 it will ensure that the ascented "e" character is displayed
         correctly on the page
       </p>
-      <code>&lt;meta charset="UTF-8" /&gt;</code>
-
-      <ul>
-        <li>
-          &lt;link rel="stylesheet" href="./styles.css" /&gt;: This line links an external CSS file named styles.css
-          to the HTML document, allowing you to apply styles defined in that file to the content of the page.
-        </li>
-      </ul>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="../assets/style.css" /&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;HTML Main Overview&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
     </section>
 
     <!-- QUESTIONS -->
     <section id="questions">
       <h2>Questions</h2>
       <ul>
-        <li>Where would yuou set the character encoding for your page?</li>
-        <li>Where would you set the language for your page?</li>
         <li>What is an HTML boilerplate?</li>
         <li>What is the purpose of the DOCTYPE declaration?</li>
         <li>What does the lang attribute in the html tag specify?</li>
@@ -186,7 +170,6 @@
         <li>What is a favicon?</li>
         <li>Where would you set the character encoding for your page?</li>
         <li>Where would you set the language for your page?</li>
-        <li>What purpose does a boilerplate serve?</li>
       </ul>
     </section>
 
@@ -194,6 +177,8 @@
     <section id="resources">
       <h2>Resources</h2>
       <ul>
+        <li><a href="html-meta-element.html">Meta Element</a></li>
+        <li><a href="html-script-element.html">Script Element</a></li>
         <li>
           <a target="_blank"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-the-html-boilerplate/what-is-the-role-of-the-link-element-in-html">freeCodeCamp:
