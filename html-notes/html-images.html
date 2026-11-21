@@ -17,9 +17,10 @@
 
     <nav class="quick-links" aria-label="On this page">
       <a href="#overview">Overview</a>
-      <a href="#keywords">Keywords</a>
       <a href="#codekeywords">Code Keywords</a>
       <a href="#codeexamples">Code Examples</a>
+      <a href="#media-optimization">Media Optimization</a>
+      <a href="#image-licences">Image Licences</a>
       <a href="#questions">Questions</a>
       <a href="#resources">Resources</a>
       <a href="#todo">TODO</a>
@@ -34,15 +35,10 @@
       <h2>Overview</h2>
       <ul>
         <li>You can add images to your website by using the img element</li>
-        <li>img elements have an opening tag without a closing tag</li>
         <li>A tag for an element without a closing tag is known as a self-closing tag or void element</li>
         <li>Sometimes code formatters like Prettier will choose to include the / in void elements</li>
         <li>The HTML spec states that the presence of the / does not mark the start tag as self closing but instead it
           is unnecessary and has no effect of any kind</li>
-        <li>
-          If you wanted to display an image, you will need to include a couple of attributes inside your image
-          element. An attribute is a special value used to adjust the behavior for an HTML element.
-        </li>
         <li>
           The src attribute is used to specify the location for that image. The value of the src attribute can be a URL
           to an image on the web or a relative path to an image file on your computer.
@@ -67,18 +63,6 @@
       </ul>
     </section>
 
-    <section id="keywords">
-      <h2>Keywords</h2>
-      <ul>
-        <li>img element</li>
-        <li>void element</li>
-        <li>src attribute</li>
-        <li>alt attribute</li>
-        <li>figure element</li>
-        <li>figcaption element</li>
-      </ul>
-    </section>
-
     <section id="codekeywords">
       <h2>Code Keywords</h2>
       <ul>
@@ -92,16 +76,6 @@
 
     <section id="codeexamples">
       <h2>Code Examples</h2>
-
-      <p>
-        <code>src</code> sets the image location, and <code>alt</code> describes the image for accessibility.
-      </p>
-
-      <pre><code>&lt;img src="./images/cat.jpg" alt="Cat sleeping in the grass"&gt;</code></pre>
-
-      <p>
-        Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> to add a caption.
-      </p>
 
       <pre><code>&lt;figure&gt;
   &lt;img src="./images/cat.jpg" alt="Cat sleeping in the grass"&gt;
@@ -122,6 +96,24 @@
 &gt;</code></pre>
     </section>
 
+    <section id="media-optimization">
+      <h2>Media Optimization</h2>
+      <ul>
+        <li>Responsive images can be used to serve different sizes based on device capabilities.</li>
+        <li>Using modern formats like WebP for images and AV1 for videos can further reduce file sizes.</li>
+        <li>Tools like ImageOptim, TinyPNG, and HandBrake can help with media optimization.</li>
+      </ul>
+    </section>
+
+    <section id="image-licences">
+      <h2>Image Licences</h2>
+      <ul>
+        <li>Images can be licensed under various terms, including Creative Commons, public domain, and commercial licenses.</li>
+        <li>Always check the license terms before using an image to ensure compliance with copyright laws.</li>
+        <li>Attribution is often required for Creative Commons images, giving credit to the original creator.</li>
+      </ul>
+    </section>
+
     <section id="questions">
       <h2>Questions</h2>
       <ul>
@@ -137,6 +129,9 @@
     <section id="resources">
       <h2>Resources</h2>
       <ul>
+        <li><a href="html-media-optimization.html">Media Optimization</a></li>
+        <li><a href="html-image-licences.html">Image Licences</a></li>
+        <li><a href="html-svgs.html">SVG</a></li>
         <li>
           <a target="_blank" rel="noopener noreferrer"
             href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-understanding-html-attributes/what-is-html">
@@ -289,7 +284,6 @@
         <li>Write one code example for each keyword.</li>
         <li>Answer the questions above.</li>
         <li>Clean up the code using ChatGPT suggestions</li>
-        <li>Add a short section for image performance (formats, compression, lazy loading).</li>
         <li>Add a short section for accessibility (meaningful alt text, decorative images).</li>
         <li>Add a short section for common issues (broken paths, missing alt, huge files).</li>
       </ul>
