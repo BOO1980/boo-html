@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Checkout Page Example" />
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <input type="text" id="card-name" name="card-name" placeholder="Cardholder Name" required />
+            <label for="card-name">Cardholder Name<span aria-hidden="true">*</span></label>
+            <input type="text" id="card-number" name="card-number" placeholder="Card Number" required
+                aria-describedby="card-number-help" />
+            <p id="card-number-help">Required card format is 1234 5678 9012 3456</p>
+            <label for="card-number">Card Number<span aria-hidden="true">*</span></label>
+        </form>
+    </section>
+</body>
+
+</html>
