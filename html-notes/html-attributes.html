@@ -32,94 +32,41 @@
     <!-- OVERVIEW -->
     <section id="overview">
       <h2>Overview</h2>
+      <p>Attributes go in an element's opening tag. They give the browser additional information or control how
+        the element behaves. For attributes with a value, write the name followed by an equals sign and a quoted
+        value, as in <code>lang="en"</code>.</p>
+
+      <h3>Global attributes</h3>
+      <p>Global attributes are available on all HTML elements. Common examples include:</p>
       <ul>
-        <li>
-          HTML attributes are special words used inside the opening tag of an element to control the element's
-          behaviour
-        </li>
-        <li>An attribute is a value placed inside the opening tag of an HTML element</li>
-        <li>
-          Attributes provide additional information about the element or specify how the element should behave. Here
-          is the basic syntax for an attribute:
-        </li>
-        <li>the attribute name is followed by an equal sign (=) and a value in quotes.</li>
-        <li>The value can be a string or a number, depending on the attribute.</li>
-
-        <li>An example of an img element using an alt attribute</li>
-        <li><code>&lt;img src="https://www.example.com/the-image.jpg"&gt;</code></li>
-
-        <li>The src attribute is an img element specifies the images url (where the image is located)</li>
-        <li>The alt attribute is not required, but it is recommended for accessibility purposes</li>
-        <li>
-          The alt attribute text is used for screen readers to improve accessibility and is displayed if the image
-          failts to load
-        </li>
-        <li>
-          Accessibility means making sure that everyone, including those with disabilities, can use and understand
-          things like websites, apps, and physical spaces. You will learn more about accessibility in the upcoming
-          lessons.
-        </li>
-
-        <li>
-          This first example uses the href and target attributes. The href attribute specifies the URL of a link and
-          the target attribute specifies where to open the link.
-        </li>
-        <li>
-          Without the href attribute, the link would not work because there would be no destination URL. So you must
-          include this href attribute to make the link functional
-        </li>
-        <li>
-          The target="_blank" enables the link to open in a new browser tab. You will learn more about the target
-          attribute in future lessons.
-        </li>
-        <li>
-          You can also specify the language of your page by adding the lang attribute to the html element.</li>
-
-        <li>Some attributes are a little unique with their syntax like the checked attribute.</li>
-        <li>
-          Enable the interactive editor and try clicking on the checkbox in the preview window to see it alternate
-          between a checked and unchecked state.
-        </li>
-        <li>The checked attribute is used to specify that the checkbox should be checked by default</li>
-        <li>The checked attribute does not require a value</li>
-        <li>
-          If the attribute is not present, the checkbox will be unchecked. This is known as a boolean attribute.
-        </li>
-        <li>
-          There are several common boolean attributes you will encounter in HTML, such as disabled, readonly, and
-          required.
-        </li>
-        <li>
-          These attributes are used to specify the state of an element, such as whether it is disabled, read-only, or
-          required.
-        </li>
-
-        <li>
-          HTML has many attributes that can be used to customize the behavior and appearance of elements on a webpage.
-        </li>
-        <li>Understanding how to use attributes is essential for creating interactive and accessible web content.</li>
-
-        <li>Inputs are used to collect data from users, and the type attribute specifies the type of input</li>
-        <li>
-          Similar to the href attribute, the src attribute is required because it specifies the image file to be
-          displayed.
-        </li>
-
-        <li>The ID attribute adds a unique identifier to an HTML element</li>
-        <li>You can reference the ids within your JavaScript or CSS code</li>
-        <li>ID attribute names need to be unique</li>
-        <li>ID names should not have spaces—they can only contain letters digits and underscores</li>
-
-        <li>Classes are used when you want to apply a set of styles to many elements</li>
-        <li>Unlike the id attribute, class names do not need to be unique</li>
-        <li>The class attribute does not need to be unique and can contain spaces</li>
-        <li>You can add multiple class names to an element</li>
-        <li>
-          The id attribute adds a unique identifier to an HTML element. Each id should be unique within a page and
-          should only be used once.
-        </li>
-        <li>id values cannot contain spaces and should only contain letters, digits, underscores, and dashes.</li>
+        <li><code>id</code> identifies one element. Use a unique value on the page with no whitespace.
+          CSS, JavaScript, fragment links such as <code>#overview</code>, and form labels can refer to that ID.</li>
+        <li><code>class</code> groups elements for styling or scripting. Classes can be reused, and spaces separate
+          multiple classes on one element, as in <code>class="card featured"</code>.</li>
+        <li><code>lang</code> identifies the language of the content. Set it on <code>&lt;html&gt;</code> for the
+          page's main language and on an individual element when the language changes. This helps screen readers
+          pronounce the text. See <a href="html-boilerplate.html">HTML Boilerplate</a>.</li>
       </ul>
+
+      <h3>Attributes for specific elements</h3>
+      <ul>
+        <li>On an anchor, <code>href</code> supplies the destination and <code>target</code> controls where it opens.
+          See <a href="html-anchor.html">Anchor</a> for paths, fragments, and examples.</li>
+        <li>On an image, <code>src</code> gives the browser the URL and <code>alt</code> supplies a text alternative.
+          Describe the relevant information for an informative image and use <code>alt=""</code> for a purely
+          decorative image. <code>width</code> and <code>height</code> help reserve space before the image loads.
+          See <a href="html-images.html">Images</a>.</li>
+        <li>On an input, <code>type</code> selects the kind of control and <code>name</code> is the key used when
+          the form submits that field. A label's <code>for</code> value matches the input's <code>id</code>.
+          Use <code>placeholder</code> for a short hint and keep a visible label.
+          See <a href="html-form.html">Forms</a>.</li>
+      </ul>
+
+      <h3>Boolean attributes</h3>
+      <p>For boolean attributes, presence means true and omission means false. On a checkbox,
+        <code>checked</code> sets its initial state. The markup <code>checked="false"</code> still counts as
+        present, so omit <code>checked</code> to start unchecked. Other examples include <code>disabled</code>,
+        <code>readonly</code>, and <code>required</code> on controls that support them.</p>
     </section>
 
     <!-- KEYWORDS -->
@@ -144,7 +91,7 @@
 
     <!-- CODE KEYWORDS -->
     <section id="codekeywords">
-      <h3>Code keywords</h3>
+      <h2>Code keywords</h2>
       <ul>
         <li><code>href</code></li>
         <li><code>alt</code></li>
@@ -169,10 +116,14 @@
         The alt attribute, which provides alternative descriptive text, or the src which is used to specify the source
         of an image are other common attributes
       </p>
-      <code>&lt;img src="image.jpg" alt="A beautiful image"/&gt;</code>
+      <code>&lt;img src="cat.jpg" alt="Cat sleeping in the grass"&gt;</code>
 
       <p>Some attributes are a little unique with their syntax like the checked attribute</p>
       <code>&lt;input type="checkbox" checked&gt;</code>
+
+      <p>The label refers to the input by its <code>id</code>, and the form submits its value under <code>email</code>.</p>
+      <pre><code>&lt;label for="contact-email"&gt;Email address&lt;/label&gt;
+&lt;input id="contact-email" name="email" type="email" required&gt;</code></pre>
     </section>
 
     <!-- QUESTIONS -->
@@ -188,7 +139,7 @@
         <li>What characters are allowed in an ID name?</li>
         <li>Give an example of a boolean attribute</li>
         <li>What is the correct syntax for a boolean attribute</li>
-        <li>What is the role of an attribute in HTML?</li>
+        <li>Why does a checkbox with <code>checked="false"</code> still start checked?</li>
 
         <li>
           Which of the following is an example of a boolean attribute?
@@ -260,7 +211,6 @@
         <li>Practice using different attributes in your own HTML projects</li>
         <li>Explore more boolean attributes and their use cases</li>
         <li>Clean up the code using ChatGPT suggestions</li>
-        <li>Learn about global attributes that can be applied to any HTML element</li>
       </ul>
     </section>
   </main>
