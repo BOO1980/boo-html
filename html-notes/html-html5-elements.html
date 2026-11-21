@@ -16,7 +16,6 @@
 
         <nav class="quick-links" aria-label="On this page">
             <a href="#overview">Overview</a>
-            <a href="#keywords">Keywords</a>
             <a href="#codekeywords">Code Keywords</a>
             <a href="#codeexamples">Code Examples</a>
             <a href="#questions">Questions</a>
@@ -32,13 +31,9 @@
         <section id="overview">
             <h2>Overview</h2>
             <ul>
-                <li>HTML5 introduced new semantic elements that provide meaning to the content.</li>
-                <li>These elements help structure the document and improve accessibility.</li>
+                <li>Semantic HTML uses HTML elements that clearly describe their meaning in a human- and machine-readable way.</li>
                 <li>The section element is used to define sections in a document, such as chapters, headers, footers, or
                     any other sections of the document. It is a semantic element that helps with SEO and accessibility.
-                </li>
-                <li>Examples of new elements include <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
-                    <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code>.
                 </li>
                 <li>Using these elements correctly enhances SEO and makes the content more understandable for both users
                     and search engines.</li>
@@ -48,33 +43,14 @@
                     document.</li>
                 <li>Content inside the <code>&lt;main&gt;</code> element should be unique to the document and not
                     repeated elsewhere.</li>
-                <li>The <code>&lt;main&gt;</code> element helps search engines and developers identify the primary
-                    content of your page.</li>
                 <li>The <code>&lt;footer&gt;</code> element defines a footer for a document or section. A footer
                     typically contains author information, copyright details, links to terms of use, or contact
                     information.</li>
                 <li>article elements commonly contain multiple elements that have related information, such as headings,
                     paragraphs, images, and other media.</li>
                 <li>The HR element is a horizontal rule</li>
-                <li>The footer element is used to define a footer for a document or section. A footer typically contains
-                    information about the author of the document, copyright data, links to terms of use, contact
-                    information, and more.</li>
-            </ul>
-        </section>
-
-        <!-- Keywords Section -->
-        <section id="keywords">
-            <h2>Keywords</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>Semantic Elements</li>
-                <li>Accessibility</li>
-                <li>SEO</li>
-                <li>Document Structure</li>
-                <li>Footer</li>
-                <li>Main Content</li>
-                <li>Header</li>
-                <li>Article</li>
+                <li>You will mainly use the div element when you want to group HTML elements that will share a set of CSS styles.</li>
+                <li>The <code>&lt;time&gt;</code> element can include a <code>datetime</code> attribute to specify the date and time in a machine-readable format.</li>
             </ul>
         </section>
 
@@ -100,19 +76,15 @@
         <section id="codeexamples">
             <h2>Code Example</h2>
             <p>Example of using semantic elements in HTML5:</p>
-            <ul>
-                <li><code>&lt;main&gt;</code></li>
-                <li><code>&lt;header&gt;</code></li>
-                <li><code>&lt;footer&gt;</code></li>
-                <li><code>&lt;article&gt;</code></li>
-                <li><code>&lt;section&gt;</code></li>
-                <li><code>&lt;nav&gt;</code></li>
-                <li><code>&lt;aside&gt;</code></li>
-                <li><code>&lt;figure&gt;</code></li>
-                <li><code>&lt;figcaption&gt;</code></li>
-                <li><code>&lt;time&gt;</code></li>
-                <li><code>&lt;mark&gt;</code></li>
-            </ul>
+            <pre><code>&lt;section id="upcoming-events"&gt;
+    &lt;h2&gt;Upcoming Events&lt;/h2&gt;
+    &lt;article&gt;
+        &lt;h3&gt;Tech Conference 2023&lt;/h3&gt;
+        &lt;p&gt;Date: October 15, 2023&lt;/p&gt;
+        &lt;p&gt;Location: San Francisco, CA&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;</code></pre>
+            <pre><code>&lt;time datetime="2023-10-01T12:00:00"&gt;October 1, 2023, 12:00 PM&lt;/time&gt;</code></pre>
         </section>
 
 
@@ -127,7 +99,6 @@
                 <li>What kind of information is typically included in the <code>&lt;footer&gt;</code> element?</li>
                 <li>How do you use the <code>&lt;article&gt;</code> element?</li>
                 <li>What is the difference between <code>&lt;section&gt;</code> and <code>&lt;div&gt;</code>?</li>
-                <li>How do semantic elements help screen readers?</li>
                 <li>Can semantic elements be nested within each other?</li>
                 <li>What is the role of the <code>&lt;nav&gt;</code> element?</li>
                 <li>How do you use the <code>&lt;aside&gt;</code> element?</li>
@@ -142,12 +113,14 @@
         <section id="resources">
             <h2>Resources</h2>
             <ul>
+                <li><a href="html-semantics.html">Semantic HTML</a></li>
+                <li><a href="html-div.html">Div Element</a></li>
+                <li><a href="html-dates-and-times.html">Dates and Times</a></li>
                 <li><a target="_blank" rel="noopener noreferrer"
                         href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-5">
                         freeCodeCamp: Learn HTML - Step 5</a></li>
                 <li><a target="_blank" rel="noopener noreferrer"
                         href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-64">
-                        target="_blank" rel="noopener noreferrer">
                         freeCodeCamp: Learn HTML - Step 64</a></li>
                 <li><a target="_blank" rel="noopener noreferrer"
                         href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-65">
@@ -199,6 +172,7 @@
                 <li>Practice writing HTML code using the new semantic elements covered in this section</li>
                 <li>Clean up the code using ChatGPT suggestions</li>
             </ul>
+        </section>
     </main>
     <!-- Sidebar JS -->
     <script src="../assets/layout.js"></script>
