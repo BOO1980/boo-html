@@ -102,7 +102,7 @@
     const walker = page.createTreeWalker(content, NodeFilter.SHOW_TEXT);
     const parts = [];
     while (walker.nextNode()) parts.push(walker.currentNode.textContent);
-    const text = parts.join(' ').replace(/\s+/g, ' ').trim();
+    const text = [page.title, ...parts].join(' ').replace(/\s+/g, ' ').trim();
     return { text, searchableText: text.toLowerCase() };
   }
 
